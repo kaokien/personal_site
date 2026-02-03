@@ -1,0 +1,130 @@
+[
+  {
+    "id": "1",
+    "name": "JavaScript",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "javascript",
+    "order": 1
+  },
+  {
+    "id": "2",
+    "name": "React",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "react",
+    "order": 2
+  },
+  {
+    "id": "3",
+    "name": "Node.js",
+    "category": "backend",
+    "level": "advanced",
+    "icon": "nodejs",
+    "order": 3
+  },
+  {
+    "id": "4",
+    "name": "HTML5 / CSS3",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "html5",
+    "order": 4
+  },
+  {
+    "id": "5",
+    "name": "Python",
+    "category": "backend",
+    "level": "intermediate",
+    "icon": "python",
+    "order": 5
+  },
+  {
+    "id": "6",
+    "name": "C",
+    "category": "backend",
+    "level": "intermediate",
+    "icon": "c",
+    "order": 6
+  },
+  {
+    "id": "7",
+    "name": "MongoDB",
+    "category": "backend",
+    "level": "intermediate",
+    "icon": "mongodb",
+    "order": 7
+  },
+  {
+    "id": "8",
+    "name": "Git / GitHub",
+    "category": "tools",
+    "level": "expert",
+    "icon": "git",
+    "order": 8
+  },
+  {
+    "id": "9",
+    "name": "Docker",
+    "category": "tools",
+    "level": "intermediate",
+    "icon": "docker",
+    "order": 9
+  },
+  {
+    "id": "10",
+    "name": "Jira",
+    "category": "tools",
+    "level": "expert",
+    "icon": "jira",
+    "order": 10
+  },
+  {
+    "id": "11",
+    "name": "Google IMA SDK",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "google",
+    "order": 11
+  },
+  {
+    "id": "12",
+    "name": "Salesforce",
+    "category": "tools",
+    "level": "intermediate",
+    "icon": "salesforce",
+    "order": 12
+  },
+  {
+    "id": "13",
+    "name": "Bash / Zsh",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "terminal",
+    "order": 13
+  },
+  {
+    "id": "14",
+    "name": "Next.js",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "nextjs",
+    "order": 14
+  },
+  {
+    "id": "15",
+    "name": "TypeScript",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "typescript",
+    "order": 15
+  },
+  {
+    "id": "16",
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "level": "expert",
+    "icon": "tailwindcss",
+    "order": 16
+  }
+]

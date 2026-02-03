@@ -1,0 +1,163 @@
+[
+  {
+    "id": "1",
+    "title": "FightersClub App",
+    "slug": "fightersclub-app",
+    "description": "A comprehensive fitness platform for combat sports enthusiasts with personalized training programs and community features.",
+    "longDescription": "FightersClub is a premium fitness application designed specifically for combat sports athletes. It features AI-powered training recommendations, video tutorials from professional fighters, progress tracking, and a supportive community platform. Built with React Native for cross-platform performance.",
+    "category": "mobile_app",
+    "status": "completed",
+    "tags": ["React Native", "TypeScript", "Node.js", "MongoDB", "AI/ML"],
+    "thumbnailUrl": "/images/projects/fightersclub-thumb.jpg",
+    "images": [
+      "/images/projects/fightersclub-1.jpg",
+      "/images/projects/fightersclub-2.jpg"
+    ],
+    "liveUrl": "https://fightersclub.app",
+    "githubUrl": "https://github.com/kadupoku/fightersclub",
+    "featured": true,
+    "order": 1,
+    "startDate": "2024-06-01",
+    "endDate": "2025-01-15"
+  },
+  {
+    "id": "2",
+    "title": "Hefner Market",
+    "slug": "hefner-market",
+    "description": "Custom Shopify theme for a premium Y2K/Opium-inspired streetwear brand with 85/100 performance score.",
+    "longDescription": "Hefner Market is a custom Shopify theme for a luxury streetwear brand featuring Solid Matte Black backgrounds, Gallery-style 48px spacing, and 3D animated branding. Achieved 90% payload reduction (7.7MB to 755KB) via hybrid WebP/GIF picture strategy, hardware-accelerated AJAX cart, and structural performance mitigations. Design score: 10.0/10.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "Performance",
+      "E-commerce"
+    ],
+    "thumbnailUrl": "/images/projects/hefner-thumb.jpg",
+    "images": [
+      "/images/projects/hefner-1.jpg",
+      "/images/projects/hefner-2.jpg"
+    ],
+    "liveUrl": "https://hefner-market.myshopify.com",
+    "featured": true,
+    "order": 2,
+    "startDate": "2024-09-01",
+    "endDate": "2025-01-20"
+  },
+  {
+    "id": "3",
+    "title": "Corner Man Platform",
+    "slug": "corner-man-platform",
+    "description": "Premium fitness content platform with video streaming, PWA capabilities, and subscription management.",
+    "longDescription": "Corner Man is a Next.js-based fitness platform featuring Mux video streaming, Stripe subscription integration, and progressive web app distribution. Built with a focus on Apple Human Interface Guidelines for a premium, polished user experience.",
+    "category": "web_app",
+    "status": "in_progress",
+    "tags": ["Next.js", "TypeScript", "Mux", "Stripe", "PWA"],
+    "thumbnailUrl": "/images/projects/cornerman-thumb.jpg",
+    "images": ["/images/projects/cornerman-1.jpg"],
+    "liveUrl": "https://cornerman.fit",
+    "githubUrl": "https://github.com/kadupoku/corner-man",
+    "featured": true,
+    "order": 3,
+    "startDate": "2024-11-01"
+  },
+  {
+    "id": "4",
+    "title": "Venture Builder OS",
+    "slug": "venture-builder-os",
+    "description": "A Notion-based operating system for managing multiple digital ventures as a Fractional CTO.",
+    "longDescription": "Venture Builder OS is a comprehensive framework for portfolio management across multiple digital brands. Features the 4-Pillar Bridge Pattern (Mission, Actions, Past, Stats) for workspace synchronization, multi-tenant database tracking, and AI-assisted workflow automation.",
+    "category": "design",
+    "status": "completed",
+    "tags": ["Notion", "System Design", "Automation", "AI"],
+    "thumbnailUrl": "/images/projects/venture-os-thumb.jpg",
+    "featured": false,
+    "order": 4,
+    "startDate": "2024-08-01",
+    "endDate": "2024-12-01"
+  },
+  {
+    "id": "5",
+    "title": "YouTube Intro Generator",
+    "slug": "youtube-intro-generator",
+    "description": "A Remotion-powered video generation tool for creating cinematic YouTube intros with code.",
+    "longDescription": "Built with Remotion, this tool generates professional sports-themed intro animations programmatically. Features dramatic lighting, smoke effects, and impact animations. All video content is created with React components.",
+    "category": "open_source",
+    "status": "completed",
+    "tags": ["Remotion", "React", "TypeScript", "Video", "Animation"],
+    "thumbnailUrl": "/images/projects/remotion-thumb.jpg",
+    "githubUrl": "https://github.com/kadupoku/youtube-intro-generator",
+    "featured": false,
+    "order": 5,
+    "startDate": "2024-07-01",
+    "endDate": "2024-08-01"
+  },
+  {
+    "id": "6",
+    "title": "Players Club Community",
+    "slug": "players-club",
+    "description": "A thriving Discord community for the Coach Josh Official brand, fostering engagement for 120+ members.",
+    "longDescription": "Founded and administer the 'Players Club' Discord server for the Coach Josh Official brand. This community serves as a central hub for fitness enthusiasts, providing exclusive content, direct engagement, and a supportive environment for personal development. Responsible for community management, bot integration, and engagement strategy.",
+    "category": "design",
+    "status": "completed",
+    "tags": ["Community Management", "Discord", "Brand Strategy", "Automation"],
+    "thumbnailUrl": "/images/projects/venture-os-thumb.jpg",
+    "liveUrl": "https://discord.gg/coachjoshofficial",
+    "featured": true,
+    "order": 6,
+    "startDate": "2024-01-01"
+  },
+  {
+    "id": "7",
+    "title": "Enterprise Video Solutions",
+    "slug": "enterprise-video",
+    "description": "Custom video engineering solutions for major media clients including NBC, NPR, Forbes, and Hedgeye.",
+    "longDescription": "Engineered bespoke video implementations for high-profile enterprise clients using JW Player's advanced capabilities. Solutions included custom advertising integrations (VAST/VPAID), DRM implementation, and specialized player behaviors using JavaScript. These optimizations directly contributed to a $4M+ book of business and significant churn reduction.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": ["Video Engineering", "JavaScript", "Ad Tech", "DRM", "Enterprise"],
+    "thumbnailUrl": "/images/projects/hefner-thumb.jpg",
+    "featured": true,
+    "order": 7,
+    "startDate": "2021-12-01",
+    "endDate": "2023-01-01"
+  },
+  {
+    "id": "8",
+    "title": "Project Negus",
+    "slug": "project-negus",
+    "description": "Exploration of the cultures and people of the diaspora through various art mediums.",
+    "longDescription": "The negus project was the exploration of the cultures and people of the diaspora through various art mediums, encouraging the rediscovery and collaboration of African roots. Goal: Celebration of our people, by our people; The Unification of Us. Included events like panel discussions on Childish Gambino's 'Awaken My Love!'.",
+    "category": "art_culture",
+    "status": "completed",
+    "tags": ["Art Direction", "Culture", "Event Production", "Community"],
+    "thumbnailUrl": "/images/projects/project-negus-thumb.png",
+    "images": ["/images/projects/project-negus-thumb.png"],
+    "videos": [
+      {
+        "title": "Title Intro",
+        "url": "https://cdn.jwplayer.com/manifests/6jA04nfn.m3u8",
+        "description": "Cinematic animated title sequence."
+      },
+      {
+        "title": "Panel Discussion",
+        "url": "https://cdn.jwplayer.com/manifests/raSnFGs6.m3u8",
+        "description": "Community panel discussion on cultural impact."
+      },
+      {
+        "title": "Player Area Demo",
+        "url": "https://cdn.jwplayer.com/manifests/lTjEspkT.m3u8",
+        "description": "Interactive player area showcase."
+      }
+    ],
+    "liveUrl": "#",
+    "featured": true,
+    "order": 8,
+    "startDate": "2016-01-01",
+    "endDate": "2017-12-31",
+    "year": "2016-2017"
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "id": "1",
+    "company": "JW Player",
+    "position": "Solutions Engineer",
+    "type": "full-time",
+    "location": "New York, NY",
+    "remote": false,
+    "startDate": "2021-12-01",
+    "current": true,
+    "description": "Engineering custom video implementations and driving feature adoption for key clients.",
+    "achievements": [
+      "Engineered custom JW Player implementations using JavaScript to showcase advanced features",
+      "Managed a book of business exceeding $4M+, representing key clients including NBC, NPR, Forbes, and Hedgeye",
+      "Led to measurable increase in key client feature adoption",
+      "Contributed to reduction in churn risk for engaged accounts"
+    ],
+    "technologies": [
+      "JavaScript",
+      "Video Engineering",
+      "Solutions Engineering"
+    ],
+    "order": 1
+  },
+  {
+    "id": "2",
+    "company": "JW Player",
+    "position": "Senior Support Engineer",
+    "type": "full-time",
+    "location": "New York, NY",
+    "remote": false,
+    "startDate": "2021-12-01",
+    "endDate": "2023-01-01",
+    "current": false,
+    "description": "Managed complex customer issues and implemented advertising technologies.",
+    "achievements": [
+      "Reduced resolution times by effectively managing Jira service escalations",
+      "Troubleshot and implemented ad tech (VAST, VPAID, Google IMA SDK, Prebid.js)",
+      "Improved technical skills of L1/L2 teams through training and mentorship"
+    ],
+    "technologies": ["Jira", "VAST", "VPAID", "Google IMA SDK", "Prebid.js"],
+    "order": 2
+  },
+  {
+    "id": "3",
+    "company": "JW Player",
+    "position": "L2 Support Engineer",
+    "type": "full-time",
+    "location": "New York, NY",
+    "remote": false,
+    "startDate": "2021-12-01",
+    "endDate": "2022-06-01",
+    "current": false,
+    "description": "Enhanced team collaboration and debugged custom client implementations.",
+    "achievements": [
+      "Created internal knowledge base articles for Frontend and Backend verticals",
+      "Developed and debugged custom JavaScript code and native apps (iOS/Android)",
+      "Enhanced client engagement and issue resolution"
+    ],
+    "technologies": ["JavaScript", "iOS", "Android", "Confluence", "Notion"],
+    "order": 3
+  },
+  {
+    "id": "4",
+    "company": "Yale University",
+    "position": "IT Consultant (Contract)",
+    "type": "contract",
+    "location": "New Haven, CT",
+    "remote": false,
+    "startDate": "2021-08-01",
+    "endDate": "2021-12-01",
+    "current": false,
+    "description": "Provided IT support for university staff and students.",
+    "achievements": [
+      "Troubleshot hardware/software for 16,000 students and staff",
+      "Slashed average resolution time from 2 days to 0.5 days via ServiceNow",
+      "Provided Tier I & II support for diverse university applications"
+    ],
+    "technologies": ["ServiceNow", "macOS", "Windows", "Oracle"],
+    "order": 4
+  },
+  {
+    "id": "5",
+    "company": "Datto",
+    "position": "Technical Support Expert",
+    "type": "full-time",
+    "location": "Norwalk, CT",
+    "remote": false,
+    "startDate": "2021-04-01",
+    "endDate": "2021-08-01",
+    "current": false,
+    "description": "Supported MSP partners with system triage and resolution.",
+    "achievements": [
+      "Authored technical articles for internal and customer knowledge bases",
+      "Provided workflow best practices via Salesforce CRM",
+      "Performed incident triage on Windows and Linux systems"
+    ],
+    "technologies": ["Salesforce", "Windows", "Linux"],
+    "order": 5
+  },
+  {
+    "id": "6",
+    "company": "Apple",
+    "position": "Technical Specialist",
+    "type": "full-time",
+    "location": "New Haven, CT",
+    "remote": false,
+    "startDate": "2017-03-01",
+    "endDate": "2021-04-01",
+    "current": false,
+    "description": "Provided technical support and training for Apple customers.",
+    "achievements": [
+      "Resulted in 20% decrease in escalations through team support",
+      "Facilitated iOS and macOS training for new technicians",
+      "Led leadership support by overseeing rotating employee tasks"
+    ],
+    "technologies": ["iOS", "macOS", "Mobile Device Management"],
+    "order": 6
+  },
+  {
+    "id": "7",
+    "company": "MarketRightCT",
+    "position": "Web Developer",
+    "type": "full-time",
+    "location": "New Haven, CT",
+    "remote": false,
+    "startDate": "2014-05-01",
+    "endDate": "2015-11-01",
+    "current": false,
+    "description": "Led website development and digital strategy for clients.",
+    "achievements": [
+      "Led website development using WordPress CMS",
+      "Integrated WooCommerce for digital transactions",
+      "Improved content engagement by 30% through new feature mapping"
+    ],
+    "technologies": ["WordPress", "WooCommerce", "HTML", "CSS"],
+    "order": 7
+  }
+]
