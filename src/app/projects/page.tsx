@@ -44,10 +44,10 @@ export default function ProjectsPage() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Projects
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600 dark:text-neutral-400">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-white/40">
               A collection of my work spanning web applications, mobile apps,
               and open-source contributions.
             </p>
@@ -89,9 +89,7 @@ export default function ProjectsPage() {
               animate={{ opacity: 1 }}
               className="mt-12 text-center"
             >
-              <p className="text-neutral-600 dark:text-neutral-400">
-                No projects in this category yet.
-              </p>
+              <p className="text-white/40">No projects in this category yet.</p>
             </motion.div>
           )}
         </div>

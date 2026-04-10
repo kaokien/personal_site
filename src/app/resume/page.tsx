@@ -8,8 +8,9 @@ import skillsData from '@/data/skills.json';
 import { siteConfig } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Resume | Kevin Adupoku',
-  description: 'Technical Specification: Kevin Adupoku - Solutions Engineer',
+  title: 'Resume | Kevin Adu-Poku',
+  description:
+    'Technical Specification: Kevin Adu-Poku - Growth Solutions Engineer',
 };
 
 export default function ResumePage() {
@@ -25,13 +26,13 @@ export default function ResumePage() {
       <section className="bg-background min-h-screen py-12 font-mono sm:py-24">
         <div className="container mx-auto max-w-5xl px-4">
           {/* Header Block */}
-          <div className="border-foreground mb-12 border-y-2 py-8">
+          <div className="mb-12 border-y border-white/20 py-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-[300px_1fr]">
               <div className="tracking-widest uppercase">
                 <h1 className="font-heading text-5xl leading-none font-bold">
                   KEVIN
                   <br />
-                  ADUPOKU
+                  ADU-POKU
                 </h1>
                 <p className="text-muted-foreground mt-2 text-sm">
                   SPEC_SHEET_VOL_01
@@ -40,7 +41,7 @@ export default function ResumePage() {
 
               <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                 <div className="text-muted-foreground space-y-1 text-xs tracking-wider uppercase">
-                  <p>ROLE: Solutions Engineer</p>
+                  <p>ROLE: Growth Solutions Engineer</p>
                   <p>LOC: New York, NY</p>
                   <p>ID: {siteConfig.email}</p>
                 </div>
@@ -66,7 +67,7 @@ export default function ResumePage() {
 
           {/* Experience Section */}
           <div className="mb-16">
-            <h2 className="border-muted-foreground/20 text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
+            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
               01 // Experience_Log
             </h2>
 
@@ -110,7 +111,7 @@ export default function ResumePage() {
                             key={i}
                             className="text-muted-foreground flex items-start gap-2 text-xs"
                           >
-                            <span className="text-primary mt-0.5">::</span>
+                            <span className="text-accent-lime mt-0.5">::</span>
                             <span className="font-sans">{achievement}</span>
                           </li>
                         ))}
@@ -123,12 +124,11 @@ export default function ResumePage() {
 
           {/* Skills Section */}
           <div className="mb-16">
-            <h2 className="border-muted-foreground/20 text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
+            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
               02 // Technical_Modules
             </h2>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              {/* Grouping approach: We'll just display them as a raw grid for the spec sheet look */}
               <div className="col-span-1 md:col-span-3">
                 <div className="flex flex-wrap gap-2">
                   {skillsData
@@ -137,7 +137,7 @@ export default function ResumePage() {
                       <Badge
                         key={skill.id}
                         variant="outline"
-                        className="text-muted-foreground hover:bg-primary hover:text-primary-foreground rounded-none px-3 py-1 font-mono text-[10px] uppercase"
+                        className="hover:bg-accent-lime rounded-none px-3 py-1 font-mono text-[10px] text-white/40 uppercase hover:text-black"
                       >
                         {skill.name}
                       </Badge>
@@ -149,7 +149,7 @@ export default function ResumePage() {
 
           {/* Education Section */}
           <div className="mb-16">
-            <h2 className="border-muted-foreground/20 text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
+            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
               03 // Education_Database
             </h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { getBlogPosts } from '@/lib/notion';
 
 export const metadata: Metadata = {
-  title: 'Blog | Kevin Adupoku',
+  title: 'Blog | Kevin Adu-Poku',
   description:
     'Thoughts, tutorials, and insights on software development, technology, and building digital products.',
 };
@@ -23,10 +23,10 @@ export default async function BlogPage() {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Blog
             </h1>
-            <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+            <p className="mt-4 text-lg text-white/40">
               Thoughts, tutorials, and insights on software development.
             </p>
           </div>
@@ -40,10 +40,10 @@ export default async function BlogPage() {
             </div>
           ) : (
             <div className="mx-auto mt-16 max-w-lg text-center">
-              <div className="rounded-xl border border-neutral-200 bg-white p-8 dark:border-neutral-800 dark:bg-neutral-900">
-                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-neutral-100 dark:bg-neutral-800">
+              <div className="rounded-none border border-white/10 bg-white/[0.02] p-8">
+                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-none bg-white/5">
                   <svg
-                    className="h-8 w-8 text-neutral-400"
+                    className="h-8 w-8 text-white/30"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -56,10 +56,10 @@ export default async function BlogPage() {
                     />
                   </svg>
                 </div>
-                <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">
+                <h2 className="text-xl font-semibold text-white">
                   Coming Soon
                 </h2>
-                <p className="mt-3 text-neutral-600 dark:text-neutral-400">
+                <p className="mt-3 text-white/40">
                   I&apos;m currently working on some exciting content. Check
                   back soon for articles on web development, mobile apps, and
                   building digital products.

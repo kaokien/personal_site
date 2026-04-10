@@ -8,60 +8,53 @@
     "remote": false,
     "startDate": "2021-12-01",
     "current": true,
-    "description": "Engineering custom video implementations and driving feature adoption for key clients.",
+    "description": "Engineer custom video tech implementations across web, mobile, and CTV platforms. Lead DAI/VAST ad-insertion workflows and partner with product teams to architect secure DRM/CDM streaming infrastructure to reduce churn.",
     "achievements": [
-      "Engineered custom JW Player implementations using JavaScript to showcase advanced features",
-      "Managed a book of business exceeding $4M+, representing key clients including NBC, NPR, Forbes, and Hedgeye",
-      "Led to measurable increase in key client feature adoption",
-      "Contributed to reduction in churn risk for engaged accounts"
+      "Engineered custom JW Player implementations across web, mobile, and CTV, driving measurable increase in feature adoption",
+      "Managed a $4M+ book of business representing key clients including NBC, NPR, Forbes, and Hedgeye",
+      "Led DAI/VAST ad-insertion workflows using Google IMA, FreeWheel, and Prebid.js",
+      "Partnered with product/engineering to resolve complex DRM/CDM secure playback issues",
+      "Mentored junior engineers and trained L1/L2 teams, improving service quality",
+      "Created internal knowledge base articles in Confluence and Notion for Frontend/Backend verticals"
     ],
     "technologies": [
       "JavaScript",
       "Video Engineering",
-      "Solutions Engineering"
+      "VAST/VPAID",
+      "Google IMA SDK",
+      "DRM",
+      "Salesforce"
     ],
     "order": 1
   },
   {
     "id": "2",
-    "company": "JW Player",
-    "position": "Senior Support Engineer",
+    "company": "Coach Josh Boxing",
+    "position": "Lead Web Developer & Technical Founder",
     "type": "full-time",
-    "location": "New York, NY",
-    "remote": false,
-    "startDate": "2021-12-01",
-    "endDate": "2023-01-01",
-    "current": false,
-    "description": "Managed complex customer issues and implemented advertising technologies.",
+    "location": "Remote",
+    "remote": true,
+    "startDate": "2025-11-01",
+    "current": true,
+    "description": "Engineered a full-stack Vercel ecosystem for a creator with 150M+ views. Spearheaded technical SEO and GEO to scale local visibility. Built automated digital outreach pipelines driving measurable growth.",
     "achievements": [
-      "Reduced resolution times by effectively managing Jira service escalations",
-      "Troubleshot and implemented ad tech (VAST, VPAID, Google IMA SDK, Prebid.js)",
-      "Improved technical skills of L1/L2 teams through training and mentorship"
+      "Designed, developed, and deployed a highly responsive web application on Vercel with dynamic micro-animations",
+      "Spearheaded technical SEO, Generative Engine Optimization (GEO), and sales funnel audits",
+      "Managed end-to-end digital ecosystem including merchandise infrastructure and marketing automations",
+      "Built automated digital outreach pipelines scaling local visibility for a creator with 150M+ views"
     ],
-    "technologies": ["Jira", "VAST", "VPAID", "Google IMA SDK", "Prebid.js"],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Vercel",
+      "SEO/GEO",
+      "Stripe",
+      "Mux"
+    ],
     "order": 2
   },
   {
     "id": "3",
-    "company": "JW Player",
-    "position": "L2 Support Engineer",
-    "type": "full-time",
-    "location": "New York, NY",
-    "remote": false,
-    "startDate": "2021-12-01",
-    "endDate": "2022-06-01",
-    "current": false,
-    "description": "Enhanced team collaboration and debugged custom client implementations.",
-    "achievements": [
-      "Created internal knowledge base articles for Frontend and Backend verticals",
-      "Developed and debugged custom JavaScript code and native apps (iOS/Android)",
-      "Enhanced client engagement and issue resolution"
-    ],
-    "technologies": ["JavaScript", "iOS", "Android", "Confluence", "Notion"],
-    "order": 3
-  },
-  {
-    "id": "4",
     "company": "Yale University",
     "position": "IT Consultant (Contract)",
     "type": "contract",
@@ -70,17 +63,16 @@
     "startDate": "2021-08-01",
     "endDate": "2021-12-01",
     "current": false,
-    "description": "Provided IT support for university staff and students.",
+    "description": "Provided Tier I/II support and troubleshot hardware/software issues for a user base of 16,000 students and staff.",
     "achievements": [
-      "Troubleshot hardware/software for 16,000 students and staff",
       "Slashed average resolution time from 2 days to 0.5 days via ServiceNow",
-      "Provided Tier I & II support for diverse university applications"
+      "Spearheaded resolution for escalated IT issues across 16,000-user base"
     ],
-    "technologies": ["ServiceNow", "macOS", "Windows", "Oracle"],
-    "order": 4
+    "technologies": ["ServiceNow", "macOS", "Windows"],
+    "order": 3
   },
   {
-    "id": "5",
+    "id": "4",
     "company": "Datto",
     "position": "Technical Support Expert",
     "type": "full-time",
@@ -89,17 +81,16 @@
     "startDate": "2021-04-01",
     "endDate": "2021-08-01",
     "current": false,
-    "description": "Supported MSP partners with system triage and resolution.",
+    "description": "Authored technical articles and performed incident triage on Windows and Linux systems for MSP partners.",
     "achievements": [
-      "Authored technical articles for internal and customer knowledge bases",
-      "Provided workflow best practices via Salesforce CRM",
-      "Performed incident triage on Windows and Linux systems"
+      "Authored technical articles for internal and customer-facing knowledge bases",
+      "Performed incident triage and first resolution across Windows and Linux systems for 12+ MSP partners"
     ],
     "technologies": ["Salesforce", "Windows", "Linux"],
-    "order": 5
+    "order": 4
   },
   {
-    "id": "6",
+    "id": "5",
     "company": "Apple",
     "position": "Technical Specialist",
     "type": "full-time",
@@ -108,17 +99,17 @@
     "startDate": "2017-03-01",
     "endDate": "2021-04-01",
     "current": false,
-    "description": "Provided technical support and training for Apple customers.",
+    "description": "Drove NPS through personal training for new customers. Facilitated iOS/macOS training shared across the New England market. Managed POS solutions resulting in 20% decrease in customer escalations.",
     "achievements": [
-      "Resulted in 20% decrease in escalations through team support",
-      "Facilitated iOS and macOS training for new technicians",
-      "Led leadership support by overseeing rotating employee tasks"
+      "Introduced 100+ service offerings leading to store-wide increase in NPS promoters",
+      "Facilitated iOS and macOS training shared across teams in the New England market",
+      "Managed rotating tasks and POS solutions, resulting in 20% decrease in escalations"
     ],
-    "technologies": ["iOS", "macOS", "Mobile Device Management"],
-    "order": 6
+    "technologies": ["iOS", "macOS", "MDM", "POS Systems"],
+    "order": 5
   },
   {
-    "id": "7",
+    "id": "6",
     "company": "MarketRightCT",
     "position": "Web Developer",
     "type": "full-time",
@@ -127,13 +118,12 @@
     "startDate": "2014-05-01",
     "endDate": "2015-11-01",
     "current": false,
-    "description": "Led website development and digital strategy for clients.",
+    "description": "Led WordPress development and WooCommerce integration. Improved content engagement by 30% through digital strategy.",
     "achievements": [
-      "Led website development using WordPress CMS",
-      "Integrated WooCommerce for digital transactions",
-      "Improved content engagement by 30% through new feature mapping"
+      "Led WordPress development and WooCommerce integration for client web pages",
+      "Improved content engagement by 30% by mapping software features to business goals"
     ],
     "technologies": ["WordPress", "WooCommerce", "HTML", "CSS"],
-    "order": 7
+    "order": 6
   }
 ]

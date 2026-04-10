@@ -52,13 +52,13 @@ export function ContactForm() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="mx-auto max-w-lg rounded-xl border border-neutral-200 bg-white p-6 shadow-sm dark:border-neutral-800 dark:bg-neutral-900"
+      className="mx-auto max-w-lg rounded-none border border-white/10 bg-white/[0.02] p-6 shadow-none"
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <div>
           <label
             htmlFor="name"
-            className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            className="mb-1.5 block font-mono text-xs font-medium tracking-wider text-white/50 uppercase"
           >
             Name
           </label>
@@ -77,7 +77,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="email"
-            className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            className="mb-1.5 block font-mono text-xs font-medium tracking-wider text-white/50 uppercase"
           >
             Email
           </label>
@@ -96,9 +96,9 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="subject"
-            className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            className="mb-1.5 block font-mono text-xs font-medium tracking-wider text-white/50 uppercase"
           >
-            Subject <span className="text-neutral-400">(optional)</span>
+            Subject <span className="text-white/20">(optional)</span>
           </label>
           <Input
             id="subject"
@@ -111,7 +111,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="message"
-            className="mb-1.5 block text-sm font-medium text-neutral-700 dark:text-neutral-300"
+            className="mb-1.5 block font-mono text-xs font-medium tracking-wider text-white/50 uppercase"
           >
             Message
           </label>
@@ -159,7 +159,7 @@ export function ContactForm() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-lg bg-emerald-50 p-4 text-center text-sm text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
+            className="bg-accent-lime/10 text-accent-lime rounded-none p-4 text-center font-mono text-sm"
           >
             Thanks for reaching out! I&apos;ll get back to you soon.
           </motion.div>
@@ -169,7 +169,7 @@ export function ContactForm() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="rounded-lg bg-red-50 p-4 text-center text-sm text-red-700 dark:bg-red-900/30 dark:text-red-400"
+            className="rounded-none bg-red-500/10 p-4 text-center font-mono text-sm text-red-400"
           >
             Something went wrong. Please try again or email me directly.
           </motion.div>

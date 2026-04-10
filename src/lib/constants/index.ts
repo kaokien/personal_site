@@ -1,10 +1,10 @@
 import { SiteConfig } from '@/lib/types';
 
 export const siteConfig: SiteConfig = {
-  name: 'Kevin Adupoku',
-  title: 'Kevin Adupoku | Solutions Engineer & Creative Developer',
+  name: 'Kevin Adu-Poku',
+  title: 'Kevin Adu-Poku | Growth Solutions Engineer',
   description:
-    'Software Engineer specializing in building exceptional digital experiences. Passionate about web development, mobile apps, and creating impactful solutions.',
+    'Growth Solutions Engineer specializing in video technology, platform optimization, and driving measurable revenue through custom engineering solutions.',
   url: 'https://adupokukevin.com',
   email: 'hello@adupokukevin.com',
   socials: [

@@ -4,9 +4,9 @@ import { ContactForm } from '@/components/sections';
 import { siteConfig } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Contact | Kevin Adupoku',
+  title: 'Contact | Kevin Adu-Poku',
   description:
-    'Get in touch with Kevin Adupoku for project inquiries, collaborations, or just to say hello.',
+    'Get in touch with Kevin Adu-Poku for project inquiries, collaborations, or just to say hello.',
 };
 
 export default function ContactPage() {
@@ -16,10 +16,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mx-auto max-w-xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Get In Touch
             </h1>
-            <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+            <p className="mt-4 text-lg text-white/50">
               Have a project in mind? Let&apos;s talk about how I can help bring
               your ideas to life.
             </p>
@@ -30,11 +30,11 @@ export default function ContactPage() {
             <div className="mb-8 grid gap-4 sm:grid-cols-2">
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-4 transition-all hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900"
+                className="hover:border-accent-lime flex items-center gap-3 rounded-none border border-white/10 bg-white/[0.02] p-4 transition-colors"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-none bg-white/5">
                   <svg
-                    className="h-5 w-5 text-neutral-600 dark:text-neutral-400"
+                    className="h-5 w-5 text-white/50"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -48,10 +48,8 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-neutral-900 dark:text-white">
-                    Email
-                  </div>
-                  <div className="text-xs text-neutral-500">
+                  <div className="text-sm font-medium text-white">Email</div>
+                  <div className="font-mono text-xs text-white/30">
                     {siteConfig.email}
                   </div>
                 </div>
@@ -63,11 +61,11 @@ export default function ContactPage() {
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-4 transition-all hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900"
+                className="hover:border-accent-lime flex items-center gap-3 rounded-none border border-white/10 bg-white/[0.02] p-4 transition-colors"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 dark:bg-neutral-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-none bg-white/5">
                   <svg
-                    className="h-5 w-5 text-neutral-600 dark:text-neutral-400"
+                    className="h-5 w-5 text-white/50"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -75,10 +73,8 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-neutral-900 dark:text-white">
-                    LinkedIn
-                  </div>
-                  <div className="text-xs text-neutral-500">
+                  <div className="text-sm font-medium text-white">LinkedIn</div>
+                  <div className="font-mono text-xs text-white/30">
                     Connect with me
                   </div>
                 </div>

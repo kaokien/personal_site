@@ -5,21 +5,20 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none text-sm font-bold uppercase tracking-widest transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none text-sm font-bold uppercase tracking-widest transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 aria-invalid:border-destructive",
   {
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground hover:bg-primary/90 hover:tracking-[0.2em] transition-[letter-spacing]',
+          'bg-white text-black hover:bg-accent-lime hover:text-black transition-colors',
         destructive:
-          'bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60',
+          'bg-accent-lime text-black hover:bg-accent-lime/80 focus-visible:ring-accent-lime/20',
         outline:
-          'border-2 border-primary bg-background shadow-xs hover:bg-primary hover:text-primary-foreground',
+          'border border-white/20 bg-transparent hover:border-accent-lime hover:text-accent-lime transition-colors',
         secondary:
-          'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost:
-          'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
-        link: 'text-primary underline-offset-4 hover:underline',
+          'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white',
+        ghost: 'hover:bg-white/5 hover:text-white',
+        link: 'text-accent-lime underline-offset-4 hover:underline',
       },
       size: {
         default: 'h-11 px-6 py-2 has-[>svg]:px-4',

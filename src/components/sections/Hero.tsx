@@ -7,9 +7,9 @@ import { Badge } from '@/components/ui/badge';
 
 export function Hero() {
   return (
-    <section className="border-primary/20 bg-background relative flex min-h-screen flex-col justify-between overflow-hidden border-b-2 px-4 py-12 sm:px-8">
+    <section className="relative flex min-h-screen flex-col justify-between overflow-hidden border-b border-white/10 px-4 py-12 sm:px-8">
       {/* Background Pattern */}
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
       {/* Top Bar */}
       <div className="relative z-10 flex w-full items-start justify-between">
@@ -26,9 +26,9 @@ export function Hero() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-muted-foreground hidden text-right font-mono text-xs tracking-widest uppercase sm:block"
+          className="hidden text-right font-mono text-xs tracking-widest text-white/30 uppercase sm:block"
         >
-          Portfolio 2024
+          Portfolio 2025
           <br />
           Vol. 01
         </motion.div>
@@ -40,9 +40,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="font-heading text-foreground text-[15vw] leading-[0.85] font-bold tracking-tighter uppercase select-none"
+          className="font-heading text-[12vw] leading-[0.85] font-bold tracking-tighter text-white uppercase select-none sm:text-[15vw]"
         >
-          Solutions
+          Growth
         </motion.h1>
 
         <div className="flex items-center gap-4 sm:gap-8">
@@ -50,13 +50,13 @@ export function Hero() {
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="bg-destructive h-2 w-full max-w-[100px] sm:max-w-[150px] lg:max-w-[300px]"
+            className="bg-accent-lime h-2 w-full max-w-[100px] sm:max-w-[150px] lg:max-w-[300px]"
           />
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-muted-foreground/50 hover:text-primary text-[15vw] leading-[0.85] font-bold tracking-tighter uppercase transition-colors duration-500 select-none"
+            className="font-heading text-[12vw] leading-[0.85] font-bold tracking-tighter text-white/20 uppercase transition-colors duration-500 select-none hover:text-white sm:text-[15vw]"
           >
             Engineer
           </motion.h1>
@@ -71,13 +71,12 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="max-w-xl"
         >
-          <p className="text-destructive mb-2 font-mono text-xs font-bold tracking-widest uppercase">
-            Kevin Adupoku
+          <p className="text-accent-lime mb-2 font-mono text-xs font-bold tracking-widest uppercase">
+            Kevin Adu-Poku
           </p>
-          <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
-            I build scalable web applications and craft premium digital
-            experiences that solve real business problems. Specializing in video
-            engineering and creative development.
+          <p className="text-lg leading-relaxed font-medium text-white/50 sm:text-xl">
+            Engineering Growth Systems. Architecting performance, optimizing
+            platforms, and driving measurable revenue.
           </p>
         </motion.div>
 
@@ -94,7 +93,7 @@ export function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="h-14 bg-transparent px-8 text-lg"
+            className="h-14 px-8 text-lg"
           >
             <Link href="/contact">CONTACT</Link>
           </Button>

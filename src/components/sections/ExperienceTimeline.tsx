@@ -28,17 +28,17 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Experience
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          <p className="mx-auto mt-4 max-w-2xl text-white/40">
             My professional journey building digital products
           </p>
         </motion.div>
 
         <div className="relative mx-auto mt-12 max-w-3xl">
           {/* Timeline line */}
-          <div className="absolute top-0 left-4 h-full w-0.5 bg-gradient-to-b from-neutral-200 via-neutral-300 to-neutral-200 md:left-1/2 md:-translate-x-px dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-800" />
+          <div className="absolute top-0 left-4 h-full w-px bg-white/10 md:left-1/2" />
 
           {sortedExperiences.map((exp, index) => (
             <motion.div
@@ -55,15 +55,15 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
             >
               {/* Timeline dot */}
               <div
-                className={`absolute top-1.5 left-2.5 h-3 w-3 rounded-full border-2 border-neutral-900 bg-white md:left-auto dark:border-white dark:bg-neutral-950 ${
+                className={`border-accent-lime absolute top-1.5 left-2.5 h-3 w-3 border-2 bg-black md:left-auto ${
                   index % 2 === 0 ? 'md:right-[-7px]' : 'md:left-[-7px]'
                 }`}
               />
 
               {/* Content card */}
-              <div className="rounded-xl border border-neutral-200 bg-white p-5 transition-all duration-300 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="rounded-none border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-white/20">
                 {/* Date range */}
-                <div className="mb-2 flex items-center gap-2 text-sm text-neutral-500 md:justify-end dark:text-neutral-500">
+                <div className="mb-2 flex items-center gap-2 font-mono text-xs text-white/30 md:justify-end">
                   {index % 2 !== 0 && <span className="hidden md:inline" />}
                   <span>
                     {formatDate(exp.startDate)} —{' '}
@@ -76,22 +76,20 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                 </div>
 
                 {/* Company & Role */}
-                <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">
+                <h3 className="text-lg font-semibold text-white">
                   {exp.position}
                 </h3>
-                <p className="mt-1 text-neutral-600 dark:text-neutral-400">
+                <p className="mt-1 text-white/40">
                   {exp.company} • {exp.remote ? 'Remote' : exp.location}
                 </p>
 
                 {/* Description */}
-                <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400">
-                  {exp.description}
-                </p>
+                <p className="mt-3 text-sm text-white/40">{exp.description}</p>
 
                 {/* Achievements */}
                 {exp.achievements.length > 0 && (
                   <ul
-                    className={`mt-3 space-y-1 text-sm text-neutral-500 dark:text-neutral-500 ${
+                    className={`mt-3 space-y-1 text-sm text-white/40 ${
                       index % 2 === 0 ? 'md:text-right' : ''
                     }`}
                   >
@@ -100,7 +98,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                         key={i}
                         className="flex items-start gap-2 md:justify-end"
                       >
-                        <span className="shrink-0 text-emerald-500">✓</span>
+                        <span className="text-accent-lime shrink-0">✓</span>
                         <span
                           className={index % 2 === 0 ? 'md:order-first' : ''}
                         >
@@ -118,7 +116,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                   {exp.technologies.slice(0, 5).map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
+                      className="rounded-none bg-white/5 px-2 py-0.5 font-mono text-xs text-white/40"
                     >
                       {tech}
                     </span>

@@ -17,10 +17,10 @@ const categoryLabels: Record<SkillCategory, string> = {
 };
 
 const levelColors: Record<SkillLevel, string> = {
-  [SkillLevel.BEGINNER]: 'bg-neutral-300 dark:bg-neutral-600',
-  [SkillLevel.INTERMEDIATE]: 'bg-blue-400 dark:bg-blue-500',
-  [SkillLevel.ADVANCED]: 'bg-emerald-400 dark:bg-emerald-500',
-  [SkillLevel.EXPERT]: 'bg-purple-500 dark:bg-purple-400',
+  [SkillLevel.BEGINNER]: 'bg-white/15',
+  [SkillLevel.INTERMEDIATE]: 'bg-white/25',
+  [SkillLevel.ADVANCED]: 'bg-white/40',
+  [SkillLevel.EXPERT]: 'bg-accent-lime',
 };
 
 const levelWidth: Record<SkillLevel, string> = {
@@ -59,10 +59,10 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Skills & Technologies
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          <p className="mx-auto mt-4 max-w-2xl text-white/40">
             A comprehensive toolkit built over years of hands-on experience
           </p>
         </motion.div>
@@ -79,9 +79,9 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-                className="rounded-xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900"
+                className="rounded-none border border-white/10 bg-white/[0.02] p-6"
               >
-                <h3 className="mb-4 text-lg font-semibold text-neutral-900 dark:text-white">
+                <h3 className="mb-4 text-lg font-semibold text-white">
                   {categoryLabels[category]}
                 </h3>
                 <div className="space-y-3">
@@ -90,20 +90,20 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
                     .map((skill) => (
                       <div key={skill.id}>
                         <div className="mb-1 flex items-center justify-between">
-                          <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                          <span className="font-mono text-sm font-medium text-white/60">
                             {skill.name}
                           </span>
-                          <span className="text-xs text-neutral-500 capitalize dark:text-neutral-500">
+                          <span className="font-mono text-xs text-white/30 capitalize">
                             {skill.level}
                           </span>
                         </div>
-                        <div className="h-1.5 w-full rounded-full bg-neutral-100 dark:bg-neutral-800">
+                        <div className="h-1 w-full bg-white/5">
                           <motion.div
                             initial={{ width: 0 }}
                             whileInView={{ width: '100%' }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className={`h-full rounded-full ${levelColors[skill.level as SkillLevel]} ${levelWidth[skill.level as SkillLevel]}`}
+                            className={`h-full ${levelColors[skill.level as SkillLevel]} ${levelWidth[skill.level as SkillLevel]}`}
                           />
                         </div>
                       </div>

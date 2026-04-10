@@ -34,12 +34,12 @@ export async function generateMetadata({
 
   if (!project) {
     return {
-      title: 'Project Not Found | Kevin Adupoku',
+      title: 'Project Not Found | Kevin Adu-Poku',
     };
   }
 
   return {
-    title: `${project.title} | Kevin Adupoku`,
+    title: `${project.title} | Kevin Adu-Poku`,
     description: project.description,
   };
 }
@@ -64,7 +64,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Back link */}
           <Link
             href="/projects"
-            className="mb-8 inline-flex items-center gap-2 text-sm text-neutral-600 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white"
+            className="hover:text-accent-lime mb-8 inline-flex items-center gap-2 font-mono text-xs tracking-wider text-white/40 uppercase transition-colors"
           >
             <svg
               className="h-4 w-4"
@@ -91,30 +91,28 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 </Badge>
               ))}
             </div>
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               {project.title}
             </h1>
-            <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
-              {project.description}
-            </p>
+            <p className="mt-4 text-lg text-white/50">{project.description}</p>
 
             {/* Meta info */}
-            <div className="mt-6 flex flex-wrap items-center gap-6 text-sm text-neutral-500 dark:text-neutral-500">
+            <div className="mt-6 flex flex-wrap items-center gap-6 font-mono text-xs text-white/30">
               <div className="flex items-center gap-2">
                 <span
-                  className={`h-2 w-2 rounded-full ${
+                  className={`h-2 w-2 ${
                     project.status === 'completed'
-                      ? 'bg-emerald-500'
+                      ? 'bg-accent-lime'
                       : project.status === 'in_progress'
                         ? 'bg-amber-500'
-                        : 'bg-neutral-400'
+                        : 'bg-white/30'
                   }`}
                 />
-                <span className="capitalize">
+                <span className="tracking-wider uppercase">
                   {project.status.replace('_', ' ')}
                 </span>
               </div>
-              <div>
+              <div className="tracking-wider uppercase">
                 {formatDate(project.startDate)}
                 {project.endDate && ` — ${formatDate(project.endDate)}`}
               </div>
@@ -173,7 +171,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {/* Featured Image */}
           {project.thumbnailUrl && (
-            <div className="mt-12 overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900">
+            <div className="mt-12 overflow-hidden rounded-none border border-white/10 bg-white/[0.02]">
               <div className="relative aspect-video">
                 <Image
                   src={project.thumbnailUrl}
@@ -189,10 +187,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Long Description */}
           {project.longDescription && (
             <div className="mt-12 max-w-3xl">
-              <h2 className="text-2xl font-bold text-neutral-900 dark:text-white">
-                Overview
-              </h2>
-              <p className="mt-4 leading-relaxed text-neutral-600 dark:text-neutral-400">
+              <h2 className="text-2xl font-bold text-white">Overview</h2>
+              <p className="mt-4 leading-relaxed text-white/50">
                 {project.longDescription}
               </p>
             </div>
@@ -200,18 +196,16 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {project.videos && project.videos.length > 0 && (
             <div className="mt-12">
-              <h2 className="mb-6 text-2xl font-bold text-neutral-900 dark:text-white">
-                Media
-              </h2>
+              <h2 className="mb-6 text-2xl font-bold text-white">Media</h2>
               <div className="grid gap-8">
                 {project.videos.map((video, index) => (
                   <div key={index} className="space-y-3">
-                    <h3 className="text-lg font-medium text-neutral-900 dark:text-white">
+                    <h3 className="text-lg font-medium text-white">
                       {video.title}
                     </h3>
                     <VideoPlayer url={video.url} />
                     {video.description && (
-                      <p className="max-w-2xl text-sm text-neutral-500 dark:text-neutral-400">
+                      <p className="max-w-2xl font-mono text-xs text-white/30">
                         {video.description}
                       </p>
                     )}
@@ -224,14 +218,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Gallery */}
           {project.images && project.images.length > 0 && (
             <div className="mt-12">
-              <h2 className="mb-6 text-2xl font-bold text-neutral-900 dark:text-white">
-                Gallery
-              </h2>
+              <h2 className="mb-6 text-2xl font-bold text-white">Gallery</h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 {project.images.map((image, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden rounded-xl border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900"
+                    className="overflow-hidden rounded-none border border-white/10 bg-white/[0.02]"
                   >
                     <div className="relative aspect-video">
                       <Image

@@ -35,7 +35,7 @@ export function BlogPostCard({ post, index = 0 }: BlogPostCardProps) {
       viewport={{ once: true }}
     >
       <Link href={`/blog/${post.slug}`}>
-        <Card className="group h-full overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-neutral-800/50">
+        <Card className="group hover:border-accent-lime h-full overflow-hidden transition-colors duration-300">
           {/* Cover Image */}
           {post.coverImage && (
             <div className="relative aspect-video overflow-hidden">
@@ -45,7 +45,6 @@ export function BlogPostCard({ post, index = 0 }: BlogPostCardProps) {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           )}
 
@@ -60,19 +59,19 @@ export function BlogPostCard({ post, index = 0 }: BlogPostCardProps) {
             </div>
 
             {/* Title */}
-            <h3 className="text-xl leading-tight font-semibold tracking-tight text-neutral-900 transition-colors group-hover:text-neutral-600 dark:text-white dark:group-hover:text-neutral-300">
+            <h3 className="group-hover:text-accent-lime text-xl leading-tight font-semibold tracking-tight text-white transition-colors">
               {post.title}
             </h3>
           </CardHeader>
 
           <CardContent>
             {/* Description */}
-            <p className="line-clamp-2 text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="line-clamp-2 text-sm text-white/40">
               {post.description}
             </p>
           </CardContent>
 
-          <CardFooter className="flex items-center justify-between text-sm text-neutral-500 dark:text-neutral-400">
+          <CardFooter className="flex items-center justify-between font-mono text-xs text-white/30">
             {/* Meta Info */}
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1">
