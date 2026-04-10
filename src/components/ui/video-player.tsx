@@ -1,60 +1,7 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import { useState, useEffect } from 'react';
-import { Loader2 } from 'lucide-react';
-// import type { ReactPlayerProps } from 'react-player';
-
-interface ReactPlayerProps {
-  url: string;
-  playing?: boolean;
-  loop?: boolean;
-  controls?: boolean;
-  light?: boolean | string;
-  volume?: number;
-  muted?: boolean;
-  playbackRate?: number;
-  width?: string | number;
-  height?: string | number;
-  style?: React.CSSProperties;
-  progressInterval?: number;
-  playsinline?: boolean;
-  pip?: boolean;
-  stopOnUnmount?: boolean;
-  fallback?: React.ReactElement;
-  wrapper?:
-    | React.ElementType
-    | { render: (props: unknown) => React.ReactElement };
-  config?: unknown;
-  onReady?: (player: unknown) => void;
-  onStart?: () => void;
-  onPlay?: () => void;
-  onPause?: () => void;
-  onBuffer?: () => void;
-  onBufferEnd?: () => void;
-  onEnded?: () => void;
-  onError?: (
-    error: unknown,
-    data?: unknown,
-    hlsInstance?: unknown,
-    hlsGlobal?: unknown
-  ) => void;
-  onDuration?: (duration: number) => void;
-  onSeek?: (seconds: number) => void;
-  onProgress?: (state: {
-    played: number;
-    playedSeconds: number;
-    loaded: number;
-    loadedSeconds: number;
-  }) => void;
-  onEnablePIP?: () => void;
-  onDisablePIP?: () => void;
-}
-
-// Dynamically import ReactPlayer with explicit casting to avoid type processing errors with dynamic()
-const ReactPlayer = dynamic(() => import('react-player'), {
-  ssr: false,
-}) as unknown as React.ComponentType<ReactPlayerProps>;
+import { useState, useEffect, useRef } from 'react';
+import { Loader2, AlertCircle } from 'lucide-react';
 
 interface VideoPlayerProps {
   url: string;
@@ -62,12 +9,90 @@ interface VideoPlayerProps {
 }
 
 export function VideoPlayer({ url, className }: VideoPlayerProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const hlsRef = useRef<unknown>(null);
   const [isMounted, setIsMounted] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!isMounted || !videoRef.current) return;
+
+    const video = videoRef.current;
+    let hls: import('hls.js').default | null = null;
+
+    const initHls = async () => {
+      // Dynamically import hls.js to avoid SSR/HMR issues
+      const Hls = (await import('hls.js')).default;
+
+      // Cleanup previous HLS instance
+      if (hlsRef.current) {
+        (hlsRef.current as import('hls.js').default).destroy();
+        hlsRef.current = null;
+      }
+
+      // Check if HLS is supported
+      if (Hls.isSupported()) {
+        hls = new Hls({
+          enableWorker: true,
+          lowLatencyMode: true,
+        });
+
+        hls.loadSource(url);
+        hls.attachMedia(video);
+
+        hls.on(Hls.Events.MANIFEST_PARSED, () => {
+          setIsLoading(false);
+          setError(null);
+        });
+
+        hls.on(Hls.Events.ERROR, (event, data) => {
+          if (data.fatal) {
+            switch (data.type) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                setError('Network error loading video');
+                hls?.startLoad();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                setError('Media error - attempting recovery');
+                hls?.recoverMediaError();
+                break;
+              default:
+                setError('Failed to load video');
+                hls?.destroy();
+                break;
+            }
+          }
+        });
+
+        hlsRef.current = hls;
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        // Native HLS support (Safari)
+        video.src = url;
+        video.addEventListener('loadedmetadata', () => {
+          setIsLoading(false);
+        });
+        video.addEventListener('error', () => {
+          setError('Failed to load video');
+        });
+      } else {
+        setError('HLS playback not supported in this browser');
+      }
+    };
+
+    initHls();
+
+    return () => {
+      if (hlsRef.current) {
+        (hlsRef.current as import('hls.js').default).destroy();
+        hlsRef.current = null;
+      }
+    };
+  }, [isMounted, url]);
 
   if (!isMounted) {
     return (
@@ -81,18 +106,18 @@ export function VideoPlayer({ url, className }: VideoPlayerProps) {
     <div
       className={`relative aspect-video w-full overflow-hidden rounded-xl border border-neutral-200 bg-black dark:border-neutral-800 ${className || ''}`}
     >
-      <ReactPlayer
-        url={url}
-        width="100%"
-        height="100%"
-        controls
-        playing={false}
-        config={{
-          file: {
-            forceHLS: true,
-          },
-        }}
-      />
+      {isLoading && !error && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+          <Loader2 className="h-8 w-8 animate-spin text-white" />
+        </div>
+      )}
+      {error && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-black/80 text-white">
+          <AlertCircle className="h-8 w-8 text-red-500" />
+          <p className="text-sm">{error}</p>
+        </div>
+      )}
+      <video ref={videoRef} className="h-full w-full" controls playsInline />
     </div>
   );
 }
