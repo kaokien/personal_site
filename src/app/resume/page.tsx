@@ -42,7 +42,7 @@ export default function ResumePage() {
               <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                 <div className="text-muted-foreground space-y-1 text-xs tracking-wider uppercase">
                   <p>ROLE: Growth Solutions Engineer</p>
-                  <p>LOC: New York, NY</p>
+                  <p>LOC: New Haven, CT</p>
                   <p>ID: {siteConfig.email}</p>
                 </div>
 

@@ -19,7 +19,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
         >
           <Badge variant="outline" className="text-xs sm:text-sm">
-            Based in New York, NY
+            Based in New Haven, CT
           </Badge>
         </motion.div>
         <motion.div

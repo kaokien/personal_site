@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog',
     '/contact',
     '/resume',
+    '/links',
   ];
 
   const staticRoutes = staticPages.map((route) => ({
