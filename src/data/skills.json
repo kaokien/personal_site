@@ -126,5 +126,61 @@
     "level": "expert",
     "icon": "tailwindcss",
     "order": 16
+  },
+  {
+    "id": "17",
+    "name": "MySQL",
+    "category": "backend",
+    "level": "intermediate",
+    "icon": "database",
+    "order": 17
+  },
+  {
+    "id": "18",
+    "name": "ServiceNow",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "servicenow",
+    "order": 18
+  },
+  {
+    "id": "19",
+    "name": "VAST/VPAID",
+    "category": "tools",
+    "level": "expert",
+    "icon": "video",
+    "order": 19
+  },
+  {
+    "id": "20",
+    "name": "Microsoft Endpoint Manager",
+    "category": "tools",
+    "level": "intermediate",
+    "icon": "microsoft",
+    "order": 20
+  },
+  {
+    "id": "21",
+    "name": "SEO / GEO Strategy",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "search",
+    "order": 21
+  },
+  {
+    "id": "22",
+    "name": "Web Analytics",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "analytics",
+    "order": 22
+  },
+  {
+    "id": "23",
+    "name": "Agile / Scrum",
+    "category": "tools",
+    "level": "advanced",
+    "icon": "agile",
+    "order": 23
   }
 ]

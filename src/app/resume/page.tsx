@@ -159,11 +159,11 @@ export default function ResumePage() {
               </div>
               <div>
                 <h3 className="font-heading mb-1 text-lg font-bold uppercase">
-                  Full Stack Engineering
+                  Full Stack Engineering (C, MySQL, JavaScript)
                 </h3>
                 <p className="text-muted-foreground font-sans text-sm">
-                  Advanced curriculum in C, Python, DevOps, and Web Stack
-                  technologies. Focus: System Architecture.
+                  Software Engineering Bootcamp. Focus: Systems Programming,
+                  Database Architecture, and Full-Stack Web Development.
                 </p>
               </div>
             </div>
