@@ -4,30 +4,23 @@ import Image from 'next/image';
 
 /* ─────────────────────────── Data ─────────────────────────── */
 
-const BADGES = [
-  { icon: '⚙️', label: 'Solutions Engineer' },
-  { icon: '🥊', label: 'Fitness & Boxing' },
-  { icon: '🎮', label: 'PC Hardware' },
+const STATS = [
+  { value: '150M+', label: 'Views Scaled' },
+  { value: '$4M+', label: 'Revenue Managed' },
+  { value: '8+', label: 'Years in Tech' },
 ];
 
 const ENTERPRISE_BRANDS = [
-  'JW Player',
   'Forbes',
   'NBCU',
   'NPR',
   'TMZ',
   'Fox',
   'Thomson Reuters',
-  'Guitar Center',
   'Hedgeye',
   'Weather Channel',
-  'Pelmorex',
   'StockX',
-  'Skilljar',
-  'GoNoodle',
-  'Barre3',
-  'Accessible Media',
-  'Journy.tv',
+  'Guitar Center',
 ];
 
 interface LinkItem {
@@ -46,32 +39,32 @@ const LINKS: LinkItem[] = [
     href: 'https://calendly.com/adupokukevin/scale-application',
     icon: '⚡',
     title: 'Scale Your Brand',
-    desc: 'Apply to have me build your digital ecosystem',
+    desc: "Book a free strategy call — let's build your digital ecosystem",
     external: true,
     primary: true,
+  },
+  {
+    id: 'portfolio',
+    href: '/projects',
+    icon: '💼',
+    title: 'View My Work',
+    desc: 'Full portfolio — web platforms, video engineering, growth systems',
+    external: false,
   },
   {
     id: 'case-study',
     href: '/projects/coach-josh-official',
     icon: '📈',
-    title: 'The Coach Josh Case Study',
-    desc: 'How we beat the IG algorithm with owned infrastructure',
+    title: 'Case Study: 150M+ Views → Revenue',
+    desc: "How I turned a creator's following into a digital product empire",
     external: false,
   },
   {
-    id: 'twitch',
-    href: 'https://twitch.tv/kinetic_logic',
-    icon: '🟣',
-    title: 'Twitch: kinetic_logic',
-    desc: 'Live Gaming, PC Builds & RTX 5090 Hardware',
-    external: true,
-  },
-  {
-    id: 'fitness',
-    href: 'https://instagram.com/kevysupr3me',
-    icon: '🥊',
-    title: 'Fitness & Boxing Lifestyle',
-    desc: 'Training behind the scenes on Instagram',
+    id: 'linkedin',
+    href: 'https://linkedin.com/in/kadupoku',
+    icon: '🔗',
+    title: 'Connect on LinkedIn',
+    desc: 'Enterprise experience, recommendations & professional background',
     external: true,
   },
 ];
@@ -223,6 +216,9 @@ export default function LinksPage() {
         .links-container > *:nth-child(8) {
           animation-delay: 0.4s;
         }
+        .links-container > *:nth-child(9) {
+          animation-delay: 0.45s;
+        }
 
         @keyframes linksReveal {
           to {
@@ -235,12 +231,12 @@ export default function LinksPage() {
         .links-avatar-wrap {
           position: relative;
           display: inline-block;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1.25rem;
         }
 
         .links-avatar {
-          width: 110px;
-          height: 110px;
+          width: 100px;
+          height: 100px;
           border: 2px solid oklch(1 0 0 / 0.12);
           object-fit: cover;
           position: relative;
@@ -274,62 +270,78 @@ export default function LinksPage() {
           letter-spacing: 0.05em;
           text-transform: uppercase;
           color: oklch(1 0 0);
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.5rem;
         }
 
-        .links-subtitle {
-          font-family: var(--font-mono), 'JetBrains Mono', monospace;
-          font-size: 0.8rem;
-          color: oklch(1 0 0 / 0.4);
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
+        .links-value-prop {
+          font-family: var(--font-sans), 'Inter', sans-serif;
+          font-size: 0.88rem;
+          color: oklch(1 0 0 / 0.5);
+          line-height: 1.5;
           margin-bottom: 1.5rem;
+          max-width: 360px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        /* ── Badges ── */
-        .links-badges {
+        .links-value-prop strong {
+          color: oklch(0.89 0.208 125);
+          font-weight: 600;
+        }
+
+        /* ── Stats Row ── */
+        .links-stats {
           display: flex;
           justify-content: center;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-          margin-bottom: 2rem;
-        }
-
-        .links-badge {
-          background: oklch(1 0 0 / 0.04);
+          gap: 0;
+          margin-bottom: 1.5rem;
           border: 1px solid oklch(1 0 0 / 0.08);
-          padding: 0.35rem 0.75rem;
-          font-size: 0.72rem;
-          font-family: var(--font-mono), monospace;
-          color: oklch(1 0 0 / 0.5);
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          display: flex;
-          align-items: center;
-          gap: 0.4rem;
-          transition: all 0.3s ease;
+          background: oklch(1 0 0 / 0.02);
         }
 
-        .links-badge:hover {
-          border-color: oklch(0.89 0.208 125 / 0.3);
-          color: oklch(0.89 0.208 125);
+        .links-stat {
+          flex: 1;
+          padding: 0.75rem 0.5rem;
+          text-align: center;
+        }
+
+        .links-stat + .links-stat {
+          border-left: 1px solid oklch(1 0 0 / 0.06);
+        }
+
+        .links-stat-value {
+          font-family: var(--font-heading), 'Oswald', sans-serif;
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: oklch(1 0 0);
+          letter-spacing: 0.02em;
+          line-height: 1;
+        }
+
+        .links-stat-label {
+          font-family: var(--font-mono), monospace;
+          font-size: 0.55rem;
+          color: oklch(1 0 0 / 0.3);
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          margin-top: 0.3rem;
         }
 
         /* ── Enterprise Trust ── */
         .links-trust {
-          margin-bottom: 2rem;
-          padding: 1rem;
+          margin-bottom: 1.5rem;
+          padding: 0.75rem 1rem;
           background: oklch(1 0 0 / 0.02);
           border: 1px solid oklch(1 0 0 / 0.06);
         }
 
         .links-trust-title {
           font-family: var(--font-mono), monospace;
-          font-size: 0.6rem;
-          color: oklch(1 0 0 / 0.25);
+          font-size: 0.55rem;
+          color: oklch(1 0 0 / 0.2);
           text-transform: uppercase;
           letter-spacing: 0.2em;
-          margin-bottom: 0.75rem;
+          margin-bottom: 0.5rem;
           font-weight: 600;
         }
 
@@ -337,13 +349,13 @@ export default function LinksPage() {
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
-          gap: 0.5rem 1.2rem;
+          gap: 0.35rem 1rem;
         }
 
         .links-brand {
           font-family: var(--font-heading), 'Oswald', sans-serif;
-          font-size: 0.75rem;
-          color: oklch(1 0 0 / 0.2);
+          font-size: 0.7rem;
+          color: oklch(1 0 0 / 0.18);
           font-weight: 500;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -361,10 +373,10 @@ export default function LinksPage() {
           background: linear-gradient(
             90deg,
             transparent,
-            oklch(0.89 0.208 125 / 0.2),
+            oklch(0.89 0.208 125 / 0.25),
             transparent
           );
-          margin-bottom: 2rem;
+          margin-bottom: 1.5rem;
         }
 
         /* ── Link Cards ── */
@@ -505,7 +517,7 @@ export default function LinksPage() {
 
         /* ── Socials Footer ── */
         .links-socials {
-          margin-top: 2.5rem;
+          margin-top: 2rem;
           display: flex;
           justify-content: center;
           gap: 1.5rem;
@@ -531,7 +543,7 @@ export default function LinksPage() {
 
         /* ── Footer Credit ── */
         .links-credit {
-          margin-top: 2.5rem;
+          margin-top: 2rem;
           font-family: var(--font-mono), monospace;
           font-size: 0.6rem;
           color: oklch(1 0 0 / 0.12);
@@ -559,9 +571,17 @@ export default function LinksPage() {
             font-size: 1.5rem;
           }
 
+          .links-value-prop {
+            font-size: 0.82rem;
+          }
+
           .links-avatar {
-            width: 90px;
-            height: 90px;
+            width: 85px;
+            height: 85px;
+          }
+
+          .links-stat-value {
+            font-size: 1.1rem;
           }
 
           .link-card {
@@ -592,32 +612,34 @@ export default function LinksPage() {
             <Image
               src="/images/kevin-monogram.png"
               alt="Kevin Adu-Poku"
-              width={110}
-              height={110}
+              width={100}
+              height={100}
               className="links-avatar"
               priority
             />
           </div>
 
-          {/* Name & Subtitle */}
+          {/* Name & Value Prop */}
           <h1 className="links-name">Kevin Adu-Poku</h1>
-          <p className="links-subtitle">Growth Systems Engineer</p>
+          <p className="links-value-prop">
+            I build digital ecosystems that turn{' '}
+            <strong>followers into revenue</strong> — websites, courses, funnels
+            & growth systems.
+          </p>
 
-          {/* Badges */}
-          <div className="links-badges">
-            {BADGES.map((b) => (
-              <span key={b.label} className="links-badge">
-                <span>{b.icon}</span>
-                {b.label}
-              </span>
+          {/* Stats Row */}
+          <div className="links-stats">
+            {STATS.map((stat) => (
+              <div key={stat.label} className="links-stat">
+                <div className="links-stat-value">{stat.value}</div>
+                <div className="links-stat-label">{stat.label}</div>
+              </div>
             ))}
           </div>
 
           {/* Enterprise Trust */}
           <div className="links-trust">
-            <p className="links-trust-title">
-              Enterprise Systems Engineering For
-            </p>
+            <p className="links-trust-title">Engineered Solutions For</p>
             <div className="links-brands">
               {ENTERPRISE_BRANDS.map((name) => (
                 <span key={name} className="links-brand">
