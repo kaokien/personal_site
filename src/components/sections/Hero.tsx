@@ -28,7 +28,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="hidden text-right font-mono text-xs tracking-widest text-white/30 uppercase sm:block"
         >
-          Portfolio 2025
+          Portfolio 2026
           <br />
           Vol. 01
         </motion.div>

@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/constants';
+import projectsData from '@/data/projects.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
@@ -22,18 +23,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // Dynamic project pages (would be fetched from data in production)
-  // For now, importing statically
-  const projectSlugs = [
-    'fightersclub-app',
-    'hefner-market',
-    'corner-man-platform',
-    'venture-builder-os',
-    'youtube-intro-generator',
-  ];
-
-  const projectRoutes = projectSlugs.map((slug) => ({
-    url: `${baseUrl}/projects/${slug}`,
+  // Dynamic project pages from data
+  const projectRoutes = projectsData.map((project) => ({
+    url: `${baseUrl}/projects/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.6,

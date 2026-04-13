@@ -18,9 +18,7 @@ const projects: Project[] = projectsData.map((p) => ({
 const categories = [
   { value: 'all', label: 'All Projects' },
   { value: 'web_app', label: 'Web Apps' },
-  { value: 'mobile_app', label: 'Mobile Apps' },
-  { value: 'design', label: 'Design' },
-  { value: 'open_source', label: 'Open Source' },
+  { value: 'design', label: 'Community' },
   { value: 'art_culture', label: 'Art & Culture' },
 ];
 

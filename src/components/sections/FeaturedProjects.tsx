@@ -14,7 +14,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
   const featuredProjects = projects
     .filter((p) => p.featured)
     .sort((a, b) => a.order - b.order)
-    .slice(0, 3);
+    .slice(0, 4);
 
   return (
     <section className="py-20">
@@ -39,7 +39,7 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
           </Button>
         </motion.div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {featuredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

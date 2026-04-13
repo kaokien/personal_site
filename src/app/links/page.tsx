@@ -52,7 +52,7 @@ const LINKS: LinkItem[] = [
   },
   {
     id: 'case-study',
-    href: '/projects/coachjosh-official',
+    href: '/projects/coach-josh-official',
     icon: '📈',
     title: 'The Coach Josh Case Study',
     desc: 'How we beat the IG algorithm with owned infrastructure',
