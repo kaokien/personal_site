@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { ThemeToggle } from '@/components/layouts/ThemeToggle';
 
 /* ─────────────────────────── Data ─────────────────────────── */
 
@@ -606,6 +607,17 @@ export default function LinksPage() {
 
       <main className="links-page">
         <div className="links-container">
+          {/* Theme Toggle */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              marginBottom: '1rem',
+            }}
+          >
+            <ThemeToggle />
+          </div>
+
           {/* Avatar */}
           <div className="links-avatar-wrap">
             <div className="links-avatar-glow" />

@@ -1,32 +1,10 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import { BaseLayout } from '@/components/layouts';
 import { Hero, FeaturedProjects } from '@/components/sections';
 import { Marquee } from '@/components/ui/marquee';
 import projectsData from '@/data/projects.json';
 import { Project, ProjectCategory, ProjectStatus } from '@/lib/types';
-
-// Lazy-load the heavy 3D section — saves ~300KB from initial bundle
-const CreativeIntelligence = dynamic(
-  () =>
-    import('@/components/sections/CreativeIntelligence').then(
-      (mod) => mod.CreativeIntelligence
-    ),
-  {
-    ssr: false,
-    loading: () => (
-      <section className="relative flex min-h-[400px] items-center justify-center bg-neutral-950 py-24">
-        <div className="text-center">
-          <div className="border-border border-t-accent-lime mx-auto mb-4 h-8 w-8 animate-spin rounded-full border-2" />
-          <p className="font-mono text-xs tracking-widest text-neutral-500 uppercase">
-            Loading Neural Map...
-          </p>
-        </div>
-      </section>
-    ),
-  }
-);
 
 // Map JSON data to typed objects
 const projects: Project[] = projectsData.map((p) => ({
@@ -117,7 +95,6 @@ export default function HomePage() {
       </div>
 
       <FeaturedProjects projects={projects} />
-      <CreativeIntelligence />
     </BaseLayout>
   );
 }

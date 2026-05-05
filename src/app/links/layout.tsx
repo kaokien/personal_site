@@ -4,11 +4,11 @@ import { siteConfig } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'Kevin Adu-Poku | Growth Systems for Fitness Creators',
   description:
-    'I build 24/7 digital ecosystems for fitness creators and online coaches. See my work, apply to scale your brand.',
+    'I build digital products for fitness creators and online coaches. See my work, apply to scale your brand.',
   openGraph: {
     title: 'Kevin Adu-Poku | Growth Systems for Fitness Creators',
     description:
-      'Engineering 24/7 digital ecosystems for creators. Scale your brand with proven infrastructure.',
+      'I build websites, courses, and growth systems for creators. Scale your brand with me.',
     url: `${siteConfig.url}/links`,
     siteName: siteConfig.name,
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kevin Adu-Poku | Growth Systems for Fitness Creators',
     description:
-      'Engineering 24/7 digital ecosystems for creators. Scale your brand with proven infrastructure.',
+      'I build websites, courses, and growth systems for creators. Scale your brand with me.',
   },
 };
 
