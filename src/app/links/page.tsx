@@ -39,7 +39,7 @@ const LINKS: LinkItem[] = [
     href: 'https://calendly.com/adupokukevin/scale-application',
     icon: '⚡',
     title: 'Scale Your Brand',
-    desc: "Book a free strategy call — let's build your digital ecosystem",
+    desc: "Book a free strategy call. Let's build your digital presence.",
     external: true,
     primary: true,
   },
@@ -48,7 +48,7 @@ const LINKS: LinkItem[] = [
     href: '/projects',
     icon: '💼',
     title: 'View My Work',
-    desc: 'Full portfolio — web platforms, video engineering, growth systems',
+    desc: 'Full portfolio. Web platforms, video engineering, growth systems',
     external: false,
   },
   {
@@ -56,7 +56,7 @@ const LINKS: LinkItem[] = [
     href: '/projects/coach-josh-official',
     icon: '📈',
     title: 'Case Study: 150M+ Views → Revenue',
-    desc: "How I turned a creator's following into a digital product empire",
+    desc: "How I turned a creator's following into a digital product business",
     external: false,
   },
   {
@@ -622,8 +622,8 @@ export default function LinksPage() {
           {/* Name & Value Prop */}
           <h1 className="links-name">Kevin Adu-Poku</h1>
           <p className="links-value-prop">
-            I build digital ecosystems that turn{' '}
-            <strong>followers into revenue</strong> — websites, courses, funnels
+            I build digital systems that turn{' '}
+            <strong>followers into revenue</strong>. Websites, courses, funnels
             & growth systems.
           </p>
 

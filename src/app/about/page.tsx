@@ -46,18 +46,18 @@ export default function AboutPage() {
               About Me
             </h1>
             <p className="text-muted-foreground mt-6 text-lg leading-8">
-              I&apos;m a Growth Solutions Engineer who architects performance,
-              optimizes platforms, and drives measurable revenue. With deep
-              expertise in video technology and full-stack engineering, I
-              specialize in building systems that scale — from enterprise video
-              infrastructure serving millions to creator platforms generating
-              real business outcomes.
+              I&apos;m a Growth Solutions Engineer. I build things that perform,
+              fix things that don&apos;t, and figure out how to make the numbers
+              go up. My background is in video technology and full-stack
+              engineering, and I&apos;ve spent the last few years applying that
+              to everything from enterprise media platforms to creator
+              businesses.
             </p>
             <p className="text-muted-foreground mt-4 text-lg leading-8">
               At JW Player, I engineer custom implementations for clients like
-              NBC, Forbes, and Hedgeye. As a Technical Founder, I&apos;ve built
-              a full-stack Vercel ecosystem for a creator with 150M+ views. My
-              approach: technical precision meets business impact.
+              NBC, Forbes, and Hedgeye. On the side, I&apos;ve built a full
+              product suite on Vercel for a creator with 150M+ views. I like
+              working where technical depth meets real business problems.
             </p>
           </div>
 

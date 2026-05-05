@@ -139,7 +139,7 @@ export function ContactForm() {
             animate={{ opacity: 1, y: 0 }}
             className="bg-accent-lime/10 text-accent-lime rounded-none p-4 text-center font-mono text-sm"
           >
-            Opening your email client — send when ready!
+            Opening your email client. Send when ready!
           </motion.div>
         )}
 
