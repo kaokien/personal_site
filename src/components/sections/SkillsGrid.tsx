@@ -59,10 +59,10 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
             Skills & Technologies
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-white/40">
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl">
             A comprehensive toolkit built over years of hands-on experience
           </p>
         </motion.div>
@@ -79,9 +79,9 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-                className="rounded-none border border-white/10 bg-white/[0.02] p-6"
+                className="border-border bg-muted/30 rounded-none border p-6"
               >
-                <h3 className="mb-4 text-lg font-semibold text-white">
+                <h3 className="text-foreground mb-4 text-lg font-semibold">
                   {categoryLabels[category]}
                 </h3>
                 <div className="space-y-3">
@@ -93,11 +93,11 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
                           <span className="font-mono text-sm font-medium text-white/60">
                             {skill.name}
                           </span>
-                          <span className="font-mono text-xs text-white/30 capitalize">
+                          <span className="text-muted-foreground font-mono text-xs capitalize">
                             {skill.level}
                           </span>
                         </div>
-                        <div className="h-1 w-full bg-white/5">
+                        <div className="bg-muted/30 h-1 w-full">
                           <motion.div
                             initial={{ width: 0 }}
                             whileInView={{ width: '100%' }}

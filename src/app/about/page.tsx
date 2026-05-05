@@ -42,10 +42,10 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
               About Me
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white/50">
+            <p className="text-muted-foreground mt-6 text-lg leading-8">
               I&apos;m a Growth Solutions Engineer who architects performance,
               optimizes platforms, and drives measurable revenue. With deep
               expertise in video technology and full-stack engineering, I
@@ -53,7 +53,7 @@ export default function AboutPage() {
               infrastructure serving millions to creator platforms generating
               real business outcomes.
             </p>
-            <p className="mt-4 text-lg leading-8 text-white/50">
+            <p className="text-muted-foreground mt-4 text-lg leading-8">
               At JW Player, I engineer custom implementations for clients like
               NBC, Forbes, and Hedgeye. As a Technical Founder, I&apos;ve built
               a full-stack Vercel ecosystem for a creator with 150M+ views. My
@@ -63,21 +63,21 @@ export default function AboutPage() {
 
           {/* Quick Stats */}
           <div className="mx-auto mt-12 grid max-w-2xl gap-4 sm:grid-cols-3">
-            <div className="rounded-none border border-white/10 bg-white/[0.02] p-6 text-center">
-              <div className="text-3xl font-bold text-white">8+</div>
-              <div className="mt-1 font-mono text-xs tracking-wider text-white/30 uppercase">
+            <div className="border-border bg-muted/30 rounded-none border p-6 text-center">
+              <div className="text-foreground text-3xl font-bold">8+</div>
+              <div className="text-muted-foreground mt-1 font-mono text-xs tracking-wider uppercase">
                 Years in Tech
               </div>
             </div>
-            <div className="rounded-none border border-white/10 bg-white/[0.02] p-6 text-center">
-              <div className="text-3xl font-bold text-white">$4M+</div>
-              <div className="mt-1 font-mono text-xs tracking-wider text-white/30 uppercase">
+            <div className="border-border bg-muted/30 rounded-none border p-6 text-center">
+              <div className="text-foreground text-3xl font-bold">$4M+</div>
+              <div className="text-muted-foreground mt-1 font-mono text-xs tracking-wider uppercase">
                 Revenue Managed
               </div>
             </div>
-            <div className="rounded-none border border-white/10 bg-white/[0.02] p-6 text-center">
-              <div className="text-3xl font-bold text-white">150M+</div>
-              <div className="mt-1 font-mono text-xs tracking-wider text-white/30 uppercase">
+            <div className="border-border bg-muted/30 rounded-none border p-6 text-center">
+              <div className="text-foreground text-3xl font-bold">150M+</div>
+              <div className="text-muted-foreground mt-1 font-mono text-xs tracking-wider uppercase">
                 Views Scaled
               </div>
             </div>
@@ -86,19 +86,21 @@ export default function AboutPage() {
       </section>
 
       {/* Capabilities — replaces the Skills Grid */}
-      <section className="border-y border-white/10 py-20">
+      <section className="border-border border-y py-20">
         <div className="container mx-auto px-4">
-          <h2 className="mb-2 font-mono text-xs tracking-[0.3em] text-white/30 uppercase">
+          <h2 className="text-muted-foreground mb-2 font-mono text-xs tracking-[0.3em] uppercase">
             What I Do
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {capabilities.map((cap) => (
               <div
                 key={cap.label}
-                className="group hover:border-accent-lime border border-white/10 bg-white/[0.02] p-6 transition-colors"
+                className="group hover:border-accent-lime border-border bg-muted/30 border p-6 transition-colors"
               >
-                <h3 className="text-lg font-bold text-white">{cap.label}</h3>
-                <p className="mt-2 font-mono text-xs leading-relaxed text-white/30">
+                <h3 className="text-foreground text-lg font-bold">
+                  {cap.label}
+                </h3>
+                <p className="text-muted-foreground mt-2 font-mono text-xs leading-relaxed">
                   {cap.detail}
                 </p>
               </div>
@@ -111,12 +113,12 @@ export default function AboutPage() {
       <ExperienceTimeline experiences={experiences} />
 
       {/* CTA Section */}
-      <section className="border-t border-white/10 py-20">
+      <section className="border-border border-t py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-white">
+          <h2 className="text-foreground text-2xl font-bold">
             Interested in working together?
           </h2>
-          <p className="mt-4 text-white/40">
+          <p className="text-muted-foreground mt-4">
             I&apos;m always open to discussing new projects and opportunities.
           </p>
           <a

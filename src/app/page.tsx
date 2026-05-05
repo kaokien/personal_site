@@ -1,9 +1,32 @@
+'use client';
+
+import dynamic from 'next/dynamic';
 import { BaseLayout } from '@/components/layouts';
 import { Hero, FeaturedProjects } from '@/components/sections';
-import { CreativeIntelligence } from '@/components/sections/CreativeIntelligence';
 import { Marquee } from '@/components/ui/marquee';
 import projectsData from '@/data/projects.json';
 import { Project, ProjectCategory, ProjectStatus } from '@/lib/types';
+
+// Lazy-load the heavy 3D section — saves ~300KB from initial bundle
+const CreativeIntelligence = dynamic(
+  () =>
+    import('@/components/sections/CreativeIntelligence').then(
+      (mod) => mod.CreativeIntelligence
+    ),
+  {
+    ssr: false,
+    loading: () => (
+      <section className="relative flex min-h-[400px] items-center justify-center bg-neutral-950 py-24">
+        <div className="text-center">
+          <div className="border-border border-t-accent-lime mx-auto mb-4 h-8 w-8 animate-spin rounded-full border-2" />
+          <p className="font-mono text-xs tracking-widest text-neutral-500 uppercase">
+            Loading Neural Map...
+          </p>
+        </div>
+      </section>
+    ),
+  }
+);
 
 // Map JSON data to typed objects
 const projects: Project[] = projectsData.map((p) => ({
@@ -38,17 +61,17 @@ export default function HomePage() {
       <Hero />
 
       {/* Client & Experience Strips */}
-      <div className="border-b border-white/10 py-6">
+      <div className="dark:border-border border-b border-black/10 py-6">
         <div className="container mx-auto px-4">
           {/* JW Player Clients */}
-          <p className="mb-4 text-center font-mono text-[10px] tracking-[0.3em] text-white/20 uppercase">
+          <p className="dark:text-muted-foreground/60 mb-4 text-center font-mono text-[10px] tracking-[0.3em] text-black/20 uppercase">
             Clients Engineered For @ JW Player
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-3">
             {jwpClients.map((name) => (
               <span
                 key={name}
-                className="font-heading text-lg font-bold tracking-widest text-white/15 uppercase transition-colors hover:text-white/40"
+                className="font-heading dark:hover:text-muted-foreground text-lg font-bold tracking-widest text-black/15 uppercase transition-colors hover:text-black/40 dark:text-white/15"
               >
                 {name}
               </span>
@@ -56,17 +79,17 @@ export default function HomePage() {
           </div>
 
           {/* Divider */}
-          <div className="mx-auto my-5 h-px w-32 bg-white/5" />
+          <div className="dark:bg-muted/30 mx-auto my-5 h-px w-32 bg-black/5" />
 
           {/* Previous Companies */}
-          <p className="mb-3 text-center font-mono text-[10px] tracking-[0.3em] text-white/15 uppercase">
+          <p className="mb-3 text-center font-mono text-[10px] tracking-[0.3em] text-black/15 uppercase dark:text-white/15">
             Previously At
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-3">
             {previousCompanies.map((name) => (
               <span
                 key={name}
-                className="font-heading text-sm font-bold tracking-widest text-white/10 uppercase transition-colors hover:text-white/30"
+                className="font-heading dark:hover:text-muted-foreground text-sm font-bold tracking-widest text-black/10 uppercase transition-colors hover:text-black/30 dark:text-white/10"
               >
                 {name}
               </span>
@@ -76,7 +99,7 @@ export default function HomePage() {
       </div>
 
       {/* Marquee */}
-      <div className="border-b border-white/10 py-4 text-white/30">
+      <div className="dark:border-border dark:text-muted-foreground border-b border-black/10 py-4 text-black/30">
         <Marquee>
           <span className="font-heading mx-8 text-lg font-bold tracking-widest uppercase">
             {'///'} LATEST DROPS {'///'}

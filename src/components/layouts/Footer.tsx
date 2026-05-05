@@ -10,10 +10,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/10">
+    <footer className="border-border border-t">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <p className="font-mono text-xs tracking-wider text-white/30 uppercase">
+          <p className="text-muted-foreground font-mono text-xs tracking-wider uppercase">
             © {currentYear} Kevin Adu-Poku. All rights reserved.
           </p>
 
@@ -24,7 +24,7 @@ export function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-accent-lime font-mono text-xs tracking-wider text-white/30 uppercase transition-colors"
+                className="text-muted-foreground hover:text-accent-lime font-mono text-xs tracking-wider uppercase transition-colors"
               >
                 {link.label}
               </Link>

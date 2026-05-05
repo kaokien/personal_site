@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   title: 'Kevin Adu-Poku | Growth Solutions Engineer',
   description:
     'Growth Solutions Engineer specializing in video technology, platform optimization, and driving measurable revenue through custom engineering solutions.',
-  url: 'https://adupokukevin.com',
+  url: 'https://personal-site-zeta-snowy.vercel.app',
   email: 'hello@adupokukevin.com',
   socials: [
     {

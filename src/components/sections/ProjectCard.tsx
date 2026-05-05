@@ -23,7 +23,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       className="group"
     >
       <Link href={`/projects/${project.slug}`} className="block">
-        <div className="group-hover:border-accent-lime relative mb-4 aspect-[4/5] w-full overflow-hidden border border-white/10 bg-white/[0.02] transition-colors duration-300">
+        <div className="group-hover:border-accent-lime border-border bg-muted/30 relative mb-4 aspect-[4/5] w-full overflow-hidden border transition-colors duration-300">
           {project.thumbnailUrl ? (
             <Image
               src={project.thumbnailUrl}
@@ -32,8 +32,8 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
               className="object-cover grayscale transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110 group-hover:grayscale-0"
             />
           ) : (
-            <div className="flex h-full items-center justify-center bg-white/[0.02]">
-              <span className="font-heading text-6xl font-bold text-white/10 uppercase">
+            <div className="bg-muted/30 flex h-full items-center justify-center">
+              <span className="font-heading text-foreground/10 text-6xl font-bold uppercase">
                 {project.title.substring(0, 2)}
               </span>
             </div>
@@ -43,7 +43,7 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <div className="absolute top-2 left-2 flex gap-2">
             <Badge
               variant="outline"
-              className="border-white/10 bg-black/80 text-[10px]"
+              className="border-border bg-background/80 text-[10px]"
             >
               {project.year || '2024'}
             </Badge>
@@ -60,15 +60,15 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         {/* Content - "Lookbook" Caption Style */}
         <div className="space-y-1">
           <div className="flex items-start justify-between gap-4">
-            <h3 className="font-heading group-hover:text-accent-lime text-xl leading-none font-bold tracking-tight text-white uppercase transition-colors">
+            <h3 className="font-heading group-hover:text-accent-lime text-foreground text-xl leading-none font-bold tracking-tight uppercase transition-colors">
               {project.title}
             </h3>
-            <span className="shrink-0 font-mono text-[10px] tracking-widest text-white/30 uppercase">
+            <span className="text-muted-foreground shrink-0 font-mono text-[10px] tracking-widest uppercase">
               {project.category || 'CASE STUDY'}
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-x-2 font-mono text-xs text-white/30">
+          <div className="text-muted-foreground flex flex-wrap gap-x-2 font-mono text-xs">
             {project.tags.slice(0, 2).map((tag, i) => (
               <span key={tag} className="tracking-wider uppercase">
                 {tag}

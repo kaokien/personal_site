@@ -23,10 +23,10 @@ export default async function BlogPage() {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
               Blog
             </h1>
-            <p className="mt-4 text-lg text-white/40">
+            <p className="text-muted-foreground mt-4 text-lg">
               Thoughts, tutorials, and insights on software development.
             </p>
           </div>
@@ -40,10 +40,10 @@ export default async function BlogPage() {
             </div>
           ) : (
             <div className="mx-auto mt-16 max-w-lg text-center">
-              <div className="rounded-none border border-white/10 bg-white/[0.02] p-8">
-                <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-none bg-white/5">
+              <div className="border-border bg-muted/30 rounded-none border p-8">
+                <div className="bg-muted/30 mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-none">
                   <svg
-                    className="h-8 w-8 text-white/30"
+                    className="text-muted-foreground h-8 w-8"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -56,10 +56,10 @@ export default async function BlogPage() {
                     />
                   </svg>
                 </div>
-                <h2 className="text-xl font-semibold text-white">
+                <h2 className="text-foreground text-xl font-semibold">
                   Coming Soon
                 </h2>
-                <p className="mt-3 text-white/40">
+                <p className="text-muted-foreground mt-3">
                   I&apos;m currently working on some exciting content. Check
                   back soon for articles on web development, mobile apps, and
                   building digital products.

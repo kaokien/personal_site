@@ -59,19 +59,19 @@ export function BlogPostCard({ post, index = 0 }: BlogPostCardProps) {
             </div>
 
             {/* Title */}
-            <h3 className="group-hover:text-accent-lime text-xl leading-tight font-semibold tracking-tight text-white transition-colors">
+            <h3 className="group-hover:text-accent-lime text-foreground text-xl leading-tight font-semibold tracking-tight transition-colors">
               {post.title}
             </h3>
           </CardHeader>
 
           <CardContent>
             {/* Description */}
-            <p className="line-clamp-2 text-sm text-white/40">
+            <p className="text-muted-foreground line-clamp-2 text-sm">
               {post.description}
             </p>
           </CardContent>
 
-          <CardFooter className="flex items-center justify-between font-mono text-xs text-white/30">
+          <CardFooter className="text-muted-foreground flex items-center justify-between font-mono text-xs">
             {/* Meta Info */}
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1">

@@ -64,7 +64,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Back link */}
           <Link
             href="/projects"
-            className="hover:text-accent-lime mb-8 inline-flex items-center gap-2 font-mono text-xs tracking-wider text-white/40 uppercase transition-colors"
+            className="hover:text-accent-lime text-muted-foreground mb-8 inline-flex items-center gap-2 font-mono text-xs tracking-wider uppercase transition-colors"
           >
             <svg
               className="h-4 w-4"
@@ -91,13 +91,15 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 </Badge>
               ))}
             </div>
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
               {project.title}
             </h1>
-            <p className="mt-4 text-lg text-white/50">{project.description}</p>
+            <p className="text-muted-foreground mt-4 text-lg">
+              {project.description}
+            </p>
 
             {/* Meta info */}
-            <div className="mt-6 flex flex-wrap items-center gap-6 font-mono text-xs text-white/30">
+            <div className="text-muted-foreground mt-6 flex flex-wrap items-center gap-6 font-mono text-xs">
               <div className="flex items-center gap-2">
                 <span
                   className={`h-2 w-2 ${
@@ -171,7 +173,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {/* Featured Image */}
           {project.thumbnailUrl && (
-            <div className="mt-12 overflow-hidden rounded-none border border-white/10 bg-white/[0.02]">
+            <div className="border-border bg-muted/30 mt-12 overflow-hidden rounded-none border">
               <div className="relative aspect-video">
                 <Image
                   src={project.thumbnailUrl}
@@ -187,8 +189,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Long Description */}
           {project.longDescription && (
             <div className="mt-12 max-w-3xl">
-              <h2 className="text-2xl font-bold text-white">Overview</h2>
-              <p className="mt-4 leading-relaxed text-white/50">
+              <h2 className="text-foreground text-2xl font-bold">Overview</h2>
+              <p className="text-muted-foreground mt-4 leading-relaxed">
                 {project.longDescription}
               </p>
             </div>
@@ -196,16 +198,16 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {project.videos && project.videos.length > 0 && (
             <div className="mt-12">
-              <h2 className="mb-6 text-2xl font-bold text-white">Media</h2>
+              <h2 className="text-foreground mb-6 text-2xl font-bold">Media</h2>
               <div className="grid gap-8">
                 {project.videos.map((video, index) => (
                   <div key={index} className="space-y-3">
-                    <h3 className="text-lg font-medium text-white">
+                    <h3 className="text-foreground text-lg font-medium">
                       {video.title}
                     </h3>
                     <VideoPlayer url={video.url} />
                     {video.description && (
-                      <p className="max-w-2xl font-mono text-xs text-white/30">
+                      <p className="text-muted-foreground max-w-2xl font-mono text-xs">
                         {video.description}
                       </p>
                     )}
@@ -218,12 +220,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Gallery */}
           {project.images && project.images.length > 0 && (
             <div className="mt-12">
-              <h2 className="mb-6 text-2xl font-bold text-white">Gallery</h2>
+              <h2 className="text-foreground mb-6 text-2xl font-bold">
+                Gallery
+              </h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 {project.images.map((image, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden rounded-none border border-white/10 bg-white/[0.02]"
+                    className="border-border bg-muted/30 overflow-hidden rounded-none border"
                   >
                     <div className="relative aspect-video">
                       <Image

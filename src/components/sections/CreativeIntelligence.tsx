@@ -277,7 +277,7 @@ function LobeMesh({
             distanceFactor={10}
             zIndexRange={[100, 0]}
           >
-            <div className="rounded-none border border-neutral-700 bg-neutral-950/80 px-3 py-1 font-mono text-xs tracking-wider whitespace-nowrap text-white uppercase backdrop-blur-md">
+            <div className="text-foreground rounded-none border border-neutral-700 bg-neutral-950/80 px-3 py-1 font-mono text-xs tracking-wider whitespace-nowrap uppercase backdrop-blur-md">
               <span style={{ color: data.color }}>{'//'}</span> {data.title}
             </div>
           </Html>
@@ -387,7 +387,7 @@ export function CreativeIntelligence() {
   const activeLobe = brainData.find((d) => d.id === activeLobeId);
 
   return (
-    <section className="relative min-h-[800px] overflow-hidden bg-neutral-950 py-24 text-white">
+    <section className="text-foreground relative min-h-[800px] overflow-hidden bg-neutral-950 py-24">
       {/* Background Grid */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
@@ -454,7 +454,7 @@ export function CreativeIntelligence() {
               {/* Close Button */}
               <button
                 onClick={() => setActiveLobeId(null)}
-                className="absolute top-6 right-6 text-neutral-500 transition-colors hover:text-white"
+                className="hover:text-foreground absolute top-6 right-6 text-neutral-500 transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -491,7 +491,7 @@ export function CreativeIntelligence() {
                       className="group border border-neutral-800 bg-neutral-900/30 p-4 transition-colors hover:border-neutral-600"
                     >
                       <div className="mb-2 flex items-start justify-between">
-                        <h4 className="text-lg font-bold text-white uppercase">
+                        <h4 className="text-foreground text-lg font-bold uppercase">
                           {tool.name}
                         </h4>
                         <span
@@ -516,7 +516,7 @@ export function CreativeIntelligence() {
 
                 <button
                   onClick={() => setActiveLobeId(null)}
-                  className="mt-8 w-full border border-white/20 py-4 font-mono text-sm text-white uppercase transition-all hover:bg-white hover:text-black"
+                  className="text-foreground mt-8 w-full border border-white/20 py-4 font-mono text-sm uppercase transition-all hover:bg-white hover:text-black"
                 >
                   Return to Overview
                 </button>

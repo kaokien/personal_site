@@ -16,10 +16,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mx-auto max-w-xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
               Get In Touch
             </h1>
-            <p className="mt-4 text-lg text-white/50">
+            <p className="text-muted-foreground mt-4 text-lg">
               Have a project in mind? Let&apos;s talk about how I can help bring
               your ideas to life.
             </p>
@@ -30,11 +30,11 @@ export default function ContactPage() {
             <div className="mb-8 grid gap-4 sm:grid-cols-2">
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="hover:border-accent-lime flex items-center gap-3 rounded-none border border-white/10 bg-white/[0.02] p-4 transition-colors"
+                className="hover:border-accent-lime border-border bg-muted/30 flex items-center gap-3 rounded-none border p-4 transition-colors"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-none bg-white/5">
+                <div className="bg-muted/30 flex h-10 w-10 items-center justify-center rounded-none">
                   <svg
-                    className="h-5 w-5 text-white/50"
+                    className="text-muted-foreground h-5 w-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -48,8 +48,10 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-white">Email</div>
-                  <div className="font-mono text-xs text-white/30">
+                  <div className="text-foreground text-sm font-medium">
+                    Email
+                  </div>
+                  <div className="text-muted-foreground font-mono text-xs">
                     {siteConfig.email}
                   </div>
                 </div>
@@ -61,11 +63,11 @@ export default function ContactPage() {
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:border-accent-lime flex items-center gap-3 rounded-none border border-white/10 bg-white/[0.02] p-4 transition-colors"
+                className="hover:border-accent-lime border-border bg-muted/30 flex items-center gap-3 rounded-none border p-4 transition-colors"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-none bg-white/5">
+                <div className="bg-muted/30 flex h-10 w-10 items-center justify-center rounded-none">
                   <svg
-                    className="h-5 w-5 text-white/50"
+                    className="text-muted-foreground h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -73,8 +75,10 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-sm font-medium text-white">LinkedIn</div>
-                  <div className="font-mono text-xs text-white/30">
+                  <div className="text-foreground text-sm font-medium">
+                    LinkedIn
+                  </div>
+                  <div className="text-muted-foreground font-mono text-xs">
                     Connect with me
                   </div>
                 </div>

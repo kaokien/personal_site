@@ -28,10 +28,10 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
             Experience
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-white/40">
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl">
             My professional journey building digital products
           </p>
         </motion.div>
@@ -61,9 +61,9 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
               />
 
               {/* Content card */}
-              <div className="rounded-none border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-white/20">
+              <div className="border-border bg-muted/30 rounded-none border p-5 transition-colors hover:border-white/20">
                 {/* Date range */}
-                <div className="mb-2 flex items-center gap-2 font-mono text-xs text-white/30 md:justify-end">
+                <div className="text-muted-foreground mb-2 flex items-center gap-2 font-mono text-xs md:justify-end">
                   {index % 2 !== 0 && <span className="hidden md:inline" />}
                   <span>
                     {formatDate(exp.startDate)} —{' '}
@@ -76,20 +76,22 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                 </div>
 
                 {/* Company & Role */}
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-foreground text-lg font-semibold">
                   {exp.position}
                 </h3>
-                <p className="mt-1 text-white/40">
+                <p className="text-muted-foreground mt-1">
                   {exp.company} • {exp.remote ? 'Remote' : exp.location}
                 </p>
 
                 {/* Description */}
-                <p className="mt-3 text-sm text-white/40">{exp.description}</p>
+                <p className="text-muted-foreground mt-3 text-sm">
+                  {exp.description}
+                </p>
 
                 {/* Achievements */}
                 {exp.achievements.length > 0 && (
                   <ul
-                    className={`mt-3 space-y-1 text-sm text-white/40 ${
+                    className={`text-muted-foreground mt-3 space-y-1 text-sm ${
                       index % 2 === 0 ? 'md:text-right' : ''
                     }`}
                   >
@@ -116,7 +118,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                   {exp.technologies.slice(0, 5).map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-none bg-white/5 px-2 py-0.5 font-mono text-xs text-white/40"
+                      className="bg-muted/30 text-muted-foreground rounded-none px-2 py-0.5 font-mono text-xs"
                     >
                       {tech}
                     </span>

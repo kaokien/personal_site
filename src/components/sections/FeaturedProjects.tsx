@@ -27,10 +27,10 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
           className="flex flex-col items-center justify-between gap-4 sm:flex-row"
         >
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
               Featured Projects
             </h2>
-            <p className="mt-2 text-white/40">
+            <p className="text-muted-foreground mt-2">
               Some of my recent work that I&apos;m proud of
             </p>
           </div>

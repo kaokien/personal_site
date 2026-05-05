@@ -48,14 +48,12 @@ export default function ResumePage() {
 
                 <div className="flex gap-4">
                   <Button
-                    asChild
                     size="sm"
                     variant="outline"
-                    className="h-8 text-xs"
+                    className="h-8 cursor-not-allowed text-xs opacity-40"
+                    disabled
                   >
-                    <a href="/resume.pdf" download>
-                      DOWNLOAD_PDF
-                    </a>
+                    PDF_COMING_SOON
                   </Button>
                   <Button asChild size="sm" className="h-8 text-xs">
                     <Link href="/contact">INITIATE_CONTACT</Link>
@@ -67,7 +65,7 @@ export default function ResumePage() {
 
           {/* Experience Section */}
           <div className="mb-16">
-            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
+            <h2 className="border-border text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
               01 // Experience_Log
             </h2>
 
@@ -124,7 +122,7 @@ export default function ResumePage() {
 
           {/* Skills Section */}
           <div className="mb-16">
-            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
+            <h2 className="border-border text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
               02 // Technical_Modules
             </h2>
 
@@ -137,7 +135,7 @@ export default function ResumePage() {
                       <Badge
                         key={skill.id}
                         variant="outline"
-                        className="hover:bg-accent-lime rounded-none px-3 py-1 font-mono text-[10px] text-white/40 uppercase hover:text-black"
+                        className="hover:bg-accent-lime text-muted-foreground rounded-none px-3 py-1 font-mono text-[10px] uppercase hover:text-black"
                       >
                         {skill.name}
                       </Badge>
@@ -149,7 +147,7 @@ export default function ResumePage() {
 
           {/* Education Section */}
           <div className="mb-16">
-            <h2 className="mb-6 border-b border-white/10 pb-2 text-xs font-bold tracking-widest text-white/40 uppercase">
+            <h2 className="border-border text-muted-foreground mb-6 border-b pb-2 text-xs font-bold tracking-widest uppercase">
               03 // Education_Database
             </h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">

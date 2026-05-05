@@ -34,15 +34,61 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Kevin Adu-Poku — Growth Solutions Engineer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
+};
+
+// JSON-LD Structured Data
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Kevin Adu-Poku',
+    jobTitle: 'Growth Solutions Engineer',
+    url: siteConfig.url,
+    email: siteConfig.email,
+    sameAs: siteConfig.socials.map((s) => s.url),
+    worksFor: {
+      '@type': 'Organization',
+      name: 'JW Player',
+    },
+    knowsAbout: [
+      'Video Engineering',
+      'Full-Stack Development',
+      'Growth Systems',
+      'SEO',
+      'Next.js',
+      'TypeScript',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'New Haven',
+      addressRegion: 'CT',
+      addressCountry: 'US',
+    },
   },
 };
 
@@ -52,10 +98,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${oswald.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
+        {/* Skip to main content — accessibility */}
+        <a
+          href="#main-content"
+          className="bg-accent-lime fixed top-0 left-0 z-[100] -translate-y-full px-4 py-2 text-sm font-bold text-black transition-transform focus:translate-y-0"
+        >
+          Skip to main content
+        </a>
         <div className="bg-noise" />
         <ThemeProvider>{children}</ThemeProvider>
       </body>
