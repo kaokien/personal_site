@@ -6,15 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
 
   // Static pages
-  const staticPages = [
-    '',
-    '/about',
-    '/projects',
-    '/blog',
-    '/contact',
-    '/resume',
-    '/links',
-  ];
+  const staticPages = ['', '/about', '/projects', '/blog', '/resume', '/links'];
 
   const staticRoutes = staticPages.map((route) => ({
     url: `${baseUrl}${route}`,

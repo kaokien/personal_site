@@ -10,12 +10,12 @@ export const siteConfig: SiteConfig = {
   socials: [
     {
       name: 'GitHub',
-      url: 'https://github.com/kadupoku',
+      url: 'https://github.com/kaokien',
       icon: 'github',
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/kadupoku',
+      url: 'https://www.linkedin.com/in/kevinadupoku',
       icon: 'linkedin',
     },
     {
@@ -31,5 +31,5 @@ export const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
   { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  { href: 'mailto:kevin.adupoku@icloud.com', label: 'Contact' },
 ];

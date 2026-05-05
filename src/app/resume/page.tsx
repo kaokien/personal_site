@@ -56,7 +56,9 @@ export default function ResumePage() {
                     PDF_COMING_SOON
                   </Button>
                   <Button asChild size="sm" className="h-8 text-xs">
-                    <Link href="/contact">INITIATE_CONTACT</Link>
+                    <Link href="mailto:kevin.adupoku@icloud.com">
+                      INITIATE_CONTACT
+                    </Link>
                   </Button>
                 </div>
               </div>

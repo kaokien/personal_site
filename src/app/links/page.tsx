@@ -62,7 +62,7 @@ const LINKS: LinkItem[] = [
   },
   {
     id: 'linkedin',
-    href: 'https://linkedin.com/in/kadupoku',
+    href: 'https://www.linkedin.com/in/kevinadupoku',
     icon: '🔗',
     title: 'Connect on LinkedIn',
     desc: 'Enterprise experience, recommendations & professional background',
@@ -99,7 +99,7 @@ const SOCIALS = [
   },
   {
     label: 'GitHub',
-    href: 'https://github.com/kadupoku',
+    href: 'https://github.com/kaokien',
     icon: (
       <svg
         viewBox="0 0 24 24"

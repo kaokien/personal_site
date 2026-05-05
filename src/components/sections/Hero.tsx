@@ -95,7 +95,7 @@ export function Hero() {
             size="lg"
             className="h-14 px-8 text-lg"
           >
-            <Link href="/contact">CONTACT</Link>
+            <Link href="mailto:kevin.adupoku@icloud.com">CONTACT</Link>
           </Button>
         </motion.div>
       </div>

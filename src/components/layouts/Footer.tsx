@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 const socialLinks = [
-  { href: 'https://github.com/kadupoku', label: 'GitHub' },
-  { href: 'https://linkedin.com/in/kadupoku', label: 'LinkedIn' },
-  { href: 'https://twitter.com/kadupoku', label: 'Twitter' },
+  { href: 'https://github.com/kaokien', label: 'GitHub' },
+  { href: 'https://www.linkedin.com/in/kevinadupoku', label: 'LinkedIn' },
+  { href: 'https://twitter.com/kevysupr3me', label: 'Twitter' },
 ];
 
 export function Footer() {
