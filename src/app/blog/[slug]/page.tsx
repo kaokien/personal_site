@@ -94,19 +94,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             )}
 
             {/* Title */}
-            <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
+            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
               {post.title}
             </h1>
 
             {/* Description */}
             {post.description && (
-              <p className="mt-4 text-xl text-neutral-600 dark:text-neutral-400">
+              <p className="text-muted-foreground mt-4 text-xl">
                 {post.description}
               </p>
             )}
 
             {/* Meta */}
-            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+            <div className="text-muted-foreground mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
               <div className="flex items-center gap-1.5">
                 <Calendar className="h-4 w-4" />
                 <time dateTime={post.publishedAt}>{formattedDate}</time>
@@ -161,7 +161,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {/* Footer */}
-          <footer className="mx-auto mt-16 max-w-3xl border-t border-neutral-200 pt-8 dark:border-neutral-800">
+          <footer className="border-border mx-auto mt-16 max-w-3xl border-t pt-8">
             <Button asChild variant="outline">
               <Link href="/blog" className="flex items-center gap-2">
                 <ArrowLeft className="h-4 w-4" />

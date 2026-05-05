@@ -107,7 +107,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                       ? 'bg-accent-lime'
                       : project.status === 'in_progress'
                         ? 'bg-amber-500'
-                        : 'bg-white/30'
+                        : 'bg-muted-foreground'
                   }`}
                 />
                 <span className="tracking-wider uppercase">

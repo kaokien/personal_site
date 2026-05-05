@@ -130,9 +130,8 @@ const SOCIALS = [
 export default function LinksPage() {
   return (
     <>
-      {/* Scoped styles for the links page — uses the site's design DNA
-          (neon lime, brutalist corners, Inter/Oswald/JetBrains Mono)
-          but in a standalone bio-link layout. */}
+      {/* Scoped styles — uses CSS variables from globals.css
+          so colors automatically adapt to light/dark mode. */}
       <style jsx global>{`
         .links-page {
           min-height: 100vh;
@@ -142,6 +141,8 @@ export default function LinksPage() {
           padding: 3rem 1.5rem;
           position: relative;
           overflow: hidden;
+          background: var(--background);
+          color: var(--foreground);
         }
 
         /* Ambient glow */
@@ -237,7 +238,7 @@ export default function LinksPage() {
         .links-avatar {
           width: 100px;
           height: 100px;
-          border: 2px solid oklch(1 0 0 / 0.12);
+          border: 2px solid var(--border);
           object-fit: cover;
           position: relative;
           z-index: 2;
@@ -245,7 +246,7 @@ export default function LinksPage() {
         }
 
         .links-avatar:hover {
-          border-color: oklch(0.89 0.208 125);
+          border-color: var(--accent-lime);
         }
 
         .links-avatar-glow {
@@ -269,14 +270,14 @@ export default function LinksPage() {
           font-weight: 700;
           letter-spacing: 0.05em;
           text-transform: uppercase;
-          color: oklch(1 0 0);
+          color: var(--foreground);
           margin-bottom: 0.5rem;
         }
 
         .links-value-prop {
           font-family: var(--font-sans), 'Inter', sans-serif;
           font-size: 0.88rem;
-          color: oklch(1 0 0 / 0.5);
+          color: var(--muted-foreground);
           line-height: 1.5;
           margin-bottom: 1.5rem;
           max-width: 360px;
@@ -285,7 +286,7 @@ export default function LinksPage() {
         }
 
         .links-value-prop strong {
-          color: oklch(0.89 0.208 125);
+          color: var(--accent-lime);
           font-weight: 600;
         }
 
@@ -295,8 +296,8 @@ export default function LinksPage() {
           justify-content: center;
           gap: 0;
           margin-bottom: 1.5rem;
-          border: 1px solid oklch(1 0 0 / 0.08);
-          background: oklch(1 0 0 / 0.02);
+          border: 1px solid var(--border);
+          background: color-mix(in oklch, var(--foreground) 2%, transparent);
         }
 
         .links-stat {
@@ -306,14 +307,14 @@ export default function LinksPage() {
         }
 
         .links-stat + .links-stat {
-          border-left: 1px solid oklch(1 0 0 / 0.06);
+          border-left: 1px solid var(--border);
         }
 
         .links-stat-value {
           font-family: var(--font-heading), 'Oswald', sans-serif;
           font-size: 1.3rem;
           font-weight: 700;
-          color: oklch(1 0 0);
+          color: var(--foreground);
           letter-spacing: 0.02em;
           line-height: 1;
         }
@@ -321,7 +322,7 @@ export default function LinksPage() {
         .links-stat-label {
           font-family: var(--font-mono), monospace;
           font-size: 0.55rem;
-          color: oklch(1 0 0 / 0.3);
+          color: var(--muted-foreground);
           text-transform: uppercase;
           letter-spacing: 0.12em;
           margin-top: 0.3rem;
@@ -331,14 +332,14 @@ export default function LinksPage() {
         .links-trust {
           margin-bottom: 1.5rem;
           padding: 0.75rem 1rem;
-          background: oklch(1 0 0 / 0.02);
-          border: 1px solid oklch(1 0 0 / 0.06);
+          background: color-mix(in oklch, var(--foreground) 2%, transparent);
+          border: 1px solid var(--border);
         }
 
         .links-trust-title {
           font-family: var(--font-mono), monospace;
           font-size: 0.55rem;
-          color: oklch(1 0 0 / 0.2);
+          color: var(--muted-foreground);
           text-transform: uppercase;
           letter-spacing: 0.2em;
           margin-bottom: 0.5rem;
@@ -355,7 +356,7 @@ export default function LinksPage() {
         .links-brand {
           font-family: var(--font-heading), 'Oswald', sans-serif;
           font-size: 0.7rem;
-          color: oklch(1 0 0 / 0.18);
+          color: var(--muted-foreground);
           font-weight: 500;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -363,7 +364,8 @@ export default function LinksPage() {
         }
 
         .links-brand:hover {
-          color: oklch(1 0 0 / 0.4);
+          opacity: 1;
+          color: var(--foreground);
         }
 
         /* ── Divider ── */
@@ -373,10 +375,11 @@ export default function LinksPage() {
           background: linear-gradient(
             90deg,
             transparent,
-            oklch(0.89 0.208 125 / 0.25),
+            var(--accent-lime),
             transparent
           );
           margin-bottom: 1.5rem;
+          opacity: 0.25;
         }
 
         /* ── Link Cards ── */
@@ -387,11 +390,11 @@ export default function LinksPage() {
         }
 
         .link-card {
-          background: oklch(1 0 0 / 0.03);
-          border: 1px solid oklch(1 0 0 / 0.08);
+          background: color-mix(in oklch, var(--foreground) 3%, transparent);
+          border: 1px solid var(--border);
           padding: 1rem 1.25rem;
           text-decoration: none;
-          color: oklch(1 0 0);
+          color: var(--foreground);
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -420,7 +423,7 @@ export default function LinksPage() {
 
         .link-card:hover {
           transform: translateY(-2px);
-          border-color: oklch(0.89 0.208 125 / 0.5);
+          border-color: var(--accent-lime);
           background: oklch(0.89 0.208 125 / 0.04);
           box-shadow: 0 8px 32px oklch(0.89 0.208 125 / 0.08);
         }
@@ -435,24 +438,21 @@ export default function LinksPage() {
 
         /* Primary CTA variant */
         .link-card--primary {
-          border-color: oklch(0.89 0.208 125 / 0.3);
-          background: linear-gradient(
-            145deg,
-            oklch(0.89 0.208 125 / 0.06),
-            oklch(1 0 0 / 0.02)
-          );
+          border-color: var(--accent-lime);
+          border-width: 1px;
+          background: oklch(0.89 0.208 125 / 0.06);
         }
 
         .link-card--primary:hover {
-          border-color: oklch(0.89 0.208 125 / 0.7);
-          background: oklch(0.89 0.208 125 / 0.08);
+          border-color: var(--accent-lime);
+          background: oklch(0.89 0.208 125 / 0.12);
           box-shadow:
             0 8px 32px oklch(0.89 0.208 125 / 0.12),
             inset 0 1px 0 oklch(0.89 0.208 125 / 0.1);
         }
 
         .link-card--primary .link-card-title {
-          color: oklch(0.89 0.208 125);
+          color: var(--accent-lime);
         }
 
         .link-card-content {
@@ -465,18 +465,18 @@ export default function LinksPage() {
           font-size: 1.4rem;
           width: 44px;
           height: 44px;
-          background: oklch(1 0 0 / 0.05);
+          background: color-mix(in oklch, var(--foreground) 5%, transparent);
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
           transition: all 0.3s ease;
-          border: 1px solid oklch(1 0 0 / 0.06);
+          border: 1px solid var(--border);
         }
 
         .link-card:hover .link-card-icon {
           background: oklch(0.89 0.208 125 / 0.1);
-          border-color: oklch(0.89 0.208 125 / 0.3);
+          border-color: var(--accent-lime);
         }
 
         .link-card-text {
@@ -497,13 +497,13 @@ export default function LinksPage() {
 
         .link-card-desc {
           font-size: 0.78rem;
-          color: oklch(1 0 0 / 0.4);
+          color: var(--muted-foreground);
           font-weight: 300;
           line-height: 1.3;
         }
 
         .link-card-arrow {
-          color: oklch(1 0 0 / 0.2);
+          color: var(--muted-foreground);
           font-size: 0.85rem;
           transition: all 0.3s ease;
           flex-shrink: 0;
@@ -512,7 +512,7 @@ export default function LinksPage() {
 
         .link-card:hover .link-card-arrow {
           transform: translateX(4px);
-          color: oklch(0.89 0.208 125);
+          color: var(--accent-lime);
         }
 
         /* ── Socials Footer ── */
@@ -524,7 +524,7 @@ export default function LinksPage() {
         }
 
         .links-social-link {
-          color: oklch(1 0 0 / 0.2);
+          color: var(--muted-foreground);
           transition: all 0.3s ease;
           display: flex;
           align-items: center;
@@ -537,7 +537,7 @@ export default function LinksPage() {
         }
 
         .links-social-link:hover {
-          color: oklch(0.89 0.208 125);
+          color: var(--accent-lime);
           transform: scale(1.15);
         }
 
@@ -546,19 +546,19 @@ export default function LinksPage() {
           margin-top: 2rem;
           font-family: var(--font-mono), monospace;
           font-size: 0.6rem;
-          color: oklch(1 0 0 / 0.12);
+          color: var(--muted-foreground);
           letter-spacing: 0.15em;
           text-transform: uppercase;
         }
 
         .links-credit a {
-          color: oklch(0.89 0.208 125 / 0.3);
+          color: var(--accent-lime);
           text-decoration: none;
           transition: color 0.3s ease;
         }
 
         .links-credit a:hover {
-          color: oklch(0.89 0.208 125);
+          color: var(--accent-lime);
         }
 
         /* ── Responsive ── */

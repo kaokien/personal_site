@@ -10,14 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-white text-black hover:bg-accent-lime hover:text-black transition-colors',
+          'bg-foreground text-background hover:bg-accent-lime hover:text-black transition-colors',
         destructive:
           'bg-accent-lime text-black hover:bg-accent-lime/80 focus-visible:ring-accent-lime/20',
         outline:
-          'border border-white/20 bg-transparent hover:border-accent-lime hover:text-accent-lime transition-colors',
+          'border border-border bg-transparent text-foreground hover:border-accent-lime hover:text-accent-lime transition-colors',
         secondary:
-          'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white',
-        ghost: 'hover:bg-white/5 hover:text-white',
+          'bg-foreground/5 text-foreground/70 hover:bg-foreground/10 hover:text-foreground',
+        ghost: 'hover:bg-foreground/5 hover:text-foreground',
         link: 'text-accent-lime underline-offset-4 hover:underline',
       },
       size: {

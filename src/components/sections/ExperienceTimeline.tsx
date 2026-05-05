@@ -38,7 +38,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
 
         <div className="relative mx-auto mt-12 max-w-3xl">
           {/* Timeline line */}
-          <div className="absolute top-0 left-4 h-full w-px bg-white/10 md:left-1/2" />
+          <div className="bg-border absolute top-0 left-4 h-full w-px md:left-1/2" />
 
           {sortedExperiences.map((exp, index) => (
             <motion.div
@@ -55,13 +55,13 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
             >
               {/* Timeline dot */}
               <div
-                className={`border-accent-lime absolute top-1.5 left-2.5 h-3 w-3 border-2 bg-black md:left-auto ${
+                className={`border-accent-lime bg-background absolute top-1.5 left-2.5 h-3 w-3 border-2 md:left-auto ${
                   index % 2 === 0 ? 'md:right-[-7px]' : 'md:left-[-7px]'
                 }`}
               />
 
               {/* Content card */}
-              <div className="border-border bg-muted/30 rounded-none border p-5 transition-colors hover:border-white/20">
+              <div className="border-border bg-muted/30 hover:border-accent-lime/30 rounded-none border p-5 transition-colors">
                 {/* Date range */}
                 <div className="text-muted-foreground mb-2 flex items-center gap-2 font-mono text-xs md:justify-end">
                   {index % 2 !== 0 && <span className="hidden md:inline" />}

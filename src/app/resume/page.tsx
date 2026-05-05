@@ -26,7 +26,7 @@ export default function ResumePage() {
       <section className="bg-background min-h-screen py-12 font-mono sm:py-24">
         <div className="container mx-auto max-w-5xl px-4">
           {/* Header Block */}
-          <div className="mb-12 border-y border-white/20 py-8">
+          <div className="border-border mb-12 border-y py-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-[300px_1fr]">
               <div className="tracking-widest uppercase">
                 <h1 className="font-heading text-5xl leading-none font-bold">

@@ -17,9 +17,9 @@ const categoryLabels: Record<SkillCategory, string> = {
 };
 
 const levelColors: Record<SkillLevel, string> = {
-  [SkillLevel.BEGINNER]: 'bg-white/15',
-  [SkillLevel.INTERMEDIATE]: 'bg-white/25',
-  [SkillLevel.ADVANCED]: 'bg-white/40',
+  [SkillLevel.BEGINNER]: 'bg-foreground/15',
+  [SkillLevel.INTERMEDIATE]: 'bg-foreground/25',
+  [SkillLevel.ADVANCED]: 'bg-foreground/40',
   [SkillLevel.EXPERT]: 'bg-accent-lime',
 };
 
@@ -90,7 +90,7 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
                     .map((skill) => (
                       <div key={skill.id}>
                         <div className="mb-1 flex items-center justify-between">
-                          <span className="font-mono text-sm font-medium text-white/60">
+                          <span className="text-foreground/60 font-mono text-sm font-medium">
                             {skill.name}
                           </span>
                           <span className="text-muted-foreground font-mono text-xs capitalize">
