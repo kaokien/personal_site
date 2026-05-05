@@ -99,7 +99,7 @@ const SOCIALS = [
   },
   {
     label: 'Email',
-    href: 'mailto:hello@adupokukevin.com',
+    href: 'mailto:kevin.adupoku@icloud.com',
     icon: (
       <svg
         viewBox="0 0 24 24"
