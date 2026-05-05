@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { BaseLayout } from '@/components/layouts';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { getBlogPostBySlug, getAllPostSlugs } from '@/lib/notion';
+import { getBlogPostBySlug, getAllPostSlugs } from '@/lib/blog';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 interface BlogPostPageProps {
@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               
               For now, we'll render as simple text with line breaks.
             */}
-            <div className="whitespace-pre-wrap">{post.content}</div>
+            <div dangerouslySetInnerHTML={{ __html: post.content }} />
           </div>
 
           {/* Footer */}

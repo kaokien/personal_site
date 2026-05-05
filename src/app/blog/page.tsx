@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BaseLayout } from '@/components/layouts';
 import { BlogPostCard } from '@/components/sections';
 import { Button } from '@/components/ui/button';
-import { getBlogPosts } from '@/lib/notion';
+import { getBlogPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
   title: 'Blog | Kevin Adu-Poku',
