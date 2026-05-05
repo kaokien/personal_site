@@ -66,9 +66,7 @@ export default async function BlogPage() {
                 </p>
                 <div className="mt-6">
                   <Button asChild variant="outline">
-                    <Link href="mailto:kevin.adupoku@icloud.com">
-                      Get Notified
-                    </Link>
+                    <Link href="/contact">Get Notified</Link>
                   </Button>
                 </div>
               </div>

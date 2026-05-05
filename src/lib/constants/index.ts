@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   description:
     'Growth Solutions Engineer specializing in video technology, platform optimization, and driving measurable revenue through custom engineering solutions.',
   url: 'https://personal-site-zeta-snowy.vercel.app',
-  email: 'hello@adupokukevin.com',
+  email: 'kevin.adupoku@icloud.com',
   socials: [
     {
       name: 'GitHub',
@@ -18,11 +18,6 @@ export const siteConfig: SiteConfig = {
       url: 'https://www.linkedin.com/in/kevinadupoku',
       icon: 'linkedin',
     },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/kadupoku',
-      icon: 'twitter',
-    },
   ],
 };
 
@@ -31,5 +26,5 @@ export const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/projects', label: 'Projects' },
   { href: '/blog', label: 'Blog' },
-  { href: 'mailto:kevin.adupoku@icloud.com', label: 'Contact' },
+  { href: '/contact', label: 'Contact' },
 ];

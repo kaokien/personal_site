@@ -122,7 +122,7 @@ export default function AboutPage() {
             I&apos;m always open to discussing new projects and opportunities.
           </p>
           <a
-            href="mailto:kevin.adupoku@icloud.com"
+            href="/contact"
             className="bg-accent-lime hover:bg-accent-lime/80 mt-6 inline-flex items-center rounded-none px-6 py-3 text-sm font-bold tracking-widest text-black uppercase transition-colors"
           >
             Let&apos;s Talk
