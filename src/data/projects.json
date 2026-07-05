@@ -120,16 +120,16 @@
     "id": "6",
     "title": "Players Club Community",
     "slug": "players-club",
-    "description": "Discord community hub for the Coach Josh content brand, scaling past 400 athletes. Engineered moderation layers, automated onboarding workflows, and integrated custom LLM agents to provide real-time form checks and technique reviews.",
-    "longDescription": "Designed, launched, and managed the entire digital community infrastructure for the Coach Josh brand, serving as the central hub converting organic traffic into paid product signups.\n\nKey components and integrations implemented:\n• Custom AI Agent Form Checks: Engineered a Node.js Discord bot integrated with vision LLMs. When users upload sparring or heavy bag videos, the agent critiques boxing guard, alignment, and movement patterns based on Blueprints rules.\n• Automated Verification & Moderation: Configured custom AutoMod rules, regex patterns to block spam/malicious links, and verification gates (using Carl-bot and custom reaction roles) to secure the channel.\n• Engagement Funnels: Designed and organized category channels covering technique feedback, combat analysis, and accountability check-ins.\n• Live Event Broadcasting: Ran technology coordination for weekly live voice Q&As and fight review events, scaling the channel past 400 active members.",
+    "description": "Discord community hub for the Coach Josh content brand, scaling past 400 athletes. Configured moderation filters, automated onboarding, and integrated a Qwen-powered AI agent routing user inquiries to boxingwiki.org to serve as an organic lead generation tool.",
+    "longDescription": "Designed, launched, and managed the entire digital community infrastructure for the Coach Josh brand, serving as the central hub converting organic traffic into paid product signups.\n\nKey components and integrations implemented:\n• Qwen AI Agent Integration: Configured a Discord bot utilizing the Qwen model. The agent answers member technique questions by dynamically routing inquiries to query boxingwiki.org, acting as a conversational lead generation entry point for the brand's coaching services.\n• Automated Verification & Moderation: Configured custom AutoMod rules, regex patterns to block spam/malicious links, and verification gates (using Carl-bot and custom reaction roles) to secure the channel.\n• Engagement Funnels: Designed and organized category channels covering technique feedback, combat analysis, and accountability check-ins.\n• Live Event Broadcasting: Ran technology coordination for weekly live voice Q&As and fight review events, scaling the channel past 400 active members.",
     "category": "design",
     "status": "completed",
     "tags": [
       "Discord API",
-      "AI Agent Integration",
+      "Qwen AI Agent",
+      "Lead Generation",
       "Carl-bot Setup",
-      "AutoMod & Security",
-      "Community Strategy"
+      "AutoMod & Security"
     ],
     "thumbnailUrl": "/images/projects/players-club-thumb.png",
     "liveUrl": "https://discord.gg/coachjoshofficial",
