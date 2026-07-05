@@ -89,7 +89,7 @@
     ],
     "thumbnailUrl": "/images/projects/sachis-booty-builder-thumb.png",
     "images": ["/images/projects/sachis-booty-builder-thumb.png"],
-    "liveUrl": "https://sachis-booty-builder.vercel.app",
+    "liveUrl": "https://sachi-program.vercel.app/",
     "featured": true,
     "order": 4,
     "startDate": "2026-05-01",
