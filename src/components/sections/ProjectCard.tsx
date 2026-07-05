@@ -60,7 +60,10 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         {/* Content - "Lookbook" Caption Style */}
         <div className="space-y-1">
           <div className="flex items-start justify-between gap-4">
-            <h3 className="font-heading group-hover:text-accent-lime text-foreground text-xl leading-none font-bold tracking-tight uppercase transition-colors">
+            <h3 className="font-heading group-hover:text-accent-lime text-foreground flex items-baseline text-xl leading-none font-bold tracking-tight uppercase transition-colors">
+              <span className="text-accent-lime/60 mr-2 font-mono text-xs font-normal">
+                {(index + 1).toString().padStart(2, '0')}.
+              </span>
               {project.title}
             </h3>
             <span className="text-muted-foreground shrink-0 font-mono text-[10px] tracking-widest uppercase">
