@@ -42,7 +42,10 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-foreground text-4xl font-bold tracking-tight sm:text-5xl">
+            <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
+              § 01 &nbsp;·&nbsp; Biography
+            </span>
+            <h1 className="text-foreground font-heading text-4xl font-bold tracking-tight uppercase sm:text-5xl">
               About Me
             </h1>
             <p className="text-muted-foreground mt-6 text-lg leading-8">
@@ -88,8 +91,11 @@ export default function AboutPage() {
       {/* Capabilities — replaces the Skills Grid */}
       <section className="border-border border-y py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-muted-foreground mb-2 font-mono text-xs tracking-[0.3em] uppercase">
-            What I Do
+          <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
+            § 02 &nbsp;·&nbsp; Capabilities
+          </span>
+          <h2 className="text-foreground font-heading text-3xl font-bold tracking-tight uppercase">
+            Core Competencies
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {capabilities.map((cap) => (
@@ -115,11 +121,15 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="border-border border-t py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-foreground text-2xl font-bold">
+          <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
+            § 04 &nbsp;·&nbsp; Connect
+          </span>
+          <h2 className="text-foreground font-heading text-3xl font-bold tracking-tight uppercase">
             Interested in working together?
           </h2>
-          <p className="text-muted-foreground mt-4">
-            I&apos;m always open to discussing new projects and opportunities.
+          <p className="text-muted-foreground mt-4 font-mono text-xs tracking-wider uppercase">
+            Always open to discussing new projects, roles, and partnership
+            opportunities.
           </p>
           <a
             href="/contact"

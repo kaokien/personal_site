@@ -56,9 +56,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="font-heading text-foreground/20 hover:text-foreground text-[12vw] leading-[0.85] font-bold tracking-tighter uppercase transition-colors duration-500 select-none sm:text-[15vw]"
+            className="text-foreground/90 hover:text-accent-lime font-serif text-[12vw] leading-[0.85] font-normal normal-case italic transition-colors duration-500 select-none sm:text-[15vw]"
           >
-            Engineer
+            Engineer.
           </motion.h1>
         </div>
       </div>

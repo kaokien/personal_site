@@ -27,11 +27,14 @@ export function FeaturedProjects({ projects }: FeaturedProjectsProps) {
           className="flex flex-col items-center justify-between gap-4 sm:flex-row"
         >
           <div>
-            <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
+            <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
+              § 01 &nbsp;·&nbsp; Work Showcase
+            </span>
+            <h2 className="text-foreground font-heading text-3xl font-bold tracking-tight uppercase sm:text-4xl">
               Featured Projects
             </h2>
-            <p className="text-muted-foreground mt-2">
-              Some of my recent work that I&apos;m proud of
+            <p className="text-muted-foreground mt-2 font-mono text-xs tracking-wider uppercase">
+              A select catalog of deployed products & engineering solutions.
             </p>
           </div>
           <Button asChild variant="outline">

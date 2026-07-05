@@ -28,11 +28,14 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h2 className="text-foreground text-3xl font-bold tracking-tight sm:text-4xl">
+          <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
+            § 03 &nbsp;·&nbsp; Professional History
+          </span>
+          <h2 className="text-foreground font-heading text-3xl font-bold tracking-tight uppercase sm:text-4xl">
             Experience
           </h2>
-          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl">
-            My professional journey building digital products
+          <p className="text-muted-foreground mx-auto mt-4 max-w-2xl font-mono text-xs tracking-wider uppercase">
+            My professional journey engineering digital systems.
           </p>
         </motion.div>
 

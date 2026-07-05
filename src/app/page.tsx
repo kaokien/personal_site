@@ -2,7 +2,6 @@
 
 import { BaseLayout } from '@/components/layouts';
 import { Hero, FeaturedProjects } from '@/components/sections';
-import { Marquee } from '@/components/ui/marquee';
 import projectsData from '@/data/projects.json';
 import { Project, ProjectCategory, ProjectStatus } from '@/lib/types';
 
@@ -74,24 +73,6 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </div>
-
-      {/* Marquee */}
-      <div className="dark:border-border dark:text-muted-foreground border-b border-black/10 py-4 text-black/30">
-        <Marquee>
-          <span className="font-heading mx-8 text-lg font-bold tracking-widest uppercase">
-            {'///'} LATEST DROPS {'///'}
-          </span>
-          <span className="font-heading text-accent-lime mx-8 text-lg font-bold tracking-widest uppercase">
-            AVAILABLE FOR HIRE
-          </span>
-          <span className="font-heading mx-8 text-lg font-bold tracking-widest uppercase">
-            {'///'} NEW VISUALS {'///'}
-          </span>
-          <span className="font-heading text-accent-lime mx-8 text-lg font-bold tracking-widest uppercase">
-            ENGINEERING EXCELLENCE
-          </span>
-        </Marquee>
       </div>
 
       <FeaturedProjects projects={projects} />

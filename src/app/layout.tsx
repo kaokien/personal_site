@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Oswald, JetBrains_Mono } from 'next/font/google';
+import { Inter, Oswald, JetBrains_Mono, Fraunces } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/layouts';
 import { siteConfig } from '@/lib/constants';
@@ -18,6 +18,13 @@ const oswald = Oswald({
 const jetbrainsMono = JetBrains_Mono({
   variable: '--font-mono',
   subsets: ['latin'],
+});
+
+const fraunces = Fraunces({
+  variable: '--font-serif',
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -106,7 +113,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${oswald.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+        className={`${inter.variable} ${oswald.variable} ${jetbrainsMono.variable} ${fraunces.variable} font-sans antialiased`}
       >
         {/* Skip to main content — accessibility */}
         <a
