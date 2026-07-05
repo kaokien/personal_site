@@ -190,7 +190,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {project.longDescription && (
             <div className="mt-12 max-w-3xl">
               <h2 className="text-foreground text-2xl font-bold">Overview</h2>
-              <p className="text-muted-foreground mt-4 leading-relaxed">
+              <p className="text-muted-foreground mt-4 leading-relaxed whitespace-pre-wrap">
                 {project.longDescription}
               </p>
             </div>
