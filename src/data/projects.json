@@ -15,6 +15,24 @@
       "Stripe Payments",
       "Framer Motion"
     ],
+    "features": [
+      {
+        "title": "Next.js App Router",
+        "detail": "Deployed on Vercel for sub-second page loads"
+      },
+      {
+        "title": "GymDesk Integration",
+        "detail": "Automated schedule syncing and free trial captures"
+      },
+      {
+        "title": "Stripe Gateway",
+        "detail": "Integrated payment workflows for membership tiers"
+      },
+      {
+        "title": "Local SEO / GEO",
+        "detail": "Search schema optimizations ranking top in local queries"
+      }
+    ],
     "thumbnailUrl": "/images/projects/coach-josh-boxing-thumb.png",
     "images": ["/images/projects/coach-josh-boxing-thumb.png"],
     "liveUrl": "https://coachjoshboxing.com",
@@ -38,6 +56,24 @@
       "Stripe Subscriptions",
       "PWA",
       "Tailwind CSS"
+    ],
+    "features": [
+      {
+        "title": "Offline PWA Setup",
+        "detail": "Mobile-ready home-screen installation"
+      },
+      {
+        "title": "Mux Video HLS",
+        "detail": "Secure adaptive-bitrate video course streaming"
+      },
+      {
+        "title": "Interactive eBook",
+        "detail": "Apple HIG-compliant digital reader engine"
+      },
+      {
+        "title": "Stripe Subscriptions",
+        "detail": "Seamless customer portal for $497/mo programs"
+      }
     ],
     "thumbnailUrl": "/images/projects/coach-josh-official-thumb.png",
     "images": ["/images/projects/coach-josh-official-thumb.png"],
@@ -63,6 +99,24 @@
       "PWA",
       "JSON-LD SEO"
     ],
+    "features": [
+      {
+        "title": "Octalysis Gamification",
+        "detail": "Streaks and custom favorites lists for daily retention"
+      },
+      {
+        "title": "Interactive Muscle Map",
+        "detail": "SVG layout matching target regions to punches"
+      },
+      {
+        "title": "Heavy Bag Generator",
+        "detail": "Round timers with built-in voice commands"
+      },
+      {
+        "title": "JSON-LD SEO Layouts",
+        "detail": "Structured microdata indexing all 60+ techniques"
+      }
+    ],
     "thumbnailUrl": "/images/projects/boxing-wiki-thumb.png",
     "images": ["/images/projects/boxing-wiki-thumb.png"],
     "liveUrl": "https://boxingwiki.vercel.app",
@@ -87,6 +141,24 @@
       "Local Storage",
       "Responsive UI"
     ],
+    "features": [
+      {
+        "title": "PWA Integration",
+        "detail": "Add to Home Screen (A2HS) native wrapper"
+      },
+      {
+        "title": "localStorage Logging",
+        "detail": "Offline-ready weights and set completion logging"
+      },
+      {
+        "title": "Dynamic Guide",
+        "detail": "Auto-looping movement demonstration clips"
+      },
+      {
+        "title": "Tailwind Dashboard",
+        "detail": "Optimized typography with smooth light/dark toggles"
+      }
+    ],
     "thumbnailUrl": "/images/projects/sachis-booty-builder-thumb.png",
     "images": ["/images/projects/sachis-booty-builder-thumb.png"],
     "liveUrl": "https://sachi-program.vercel.app/",
@@ -110,6 +182,24 @@
       "DRM",
       "Enterprise API"
     ],
+    "features": [
+      {
+        "title": "$4M+ Portfolio",
+        "detail": "Custom implementations for NBC, NPR, Forbes, TMZ"
+      },
+      {
+        "title": "Ad Tech Delivery",
+        "detail": "VAST/VPAID configurations with Google IMA"
+      },
+      {
+        "title": "Cross-Platform DRM",
+        "detail": "Widevine, FairPlay, and PlayReady player setups"
+      },
+      {
+        "title": "Technical Leadership",
+        "detail": "Standardized Frontend support playbooks"
+      }
+    ],
     "thumbnailUrl": "/images/projects/enterprise-video-thumb.png",
     "featured": true,
     "order": 5,
@@ -131,6 +221,24 @@
       "Carl-bot Setup",
       "AutoMod & Security"
     ],
+    "features": [
+      {
+        "title": "Qwen AI Agent",
+        "detail": "Bot answering questions by routing to boxingwiki.org"
+      },
+      {
+        "title": "AutoMod Regex Filters",
+        "detail": "Custom spam, exploit, and raid security safeguards"
+      },
+      {
+        "title": "Onboarding Pipelines",
+        "detail": "Role verification and customized welcome setups"
+      },
+      {
+        "title": "400+ Active Members",
+        "detail": "Scaled community engagement directly driving leads"
+      }
+    ],
     "thumbnailUrl": "/images/projects/players-club-thumb.png",
     "liveUrl": "https://discord.gg/coachjoshofficial",
     "featured": true,
@@ -147,6 +255,24 @@
     "category": "art_culture",
     "status": "completed",
     "tags": ["Art Direction", "Culture", "Event Production", "Community"],
+    "features": [
+      {
+        "title": "Exhibition Curation",
+        "detail": "Creative art galleries and cinema displays at Yale"
+      },
+      {
+        "title": "Panel Production",
+        "detail": "Organized panels on modern Black culture"
+      },
+      {
+        "title": "Identity Branding",
+        "detail": "Handled graphic design and print posters"
+      },
+      {
+        "title": "Community Organizing",
+        "detail": "Bridged student and local Hamden community groups"
+      }
+    ],
     "thumbnailUrl": "/images/projects/project-negus-thumb.png",
     "images": ["/images/projects/project-negus-thumb.png"],
     "videos": [

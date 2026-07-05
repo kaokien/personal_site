@@ -186,13 +186,48 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* Long Description */}
+          {/* Split Overview and Features */}
           {project.longDescription && (
-            <div className="mt-12 max-w-3xl">
-              <h2 className="text-foreground text-2xl font-bold">Overview</h2>
-              <p className="text-muted-foreground mt-4 leading-relaxed whitespace-pre-wrap">
-                {project.longDescription}
-              </p>
+            <div className="mt-12 grid items-start gap-12 lg:grid-cols-12">
+              <div className="lg:col-span-8">
+                <h2 className="text-foreground font-heading mb-4 text-2xl font-bold uppercase">
+                  Overview
+                </h2>
+                <p className="text-muted-foreground leading-relaxed whitespace-pre-wrap">
+                  {project.longDescription}
+                </p>
+              </div>
+
+              {project.features && project.features.length > 0 && (
+                <aside className="lg:border-border space-y-6 lg:col-span-4 lg:border-l lg:pl-8">
+                  <div>
+                    <span className="text-accent-lime mb-1 block font-mono text-[10px] tracking-widest uppercase">
+                      KEY DELIVERABLES
+                    </span>
+                    <h3 className="text-foreground font-heading text-lg font-bold uppercase">
+                      Features & Outcomes
+                    </h3>
+                  </div>
+
+                  <ul className="space-y-6 text-sm">
+                    {project.features.map((feature, i) => (
+                      <li key={i} className="flex gap-3">
+                        <span className="text-accent-lime font-serif text-lg font-normal italic select-none">
+                          {(i + 1).toString().padStart(2, '0')}.
+                        </span>
+                        <div>
+                          <h4 className="text-foreground font-heading leading-tight font-bold uppercase">
+                            {feature.title}
+                          </h4>
+                          <p className="text-muted-foreground mt-1 text-xs leading-relaxed">
+                            {feature.detail}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </aside>
+              )}
             </div>
           )}
 

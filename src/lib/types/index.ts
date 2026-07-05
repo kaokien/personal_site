@@ -19,6 +19,11 @@ export interface ProjectVideo {
   description?: string;
 }
 
+export interface ProjectFeature {
+  title: string;
+  detail: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -38,6 +43,7 @@ export interface Project {
   startDate: string;
   endDate?: string;
   year?: string;
+  features?: ProjectFeature[];
 }
 
 // Experience Types
