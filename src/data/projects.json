@@ -168,6 +168,190 @@
     "year": "2026"
   },
   {
+    "id": "8",
+    "title": "NBC Peacock Live & EPG Guide",
+    "slug": "jwplayer-nbc-epg",
+    "description": "Interactive network portal for NBCUniversal streams. Featuring dynamically switching channels, live playback guide (EPG), and a synchronized program schedule.",
+    "longDescription": "Built an interactive, premium network program guide (EPG) layer integrated with JW Player FAST streams.\n\nKey features and integrations implemented:\n• FAST Stream Syncing: Loaded XML EPG feeds dynamically matching real-time playback statuses to scheduled programming.\n• Channel Swapping: Implemented high-performance streaming controls to hot-swap live feeds across Peacock Live, NBC News NOW, and USA Network channels.\n• Dynamic Progress Indicators: Designed timeline tracks tracking playback percentages and active show descriptors.\n• Fluid Micro-Interactions: Wrapped the portal in an ambient glow UI with glassmorphic cards and loading overlays to minimize perceived channel switching latency.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "JW Player",
+      "Video Engineering",
+      "HLS Stream",
+      "EPG Sync",
+      "Interactive UI"
+    ],
+    "features": [
+      {
+        "title": "FAST Stream Syncing",
+        "detail": "Real-time XML program guide sync with HLS playback"
+      },
+      {
+        "title": "Multi-channel Swapping",
+        "detail": "Low-latency hot-swaps between streaming channels"
+      },
+      {
+        "title": "Glassmorphic EPG Carousel",
+        "detail": "Clean, interactive timeline detailing active and next-up broadcasts"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/jwplayer-nbc-epg-thumb.jpg",
+    "images": ["/images/projects/jwplayer-nbc-epg-thumb.jpg"],
+    "liveUrl": "https://workarounds-56e060.gitlab.io/jwplayer-nbc-epg.html",
+    "featured": true,
+    "order": 5,
+    "startDate": "2026-04-01",
+    "year": "2026"
+  },
+  {
+    "id": "9",
+    "title": "Nebula — Web3 DRM Audio Player",
+    "slug": "nebula",
+    "description": "Premium Web3 DRM-protected audio player with simulated token-gated access, real-time royalty tracking, and a dynamic audio visualizer.",
+    "longDescription": "Engineered a Web3-themed music player demo featuring protected audio playback.\n\nKey features and technical architecture implemented:\n• Token-Gated Decryption: Simulated wallet connection validations checking token holding status to authorize signed media URLs.\n• Real-time Royalty Tracking: Created a royalty ticker tracking earnings per play, simulating micro-payment distribution channels.\n• Custom Audio Visualizer: Built an interactive canvas-based EQ visualizer rendering real-time audio frequencies.\n• DRM Encryption Panel: Provided debug controls exposing raw decryption keys and license configuration settings for educational demonstration.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "JW Player",
+      "DRM / Decryption",
+      "Web3",
+      "Audio Engineering",
+      "Canvas API"
+    ],
+    "features": [
+      {
+        "title": "Token-gated DRM",
+        "detail": "Simulated encrypted playback authorized via wallet connection"
+      },
+      {
+        "title": "Royalty Tracking",
+        "detail": "Real-time ticker counting micro-payment earnings per stream"
+      },
+      {
+        "title": "Custom Sound Visualizer",
+        "detail": "Canvas-driven frequency bars reactive to audio outputs"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/nebula-thumb.jpg",
+    "images": ["/images/projects/nebula-thumb.jpg"],
+    "liveUrl": "https://workarounds-56e060.gitlab.io/nebula.html",
+    "featured": true,
+    "order": 6,
+    "startDate": "2026-04-10",
+    "year": "2026"
+  },
+  {
+    "id": "10",
+    "title": "JW Player Data Architecture Demo",
+    "slug": "jwplayer-capabilities-demo",
+    "description": "Video analytics demo highlighting decoupled title overrides and custom metadata parameter injections for granular tracking.",
+    "longDescription": "Created a developer demonstration detailing advanced JW Player metadata configurations.\n\nKey features and parameters implemented:\n• Title Overriding: Overrode internal library media names with marketing-friendly titles dynamically in the client player.\n• Analytics Metadata Injection: Injected custom parameters (Placement Type, Date Filmed, Author/Editor) into player analytics ping payloads.\n• Analytics Debug Dashboard: Rendered interactive sidebars displaying active payload attributes alongside embedded configuration specs.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "JW Player",
+      "Video Analytics",
+      "Data Architecture",
+      "Metadata Injection"
+    ],
+    "features": [
+      {
+        "title": "Decoupled Title Override",
+        "detail": "Displaying clean audience-facing titles while keeping internal filenames"
+      },
+      {
+        "title": "Analytics Parameter Injections",
+        "detail": "Custom campaign, placement, and author parameters sent to analytics dashboard"
+      },
+      {
+        "title": "Developer Spec Dashboard",
+        "detail": "Live config inspector displaying player states and JSON schema payloads"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/jwplayer-capabilities-demo-thumb.jpg",
+    "images": ["/images/projects/jwplayer-capabilities-demo-thumb.jpg"],
+    "liveUrl": "https://workarounds-56e060.gitlab.io/jwplayer-capabilities-demo.html",
+    "featured": true,
+    "order": 7,
+    "startDate": "2026-04-12",
+    "year": "2026"
+  },
+  {
+    "id": "11",
+    "title": "NPR Firefox HLS Playback Workaround",
+    "slug": "npr-firefox-149-workaround",
+    "description": "Interactive decoder workaround for Firefox 149 HLS playback bugs stalling video feeds after ad completions.",
+    "longDescription": "Engineered a custom solution addressing a critical HLS playback crash in Firefox 149 (Mozilla Bug 2026875).\n\nKey logic and simulation features implemented:\n• Stall Simulation: Intercepted raw play events to simulate HLS decoder stutters, replicating NPR's Lecrae Tiny Desk Concert player issue.\n• Seek Reset Hook: Attached state-seeking triggers firing immediately post-ad resolution to reset MSE buffer queues.\n• Event Listeners: Linked fallback timers monitoring buffering periods to execute soft seeks when playback stall thresholds are reached.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "JW Player",
+      "HLS Playback",
+      "Bug Fix",
+      "Firefox Workaround",
+      "Video Engineering"
+    ],
+    "features": [
+      {
+        "title": "Firefox 149 Stall Fix",
+        "detail": "Custom seek hooks resolving MSE decoder hangs"
+      },
+      {
+        "title": "Pre-roll ad completion triggers",
+        "detail": "Soft seeks resetting the buffer queue post-ad"
+      },
+      {
+        "title": "Active Debug Logger",
+        "detail": "Inline console logs demonstrating workaround executions in real time"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/npr-firefox-149-workaround-thumb.jpg",
+    "images": ["/images/projects/npr-firefox-149-workaround-thumb.jpg"],
+    "liveUrl": "https://workarounds-56e060.gitlab.io/npr_firefox_149_workaround.html",
+    "featured": true,
+    "order": 8,
+    "startDate": "2026-04-15",
+    "year": "2026"
+  },
+  {
+    "id": "12",
+    "title": "JW Player Extended Audio Description",
+    "slug": "jwplayer-extended-ad",
+    "description": "Accessible video player utilizing Web Speech API and custom cue parsers to support WCAG 2.0 Extended Audio Descriptions.",
+    "longDescription": "Developed a WCAG 2.0 SC 1.2.7 compliant extended audio description implementation for standard video media.\n\nKey accessibility features implemented:\n• Playback Cue Interrupts: Monitored video time ticks against custom description cue arrays to pause main media playback.\n• Web Speech API (TTS) Integration: Used Text-to-Speech speech synthesizers to dictate visual descriptions, or pre-recorded audio assets when available.\n• Automatic Resumption: Re-established media playback immediately after description cue audio finishes speaking.\n• WebVTT Parser: Wrote inline parsers supporting external `kind=\"descriptions\"` WebVTT files to feed interactive cue handlers.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "Accessibility",
+      "JW Player",
+      "Web Speech API",
+      "WebVTT",
+      "WCAG 2.0 Compliance"
+    ],
+    "features": [
+      {
+        "title": "WCAG 2.0 SC 1.2.7 compliance",
+        "detail": "Supports narration for visual information exceeding program pauses"
+      },
+      {
+        "title": "Web Speech API integration",
+        "detail": "Dynamic speech synthesis reading descriptions aloud"
+      },
+      {
+        "title": "WebVTT Parser",
+        "detail": "Runtime parser converting text tracks to interactive player interrupts"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/jwplayer-extended-ad-thumb.jpg",
+    "images": ["/images/projects/jwplayer-extended-ad-thumb.jpg"],
+    "liveUrl": "https://workarounds-56e060.gitlab.io/jwplayer-extended-ad.html",
+    "featured": true,
+    "order": 9,
+    "startDate": "2026-04-18",
+    "year": "2026"
+  },
+  {
     "id": "5",
     "title": "Enterprise Video Solutions",
     "slug": "enterprise-video",
@@ -202,7 +386,7 @@
     ],
     "thumbnailUrl": "/images/projects/enterprise-video-thumb.png",
     "featured": true,
-    "order": 5,
+    "order": 10,
     "startDate": "2021-12-01",
     "year": "2021"
   },
@@ -210,7 +394,7 @@
     "id": "6",
     "title": "Players Club Community",
     "slug": "players-club",
-    "description": "Discord community hub for the Coach Josh content brand, scaling past 400 athletes. Configured moderation filters, automated onboarding, and integrated a Qwen-powered AI agent routing user inquiries to boxingwiki.org to serve as an organic lead generation tool.",
+    "description": "Discord community hub for the Coach Josh content brand, scaling past 400 athletes. Configured moderation filters, automated onboarding, and integrated a Qwen-powered AI agent routing user inquiries to boxingwiki.org to serve as organic lead generation tool.",
     "longDescription": "Designed, launched, and managed the entire digital community infrastructure for the Coach Josh brand, serving as the central hub converting organic traffic into paid product signups.\n\nKey components and integrations implemented:\n• Qwen AI Agent Integration: Configured a Discord bot utilizing the Qwen model. The agent answers member technique questions by dynamically routing inquiries to query boxingwiki.org, acting as a conversational lead generation entry point for the brand's coaching services.\n• Automated Verification & Moderation: Configured custom AutoMod rules, regex patterns to block spam/malicious links, and verification gates (using Carl-bot and custom reaction roles) to secure the channel.\n• Engagement Funnels: Designed and organized category channels covering technique feedback, combat analysis, and accountability check-ins.\n• Live Event Broadcasting: Ran technology coordination for weekly live voice Q&As and fight review events, scaling the channel past 400 active members.",
     "category": "design",
     "status": "completed",
@@ -242,7 +426,7 @@
     "thumbnailUrl": "/images/projects/players-club-thumb.png",
     "liveUrl": "https://discord.gg/coachjoshofficial",
     "featured": true,
-    "order": 6,
+    "order": 11,
     "startDate": "2024-01-01",
     "year": "2024"
   },
@@ -294,7 +478,7 @@
     ],
     "liveUrl": "#",
     "featured": true,
-    "order": 7,
+    "order": 12,
     "startDate": "2016-01-01",
     "endDate": "2017-12-31",
     "year": "2016-2017"
