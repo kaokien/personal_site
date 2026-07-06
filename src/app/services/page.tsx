@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Services | Kevin Adu-Poku',
   description:
-    'Consulting services for social media creators, influencers, and media platforms. UGC pricing, usage rights contract scoping, and video engineering.',
+    'High-performance monetization platforms for creators and custom video engineering for media companies.',
 };
 
 export default function ServicesPage() {
@@ -17,39 +17,40 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <span className="text-accent-lime mb-3 block font-mono text-xs font-bold tracking-widest uppercase">
-              § 02 &nbsp;·&nbsp; Services & Consulting
+              § 02 &nbsp;·&nbsp; Services & Strategy
             </span>
             <h1 className="text-foreground font-heading text-[8vw] leading-[0.95] font-bold tracking-tight uppercase md:text-[60px] lg:text-[72px]">
               Creator & Video{' '}
               <span className="text-accent-lime font-serif font-normal normal-case italic">
-                Solutions.
+                Systems.
               </span>
             </h1>
             <p className="text-muted-foreground mt-6 max-w-2xl font-serif text-lg leading-relaxed italic">
-              Consulting for creators, influencers, and media companies to build
-              digital products, set up community backend pipelines, and
-              negotiate brand licensing terms.
+              I build high-performance monetization platforms for content
+              creators and configure custom video playback architectures for
+              media companies. I align technology, community backend systems,
+              and brand licensing around direct business value.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Services List */}
+      {/* Core Services List */}
       <section className="border-border bg-muted/5 border-b py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
-                § 02.1 &nbsp;·&nbsp; Offerings
+                § 02.1 &nbsp;·&nbsp; Capabilities
               </span>
               <h2 className="text-foreground font-heading text-3xl font-bold uppercase">
-                What I Do
+                Core Domains of Work
               </h2>
             </div>
             <div className="self-end lg:col-span-7 lg:col-start-6">
               <p className="text-muted-foreground font-mono text-sm leading-relaxed tracking-wider uppercase">
-                Four distinct consulting formats built on real shipping
-                experience.
+                Three areas of engineering specialization, grounded in real
+                deployment experience.
               </p>
             </div>
           </div>
@@ -62,28 +63,30 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  UGC & Licensing Strategy
+                  Creator Product Platforms
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Asset Scoping & Pricing
+                  eCommerce & PWAs
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Advising creators and brands on structuring User Generated
-                  Content terms. Protecting creator ownership while delivering
-                  high-yielding creative assets to brands.
+                  Building custom web systems that turn audience attention into
+                  direct digital sales. We design offline-capable applications,
+                  interactive reader layouts, and secure checkout funnels.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • UGC Pricing Models (organic placement vs. paid ad usage)
+                    • Custom Next.js architectures with Stripe Checkout API
+                    integrations
                   </li>
                   <li>
-                    • Usage Rights Scoping (30, 90-day, or perpetual ad
-                    licenses)
+                    • Apple HIG-compliant digital reader engines for training
+                    guides
                   </li>
                   <li>
-                    • Creator Profile Whitelisting & Dark Post Deal negotiation
+                    • Mobile PWA wrappers supporting Add to Home Screen (A2HS)
+                    and offline state
                   </li>
                 </ul>
               </div>
@@ -96,33 +99,36 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Creator Product Sales
+                  Enterprise Video Solutions
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  eCommerce & PWAs
+                  Ad Tech & Playback
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Converting social reach into digital product sales. Building
-                  custom platforms, interactive training blueprints, and digital
-                  courses.
+                  Video player integrations and ad tech configuration for
+                  high-traffic media properties. Resolving cross-platform
+                  playback issues and securing streams across web, mobile, and
+                  CTV.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • Mobile PWAs (Progressive Web Apps) with offline storage
+                    • Custom player SDK setups (JW Player, HLS streaming tuning)
                   </li>
                   <li>
-                    • Apple HIG-inspired digital eBook readers with progress
-                    tracking
+                    • Monetization scheduling (VAST/VPAID standards with Google
+                    IMA & FreeWheel)
                   </li>
-                  <li>• Stripe checkout funnels and subscription portals</li>
+                  <li>
+                    • DRM stream configurations (Widevine, FairPlay, PlayReady)
+                  </li>
                 </ul>
               </div>
             </li>
 
             {/* Service 3 */}
-            <li className="border-border grid grid-cols-1 gap-x-6 gap-y-4 border-b py-10 md:grid-cols-12">
+            <li className="grid grid-cols-1 gap-x-6 gap-y-4 py-10 md:grid-cols-12">
               <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
                 III.
               </span>
@@ -131,61 +137,27 @@ export default function ServicesPage() {
                   Community Backend & AI
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Discord, bots & integrations
+                  Discord & Chat Automations
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Designing chat and community platforms to engage and retain
-                  members. Setting up automated onboarding scripts, role
-                  verifications, and custom AI assistants.
+                  Designing Discord community spaces that convert and retain
+                  audiences. Implementing verification gates, security filters,
+                  and custom chatbot routing.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • Custom Verification & Role Onboarding (e.g. Carl-bot and
-                    reaction roles)
+                    • Discord verification onboarding flows (Carl-bot, reaction
+                    roles)
                   </li>
                   <li>
-                    • Conversational AI Assistants (e.g. deploying Qwen agents
-                    to dynamically route questions to site resources)
+                    • Conversational AI routing bots (deploying Qwen agents
+                    linked to site resources)
                   </li>
                   <li>
-                    • Automated Server Protection (e.g. AutoMod regex keyword
-                    filters and anti-raid setups)
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            {/* Service 4 */}
-            <li className="grid grid-cols-1 gap-x-6 gap-y-4 py-10 md:grid-cols-12">
-              <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
-                IV.
-              </span>
-              <div className="md:col-span-4">
-                <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Enterprise Video Setup
-                </h3>
-                <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  JW Player & Ad Tech
-                </p>
-              </div>
-              <div className="space-y-4 md:col-span-6 md:col-start-7">
-                <p className="text-muted-foreground leading-relaxed">
-                  Video engineering for large media platforms. Setting up
-                  players for reliable delivery, ad servers, and secure
-                  playbacks.
-                </p>
-                <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
-                  <li>
-                    • Player SDK configurations (JW Player, HLS playback tuning)
-                  </li>
-                  <li>
-                    • Ad server integrations (VAST/VPAID with Google IMA &
-                    FreeWheel)
-                  </li>
-                  <li>
-                    • DRM playback architectures (Widevine, FairPlay, PlayReady)
+                    • Server protection rules (AutoMod regex keyword filters,
+                    anti-raid scripts)
                   </li>
                 </ul>
               </div>
@@ -194,87 +166,72 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Creator Deal Strategy & Contract Auditing */}
+      {/* Engagement Strategy Segment */}
       <section className="border-border border-b py-20">
         <div className="container mx-auto px-4">
           <div className="grid items-start gap-12 lg:grid-cols-12">
             <div className="space-y-6 lg:col-span-5">
               <span className="text-accent-lime block font-mono text-xs font-bold tracking-widest uppercase">
-                § 02.2 &nbsp;·&nbsp; Creator Strategy
+                § 02.2 &nbsp;·&nbsp; Partnership & Scoping
               </span>
               <h2 className="text-foreground font-heading text-4xl leading-tight font-bold uppercase">
-                Deal Strategy & Contract Auditing
+                How I Structure Engagements
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Most creators sign generic brand agreements without scoping
-                usage rights, giving away long-term value for a single flat fee.
-                I work with creators to audit incoming offers, price usage
-                rights correctly, and structure brand partnerships that scale.
+                Whether designing custom web tools, auditing brand partnership
+                contracts, or debugging player playback architectures, I focus
+                on clear project bounds, defined deliverables, and transparent
+                pricing.
               </p>
             </div>
 
             <div className="space-y-8 lg:col-span-7">
               <div className="border-border bg-muted/10 border p-6 md:p-8">
                 <h3 className="text-foreground font-heading mb-3 text-lg font-bold uppercase">
-                  How I Help Creators Structure Partnerships
+                  1. Project Discovery & Auditing
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  We rebuild how you price and negotiate deal terms, focusing on
-                  three key areas:
+                  We look at your current technology setups, target metrics, and
+                  codebases to identify friction points:
                 </p>
-                <ol className="text-muted-foreground space-y-4 text-sm">
-                  <li className="flex gap-2">
-                    <span className="text-accent-lime font-bold">1.</span>
-                    <span>
-                      <strong>Asset Pricing Frameworks:</strong> Separating base
-                      content creation costs from active advertising usage
-                      rights, ensuring you get paid as the ad spend scales.
-                    </span>
+                <ul className="text-muted-foreground list-disc space-y-2 pl-4 text-sm">
+                  <li>
+                    <strong>Creator Audits:</strong> Mapping conversion leakages
+                    in checkout paths or community onboarding flows.
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent-lime font-bold">2.</span>
-                    <span>
-                      <strong>Whitelisting & Profile Access:</strong>{' '}
-                      Determining fair pricing structures when brands request
-                      access to run ads through your social handles (Meta/TikTok
-                      Partnership Ads).
-                    </span>
+                  <li>
+                    <strong>Brand Licensing Audits:</strong> Reviewing incoming
+                    brand contracts to structure fair UGC pricing limits and
+                    time-bounded usage rights.
                   </li>
-                  <li className="flex gap-2">
-                    <span className="text-accent-lime font-bold">3.</span>
-                    <span>
-                      <strong>Exclusivity & Category Scope:</strong> Narrowing
-                      brand exclusivity windows so you aren&apos;t locked out of
-                      competing partnerships for minimal compensation.
-                    </span>
+                  <li>
+                    <strong>Video Audits:</strong> Debugging ad-firing errors or
+                    device compatibility problems in media playback pipelines.
                   </li>
-                </ol>
+                </ul>
               </div>
 
               <div className="border-border border p-6 md:p-8">
                 <h3 className="text-foreground font-heading mb-3 text-lg font-bold uppercase">
-                  Contract Audits & Asset Delivery
+                  2. Implementation & Delivery
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  I review incoming contract drafts to remove trap clauses and
-                  ensure clear execution parameters:
+                  Engagements focus on rapid, high-quality development sprints
+                  with defined timelines:
                 </p>
-                <ul className="text-muted-foreground list-disc space-y-3 pl-4 text-sm">
+                <ul className="text-muted-foreground list-disc space-y-2 pl-4 text-sm">
                   <li>
-                    <strong>Time & Platform Boundaries:</strong> Limiting active
-                    ad usage to 30, 60, or 90 days and defining precise channels
-                    (e.g., paid social only) to prevent unauthorized
-                    distribution.
+                    <strong>Static & eCommerce Builds:</strong> Launching custom
+                    platforms built with Next.js, Stripe, and Mux Video.
                   </li>
                   <li>
-                    <strong>Anti-Sublicensing Controls:</strong> Eliminating
-                    third-party transfers so brands cannot sell your likeness to
-                    affiliates.
+                    <strong>Workflow Automations:</strong> Deploying Discord
+                    verifications, secure filters, and conversational bots.
                   </li>
                   <li>
-                    <strong>Asset Flow Automation:</strong> Setting up simple,
-                    structured file delivery pipelines so brands access approved
-                    deliverables on defined release timelines.
+                    <strong>Client Hand-off:</strong> Packaging codebases with
+                    clean inline documentation and instructions for easy
+                    maintenance.
                   </li>
                 </ul>
               </div>
@@ -293,8 +250,8 @@ export default function ServicesPage() {
             Build Your Digital Presence
           </h2>
           <p className="text-muted-foreground mx-auto mt-4 mb-8 max-w-xl text-sm leading-relaxed">
-            Let&apos;s structure your next brand agreement, build custom
-            checkout flows, or set up automated community moderation rules.
+            Ready to build custom checkout flows, optimize video streaming, or
+            set up automated community pipelines?
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild size="lg">
