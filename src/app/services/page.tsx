@@ -128,25 +128,30 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Community Backend Setup
+                  Community Backend & AI
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Discord & Automations
+                  Discord, bots & integrations
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Building community environments that retain members. Setting
-                  up verification, moderation rules, and support integrations.
+                  Designing chat and community platforms to engage and retain
+                  members. Setting up automated onboarding scripts, role
+                  verifications, and custom AI assistants.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
-                  <li>• Custom Discord verification flows & bot setups</li>
                   <li>
-                    • Qwen AI Agent configurations routing questions to
-                    boxingwiki.org
+                    • Custom Verification & Role Onboarding (e.g. Carl-bot and
+                    reaction roles)
                   </li>
                   <li>
-                    • AutoMod regex keyword filters and security safeguards
+                    • Conversational AI Assistants (e.g. deploying Qwen agents
+                    to dynamically route questions to site resources)
+                  </li>
+                  <li>
+                    • Automated Server Protection (e.g. AutoMod regex keyword
+                    filters and anti-raid setups)
                   </li>
                 </ul>
               </div>
