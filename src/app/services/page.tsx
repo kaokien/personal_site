@@ -194,57 +194,58 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* UGC & Licensing Deeper Dive */}
+      {/* Creator Deal Strategy & Contract Auditing */}
       <section className="border-border border-b py-20">
         <div className="container mx-auto px-4">
           <div className="grid items-start gap-12 lg:grid-cols-12">
             <div className="space-y-6 lg:col-span-5">
               <span className="text-accent-lime block font-mono text-xs font-bold tracking-widest uppercase">
-                § 02.2 &nbsp;·&nbsp; Deep Dive
+                § 02.2 &nbsp;·&nbsp; Creator Strategy
               </span>
               <h2 className="text-foreground font-heading text-4xl leading-tight font-bold uppercase">
-                UGC Pricing & Usage Rights Architecture
+                Deal Strategy & Contract Auditing
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Most influencer brand deals are priced incorrectly, ignoring the
-                real value of the media assets. I consult with creators and
-                brands to structure content agreements based on actual ad spend
-                usage.
+                Most creators sign generic brand agreements without scoping
+                usage rights, giving away long-term value for a single flat fee.
+                I work with creators to audit incoming offers, price usage
+                rights correctly, and structure brand partnerships that scale.
               </p>
             </div>
 
             <div className="space-y-8 lg:col-span-7">
               <div className="border-border bg-muted/10 border p-6 md:p-8">
                 <h3 className="text-foreground font-heading mb-3 text-lg font-bold uppercase">
-                  UGC Asset Pricing Structure
+                  How I Help Creators Structure Partnerships
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  Content pricing must be separate from usage pricing. A fair
-                  deal divides rate metrics:
+                  We rebuild how you price and negotiate deal terms, focusing on
+                  three key areas:
                 </p>
                 <ol className="text-muted-foreground space-y-4 text-sm">
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">1.</span>
                     <span>
-                      <strong>Base Creation Rate:</strong> Covers script,
-                      production values, and placement on the creator&apos;s
-                      channels (scaled by organic reach).
+                      <strong>Asset Pricing Frameworks:</strong> Separating base
+                      content creation costs from active advertising usage
+                      rights, ensuring you get paid as the ad spend scales.
                     </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">2.</span>
                     <span>
-                      <strong>Paid Usage Rights:</strong> Fee added if the brand
-                      runs the content as an ad. Calculated as a percentage of
-                      the base rate per 30, 90, or 365 days of active ad spend.
+                      <strong>Whitelisting & Profile Access:</strong>{' '}
+                      Determining fair pricing structures when brands request
+                      access to run ads through your social handles (Meta/TikTok
+                      Partnership Ads).
                     </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">3.</span>
                     <span>
-                      <strong>Partnership / Whitelisting:</strong> Separate
-                      licensing rate allowing brands to run ads directly from
-                      the creator&apos;s social handle.
+                      <strong>Exclusivity & Category Scope:</strong> Narrowing
+                      brand exclusivity windows so you aren&apos;t locked out of
+                      competing partnerships for minimal compensation.
                     </span>
                   </li>
                 </ol>
@@ -252,26 +253,28 @@ export default function ServicesPage() {
 
               <div className="border-border border p-6 md:p-8">
                 <h3 className="text-foreground font-heading mb-3 text-lg font-bold uppercase">
-                  Usage Rights Framing
+                  Contract Audits & Asset Delivery
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  Broad contracts that ask for &quot;perpetual usage&quot; give
-                  away value for free. Ensure contract terms are bounded:
+                  I review incoming contract drafts to remove trap clauses and
+                  ensure clear execution parameters:
                 </p>
                 <ul className="text-muted-foreground list-disc space-y-3 pl-4 text-sm">
                   <li>
-                    <strong>Time Limits:</strong> Keep active ad usage contracts
-                    capped at 30, 60, or 90 days, with options to extend.
+                    <strong>Time & Platform Boundaries:</strong> Limiting active
+                    ad usage to 30, 60, or 90 days and defining precise channels
+                    (e.g., paid social only) to prevent unauthorized
+                    distribution.
                   </li>
                   <li>
-                    <strong>Platform Limits:</strong> Define authorized channels
-                    (e.g., &quot;Meta and TikTok ads only&quot; vs.
-                    &quot;broadcast television&quot;).
-                  </li>
-                  <li>
-                    <strong>No Sub-Licensing:</strong> Prohibit third-party
-                    transfers, preventing brands from passing content to
+                    <strong>Anti-Sublicensing Controls:</strong> Eliminating
+                    third-party transfers so brands cannot sell your likeness to
                     affiliates.
+                  </li>
+                  <li>
+                    <strong>Asset Flow Automation:</strong> Setting up simple,
+                    structured file delivery pipelines so brands access approved
+                    deliverables on defined release timelines.
                   </li>
                 </ul>
               </div>
