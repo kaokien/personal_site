@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Services | Kevin Adu-Poku',
   description:
-    'Consulting services for social media influencers, media platforms, and creators. UGC pricing, usage rights architecture, and video product engineering.',
+    'Consulting services for social media creators, influencers, and media platforms. UGC pricing, usage rights contract scoping, and video engineering.',
 };
 
 export default function ServicesPage() {
@@ -26,9 +26,9 @@ export default function ServicesPage() {
               </span>
             </h1>
             <p className="text-muted-foreground mt-6 max-w-2xl font-serif text-lg leading-relaxed italic">
-              Helping high-reach creators, social influencers, and media
-              platforms build digital product ecosystems, structure high-yield
-              partnerships, and automate community operations.
+              Consulting for creators, influencers, and media companies to build
+              digital products, set up community backend pipelines, and
+              negotiate brand licensing terms.
             </p>
           </div>
         </div>
@@ -43,13 +43,13 @@ export default function ServicesPage() {
                 § 02.1 &nbsp;·&nbsp; Offerings
               </span>
               <h2 className="text-foreground font-heading text-3xl font-bold uppercase">
-                How We Can Work Together
+                What I Do
               </h2>
             </div>
             <div className="self-end lg:col-span-7 lg:col-start-6">
               <p className="text-muted-foreground font-mono text-sm leading-relaxed tracking-wider uppercase">
-                Four defined consulting domains designed to turn attention into
-                sustainable, automated revenue.
+                Four distinct consulting formats built on real shipping
+                experience.
               </p>
             </div>
           </div>
@@ -65,25 +65,26 @@ export default function ServicesPage() {
                   UGC & Licensing Strategy
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Consulting for Creators & Brands
+                  Asset Scoping & Pricing
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Advising influencers and brands on structuring User Generated
-                  Content agreements that protect creator IP while maximizing
-                  brand conversions.
+                  Advising creators and brands on structuring User Generated
+                  Content terms. Protecting creator ownership while delivering
+                  high-yielding creative assets to brands.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • UGC Pricing Models (organic flat-rates vs. paid usage
-                    additions)
+                    • UGC Pricing Models (organic placement vs. paid ad usage)
                   </li>
                   <li>
-                    • Usage Rights Scoping (30, 90-day, or perpetual ad license
-                    structures)
+                    • Usage Rights Scoping (30, 90-day, or perpetual ad
+                    licenses)
                   </li>
-                  <li>• Whitelisting & Dark Post Negotiation frameworks</li>
+                  <li>
+                    • Creator Profile Whitelisting & Dark Post Deal negotiation
+                  </li>
                 </ul>
               </div>
             </li>
@@ -95,29 +96,27 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Creator Brand Monetization
+                  Creator Product Sales
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Digital Products & PWAs
+                  eCommerce & PWAs
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Translating social attention into high-margin products. We
-                  design and build offline-capable web platforms, interactive
-                  training blueprints, and digital courses.
+                  Converting social reach into digital product sales. Building
+                  custom platforms, interactive training blueprints, and digital
+                  courses.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • Custom Progressive Web Apps (PWAs) with local caching
+                    • Mobile PWAs (Progressive Web Apps) with offline storage
                   </li>
                   <li>
-                    • Apple HIG-inspired digital eBook readers & progress logs
+                    • Apple HIG-inspired digital eBook readers with progress
+                    tracking
                   </li>
-                  <li>
-                    • Stripe billing engines, subscription gates, and user
-                    checkout funnels
-                  </li>
+                  <li>• Stripe checkout funnels and subscription portals</li>
                 </ul>
               </div>
             </li>
@@ -129,29 +128,25 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Community Setup & AI Agents
+                  Community Backend Setup
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Discord & Bot Architectures
+                  Discord & Automations
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Engineering community funnels that build high engagement.
-                  Implementing automated moderation rules and AI tools to triage
-                  onboarding.
+                  Building community environments that retain members. Setting
+                  up verification, moderation rules, and support integrations.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
+                  <li>• Custom Discord verification flows & bot setups</li>
                   <li>
-                    • Discord bots & custom onboarding automation workflows
+                    • Qwen AI Agent configurations routing questions to
+                    boxingwiki.org
                   </li>
                   <li>
-                    • LLM Agent Integrations (Qwen API dynamic knowledge-base
-                    routing)
-                  </li>
-                  <li>
-                    • AutoMod regex filters, anti-raid verification setups, and
-                    roles
+                    • AutoMod regex keyword filters and security safeguards
                   </li>
                 </ul>
               </div>
@@ -164,28 +159,28 @@ export default function ServicesPage() {
               </span>
               <div className="md:col-span-4">
                 <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Enterprise Video Solutions
+                  Enterprise Video Setup
                 </h3>
                 <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Video Players & Ad Tech
+                  JW Player & Ad Tech
                 </p>
               </div>
               <div className="space-y-4 md:col-span-6 md:col-start-7">
                 <p className="text-muted-foreground leading-relaxed">
-                  Custom player engineering for major platforms and
-                  broadcasters. Optimizing media players for performance,
-                  monetization, and device compatibility.
+                  Video engineering for large media platforms. Setting up
+                  players for reliable delivery, ad servers, and secure
+                  playbacks.
                 </p>
                 <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
                   <li>
-                    • Player SDK Integrations (JW Player, customized HLS
-                    playbacks)
+                    • Player SDK configurations (JW Player, HLS playback tuning)
                   </li>
                   <li>
-                    • VAST/VPAID Google IMA and FreeWheel ad tag scheduling
+                    • Ad server integrations (VAST/VPAID with Google IMA &
+                    FreeWheel)
                   </li>
                   <li>
-                    • DRM systems configurations (Widevine, FairPlay, PlayReady)
+                    • DRM playback architectures (Widevine, FairPlay, PlayReady)
                   </li>
                 </ul>
               </div>
@@ -200,16 +195,16 @@ export default function ServicesPage() {
           <div className="grid items-start gap-12 lg:grid-cols-12">
             <div className="space-y-6 lg:col-span-5">
               <span className="text-accent-lime block font-mono text-xs font-bold tracking-widest uppercase">
-                § 02.3 &nbsp;·&nbsp; Deep Dive
+                § 02.2 &nbsp;·&nbsp; Deep Dive
               </span>
               <h2 className="text-foreground font-heading text-4xl leading-tight font-bold uppercase">
                 UGC Pricing & Usage Rights Architecture
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Standard influencer brand deals are often structured
-                poorly—failing to account for the real value of the media
-                assets. I consult with creators and brands to align licensing
-                and delivery around measurable performance metrics.
+                Most influencer brand deals are priced incorrectly, ignoring the
+                real value of the media assets. I consult with creators and
+                brands to structure content agreements based on actual ad spend
+                usage.
               </p>
             </div>
 
@@ -219,36 +214,32 @@ export default function ServicesPage() {
                   UGC Asset Pricing Structure
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  Pricing shouldn&apos;t just cover content creation time. It
-                  must reflect the media&apos;s utility across different
-                  marketing vectors:
+                  Content pricing must be separate from usage pricing. A fair
+                  deal divides rate metrics:
                 </p>
                 <ol className="text-muted-foreground space-y-4 text-sm">
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">1.</span>
                     <span>
-                      <strong>Base Organic Rate:</strong> Covers creation and
-                      placement on the creator&apos;s channels (determined by
-                      average organic reach and production values).
+                      <strong>Base Creation Rate:</strong> Covers script,
+                      production values, and placement on the creator&apos;s
+                      channels (scaled by organic reach).
                     </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">2.</span>
                     <span>
-                      <strong>Paid Usage Additions:</strong> Licensing rates
-                      added when a brand runs the content as paid ads. Typically
-                      scaled as a percentage of the base rate per 30, 90, or 365
-                      days of active ad spend.
+                      <strong>Paid Usage Rights:</strong> Fee added if the brand
+                      runs the content as an ad. Calculated as a percentage of
+                      the base rate per 30, 90, or 365 days of active ad spend.
                     </span>
                   </li>
                   <li className="flex gap-2">
                     <span className="text-accent-lime font-bold">3.</span>
                     <span>
-                      <strong>Whitelisting / Creator Licensing:</strong>{' '}
-                      Negotiating terms to run ads directly from the
-                      creator&apos;s profile (Meta/TikTok Partnership Ads),
-                      demanding separate compensation since it affects the
-                      creator&apos;s direct audience profile.
+                      <strong>Partnership / Whitelisting:</strong> Separate
+                      licensing rate allowing brands to run ads directly from
+                      the creator&apos;s social handle.
                     </span>
                   </li>
                 </ol>
@@ -259,23 +250,22 @@ export default function ServicesPage() {
                   Usage Rights Framing
                 </h3>
                 <p className="text-muted-foreground mb-4 text-xs leading-relaxed">
-                  Licensing terms must be explicitly scoped. Broad, open-ended
-                  clauses like &quot;perpetual usage&quot; dilute creator value:
+                  Broad contracts that ask for &quot;perpetual usage&quot; give
+                  away value for free. Ensure contract terms are bounded:
                 </p>
                 <ul className="text-muted-foreground list-disc space-y-3 pl-4 text-sm">
                   <li>
-                    <strong>Time-Bounded Rights:</strong> Target standard 30,
-                    60, or 90-day limits for paid social, with optional contract
-                    renewals.
+                    <strong>Time Limits:</strong> Keep active ad usage contracts
+                    capped at 30, 60, or 90 days, with options to extend.
                   </li>
                   <li>
-                    <strong>Platform Scope:</strong> Explicitly list authorized
-                    platforms (e.g., &quot;Meta, TikTok, and YouTube Shorts
-                    only&quot; vs. &quot;all digital out-of-home media&quot;).
+                    <strong>Platform Limits:</strong> Define authorized channels
+                    (e.g., &quot;Meta and TikTok ads only&quot; vs.
+                    &quot;broadcast television&quot;).
                   </li>
                   <li>
-                    <strong>Sub-Licensing:</strong> Disallowing third-party
-                    transfers, preventing brands from selling your image to
+                    <strong>No Sub-Licensing:</strong> Prohibit third-party
+                    transfers, preventing brands from passing content to
                     affiliates.
                   </li>
                 </ul>
@@ -289,18 +279,18 @@ export default function ServicesPage() {
       <section className="py-20 text-center">
         <div className="container mx-auto px-4">
           <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
-            § 02.4 &nbsp;·&nbsp; Action
+            § 02.3 &nbsp;·&nbsp; Action
           </span>
           <h2 className="text-foreground font-heading mb-4 text-3xl font-bold uppercase">
-            Need to Optimize Your Monetization?
+            Build Your Digital Presence
           </h2>
           <p className="text-muted-foreground mx-auto mt-4 mb-8 max-w-xl text-sm leading-relaxed">
-            Let&apos;s discuss custom eCommerce funnels, bot configurations, or
-            audit your upcoming brand partnership deal terms.
+            Let&apos;s structure your next brand agreement, build custom
+            checkout flows, or set up automated community moderation rules.
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/contact">Book a Strategy Call</Link>
+              <Link href="/contact">Start a Project</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/projects">View Case Studies</Link>
