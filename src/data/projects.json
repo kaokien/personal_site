@@ -171,8 +171,8 @@
     "id": "13",
     "title": "FoodWiki",
     "slug": "food-wiki",
-    "description": "Interactive sports nutrition encyclopedia and gamified athlete health tracker. Deployed on Vercel. Built with Next.js, featuring an interactive muscle-targeted whole-food database and a virtual fighter pixel avatar synced to client training stats.",
-    "longDescription": "Developed FoodWiki (also deployed as PlateWiki), a free interactive encyclopedia of sports nutrition and whole foods designed for athlete performance. Deployed to Vercel and built with the Next.js App Router.\n\nKey features and technical systems implemented:\n• Biometric Mirror System: Configured a retro pixel-art canvas-based virtual fighter avatar. The avatar tracks three client-persisted metrics (Nourishment, Fitness, and Energy) that decay or recover based on real-world training inputs (e.g. logging workouts, completing meal planners).\n• Gamified XP Evolution: Designed a 6-stage athlete growth timeline mapping user progression from Prospect (Sprout) up to Hall of Famer (Earthy Sage) using a structured gamification reward engine.\n• Targeted Nutrition Database: Created an interactive muscle map associating specific whole-food nutrient profiles with athletic development goals and preparation techniques.\n• Clerk Auth Integration: Configured secure member authentication via Clerk to manage user training streaks and persistent training records.",
+    "description": "Interactive sports nutrition encyclopedia and gamified athlete health tracker. Deployed on Vercel. Built with Next.js, featuring an interactive muscle-targeted whole-food database, virtual fighter avatar, webcam-based pose tracking, and AI meal planners.",
+    "longDescription": "Developed FoodWiki (also deployed as PlateWiki), an interactive sports nutrition encyclopedia and gamified health platform designed for athletes. Built with Next.js, TypeScript, and Tailwind CSS.\n\nKey features and technical systems implemented:\n• Biometric Mirror System: Configured a retro pixel-art canvas-based virtual fighter avatar. The avatar tracks three client-persisted metrics (Nourishment, Fitness, and Energy) that decay or recover based on real-world training inputs (e.g. logging workouts, completing meal plans).\n• Webcam AI Tracker: Integrated client-side computer vision/pose estimation ('Speed Bag Blitz' exercises) tracking physical movements to gamify workout sessions and score points.\n• Targeted Nutrition Database: Created an interactive muscle map associating specific whole-food nutrient profiles with athletic development goals and preparation techniques.\n• Dynamic Meal Planner: Built a goal-aware generator questionnaire that outputs structured meal plans based on user goals, skills, and kitchen equipment.\n• Progression Economy: Implemented user leveling from Sprout up to Earthy Sage, daily streak calendars, and a Virtual Kitchen Shop to spend earned Seed Coins on cosmetic gear.",
     "category": "web_app",
     "status": "completed",
     "tags": [
@@ -180,8 +180,8 @@
       "Clerk Auth",
       "Gamification",
       "Canvas API",
-      "PWA",
-      "SEO"
+      "Computer Vision",
+      "PWA"
     ],
     "features": [
       {
@@ -189,16 +189,16 @@
         "detail": "Retro pixel-art fighter tracking real-world Nourishment, Fitness, and Energy states"
       },
       {
-        "title": "Gamified XP Evolution",
-        "detail": "6-stage ranking timeline from Sprout (0 XP) up to Earthy Sage (5,000+ XP)"
+        "title": "Webcam AI Tracker",
+        "detail": "Client-side motion detection gamifying physical exercise directly in browser"
       },
       {
         "title": "Interactive Nutrition Guide",
         "detail": "Target muscle group maps linking whole foods to physical attributes"
       },
       {
-        "title": "Clerk Auth & Streaks",
-        "detail": "Secure profile sync recording user stats, favorite lists, and training logs"
+        "title": "Dynamic Meal Planner",
+        "detail": "Structured meal plans customized by target goals, skills, and equipment"
       }
     ],
     "thumbnailUrl": "/images/projects/food-wiki-thumb.png",
