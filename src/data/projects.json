@@ -127,10 +127,10 @@
   },
   {
     "id": "13",
-    "title": "FoodWiki",
-    "slug": "food-wiki",
-    "description": "Interactive sports nutrition encyclopedia and gamified athlete health tracker. Deployed on Vercel. Built with Next.js, featuring an interactive muscle-targeted whole-food database, virtual fighter avatar, webcam-based pose tracking, and AI meal planners.",
-    "longDescription": "Developed FoodWiki (also deployed as PlateWiki), an interactive sports nutrition encyclopedia and gamified health platform designed for athletes. Built with Next.js, TypeScript, and Tailwind CSS.\n\nKey features and technical systems implemented:\n• Biometric Mirror System: Configured a retro pixel-art canvas-based virtual fighter avatar. The avatar tracks three client-persisted metrics (Nourishment, Fitness, and Energy) that decay or recover based on real-world training inputs (e.g. logging workouts, completing meal plans).\n• Webcam AI Tracker: Integrated client-side computer vision/pose estimation ('Speed Bag Blitz' exercises) tracking physical movements to gamify workout sessions and score points.\n• Targeted Nutrition Database: Created an interactive muscle map associating specific whole-food nutrient profiles with athletic development goals and preparation techniques.\n• Dynamic Meal Planner: Built a goal-aware generator questionnaire that outputs structured meal plans based on user goals, skills, and kitchen equipment.\n• Progression Economy: Implemented user leveling from Sprout up to Earthy Sage, daily streak calendars, and a Virtual Kitchen Shop to spend earned Seed Coins on cosmetic gear.",
+    "title": "PlateWiki",
+    "slug": "plate-wiki",
+    "description": "Interactive sports nutrition encyclopedia and gamified athlete health tracker. Deployed on Vercel. Built with Next.js, featuring an interactive muscle-targeted nutrition database, virtual fighter avatar, webcam-based pose tracking, and AI meal planners.",
+    "longDescription": "Developed PlateWiki, an interactive sports nutrition encyclopedia and gamified health platform designed for athletes. Built with Next.js, TypeScript, and Tailwind CSS.\n\nKey features and technical systems implemented:\n• Biometric Mirror System: Configured a retro pixel-art canvas-based virtual fighter avatar. The avatar tracks three client-persisted metrics (Nourishment, Fitness, and Energy) that decay or recover based on real-world training inputs (e.g. logging workouts, completing meal plans).\n• Webcam AI Tracker: Integrated client-side computer vision/pose estimation ('Speed Bag Blitz' exercises) tracking physical movements to gamify workout sessions and score points.\n• Targeted Nutrition Database: Created an interactive muscle map associating specific whole-food nutrient profiles with athletic development goals and preparation techniques.\n• Dynamic Meal Planner: Built a goal-aware generator questionnaire that outputs structured meal plans based on user goals, skills, and kitchen equipment.\n• Progression Economy: Implemented user leveling from Sprout up to Earthy Sage, daily streak calendars, and a Virtual Kitchen Shop to spend earned Seed Coins on cosmetic gear.",
     "category": "web_app",
     "status": "completed",
     "tags": [
@@ -159,8 +159,8 @@
         "detail": "Structured meal plans customized by target goals, skills, and equipment"
       }
     ],
-    "thumbnailUrl": "/images/projects/food-wiki-thumb.png",
-    "images": ["/images/projects/food-wiki-thumb.png"],
+    "thumbnailUrl": "/images/projects/plate-wiki-thumb.png",
+    "images": ["/images/projects/plate-wiki-thumb.png"],
     "liveUrl": "https://plate-wiki.vercel.app/",
     "featured": true,
     "order": 4,
