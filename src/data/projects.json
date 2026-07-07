@@ -126,48 +126,6 @@
     "year": "2025"
   },
   {
-    "id": "4",
-    "title": "Sachi's Booty Builder",
-    "slug": "sachis-booty-builder",
-    "description": "Mobile-first workout tracker and exercise guide. Deployed on Vercel. Built with React, TypeScript, and Tailwind CSS, featuring PWA home-screen installation and offline logs.",
-    "longDescription": "Designed and deployed a specialized, mobile-first training utility for 'Sachi's Booty Builder' to enable high-quality workout logging on the gym floor. Deployed to Vercel.\n\nKey features and technical architecture implemented:\n• PWA Capabilities: Developed service worker integrations and Add to Home Screen (A2HS) prompts for full application installation, offering a fast, standalone application interface.\n• Local Storage Synchronization: Created a custom React state manager syncing directly with localStorage to persist weight logs, progression graphs, and set-completion streaks offline.\n• Interactive Exercise Guide: Constructed a responsive database of target movements with auto-looping instructional video demonstrations and setup checklist panels.\n• Responsive Brutalist Layout: Applied a high-contrast, touch-optimized visual layout leveraging CSS variables for smooth light/dark switching and high-density legibility.",
-    "category": "web_app",
-    "status": "completed",
-    "tags": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "PWA",
-      "Local Storage",
-      "Responsive UI"
-    ],
-    "features": [
-      {
-        "title": "PWA Integration",
-        "detail": "Add to Home Screen (A2HS) native wrapper"
-      },
-      {
-        "title": "localStorage Logging",
-        "detail": "Offline-ready weights and set completion logging"
-      },
-      {
-        "title": "Dynamic Guide",
-        "detail": "Auto-looping movement demonstration clips"
-      },
-      {
-        "title": "Tailwind Dashboard",
-        "detail": "Optimized typography with smooth light/dark toggles"
-      }
-    ],
-    "thumbnailUrl": "/images/projects/sachis-booty-builder-thumb.png",
-    "images": ["/images/projects/sachis-booty-builder-thumb.png"],
-    "liveUrl": "https://sachi-program.vercel.app/",
-    "featured": true,
-    "order": 4,
-    "startDate": "2026-05-01",
-    "year": "2026"
-  },
-  {
     "id": "13",
     "title": "FoodWiki",
     "slug": "food-wiki",
@@ -205,8 +163,50 @@
     "images": ["/images/projects/food-wiki-thumb.png"],
     "liveUrl": "https://plate-wiki.vercel.app/",
     "featured": true,
-    "order": 5,
+    "order": 4,
     "startDate": "2026-06-01",
+    "year": "2026"
+  },
+  {
+    "id": "4",
+    "title": "Sachi's Booty Builder",
+    "slug": "sachis-booty-builder",
+    "description": "Mobile-first workout tracker and exercise guide. Deployed on Vercel. Built with React, TypeScript, and Tailwind CSS, featuring PWA home-screen installation and offline logs.",
+    "longDescription": "Designed and deployed a specialized, mobile-first training utility for 'Sachi's Booty Builder' to enable high-quality workout logging on the gym floor. Deployed to Vercel.\n\nKey features and technical architecture implemented:\n• PWA Capabilities: Developed service worker integrations and Add to Home Screen (A2HS) prompts for full application installation, offering a fast, standalone application interface.\n• Local Storage Synchronization: Created a custom React state manager syncing directly with localStorage to persist weight logs, progression graphs, and set-completion streaks offline.\n• Interactive Exercise Guide: Constructed a responsive database of target movements with auto-looping instructional video demonstrations and setup checklist panels.\n• Responsive Brutalist Layout: Applied a high-contrast, touch-optimized visual layout leveraging CSS variables for smooth light/dark switching and high-density legibility.",
+    "category": "web_app",
+    "status": "completed",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PWA",
+      "Local Storage",
+      "Responsive UI"
+    ],
+    "features": [
+      {
+        "title": "PWA Integration",
+        "detail": "Add to Home Screen (A2HS) native wrapper"
+      },
+      {
+        "title": "localStorage Logging",
+        "detail": "Offline-ready weights and set completion logging"
+      },
+      {
+        "title": "Dynamic Guide",
+        "detail": "Auto-looping movement demonstration clips"
+      },
+      {
+        "title": "Tailwind Dashboard",
+        "detail": "Optimized typography with smooth light/dark toggles"
+      }
+    ],
+    "thumbnailUrl": "/images/projects/sachis-booty-builder-thumb.png",
+    "images": ["/images/projects/sachis-booty-builder-thumb.png"],
+    "liveUrl": "https://sachi-program.vercel.app/",
+    "featured": true,
+    "order": 5,
+    "startDate": "2026-05-01",
     "year": "2026"
   },
   {
