@@ -75,8 +75,9 @@ export function Hero() {
             Kevin Adu-Poku
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
-            I built video platforms for Forbes, NPR, and Fox. Before that, Apple
-            and Yale. I make the things behind the things work.
+            Solutions engineer at JW Player — kept video running for Forbes,
+            NPR, Fox, and a dozen others. Before that, Apple and Yale. I fix the
+            things nobody sees until they break.
           </p>
         </motion.div>
 
