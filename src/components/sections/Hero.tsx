@@ -75,8 +75,8 @@ export function Hero() {
             Kevin Adu-Poku
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
-            Engineering Growth Systems. Architecting performance, optimizing
-            platforms, and driving measurable revenue.
+            I built video platforms for Forbes, NPR, and Fox. Before that, Apple
+            and Yale. I make the things behind the things work.
           </p>
         </motion.div>
 
