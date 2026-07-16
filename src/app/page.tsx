@@ -1,7 +1,12 @@
 'use client';
 
 import { BaseLayout } from '@/components/layouts';
-import { Hero, FeaturedProjects } from '@/components/sections';
+import {
+  Hero,
+  AboutTeaser,
+  ServicesTeaser,
+  FeaturedProjects,
+} from '@/components/sections';
 import projectsData from '@/data/projects.json';
 import { Project, ProjectCategory, ProjectStatus } from '@/lib/types';
 
@@ -75,6 +80,8 @@ export default function HomePage() {
         </div>
       </div>
 
+      <AboutTeaser />
+      <ServicesTeaser />
       <FeaturedProjects projects={projects} />
     </BaseLayout>
   );

@@ -1,4 +1,6 @@
 export { Hero } from './Hero';
+export { AboutTeaser } from './AboutTeaser';
+export { ServicesTeaser } from './ServicesTeaser';
 export { ProjectCard } from './ProjectCard';
 export { SkillsGrid } from './SkillsGrid';
 export { ExperienceTimeline } from './ExperienceTimeline';
