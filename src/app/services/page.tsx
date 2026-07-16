@@ -38,7 +38,7 @@ export default function ServicesPage() {
       {/* Core Services List */}
       <section className="border-border bg-muted/5 border-b py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-12 grid gap-10 lg:grid-cols-12">
+          <div className="mb-12 grid gap-6 lg:grid-cols-12 lg:gap-10">
             <div className="lg:col-span-5">
               <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">
                 § 02.1 &nbsp;·&nbsp; Capabilities
@@ -57,109 +57,124 @@ export default function ServicesPage() {
 
           <ol className="border-border mt-8 border-t">
             {/* Service 1 */}
-            <li className="border-border grid grid-cols-1 gap-x-6 gap-y-4 border-b py-10 md:grid-cols-12">
-              <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
-                I.
-              </span>
-              <div className="md:col-span-4">
-                <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Creator Product Platforms
-                </h3>
-                <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  eCommerce & PWAs
-                </p>
-              </div>
-              <div className="space-y-4 md:col-span-6 md:col-start-7">
-                <p className="text-muted-foreground leading-relaxed">
-                  Building custom web systems that turn audience attention into
-                  direct digital sales. We design offline-capable applications,
-                  interactive reader layouts, and secure checkout funnels.
-                </p>
-                <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
-                  <li>
-                    • Custom Next.js architectures with Stripe Checkout API
-                    integrations
-                  </li>
-                  <li>
-                    • Apple HIG-compliant digital reader engines for training
-                    guides
-                  </li>
-                  <li>
-                    • Mobile PWA wrappers supporting Add to Home Screen (A2HS)
-                    and offline state
-                  </li>
-                </ul>
+            <li className="border-border border-b py-8 md:py-10">
+              <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-12">
+                <div className="flex items-baseline gap-3 md:contents">
+                  <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
+                    I.
+                  </span>
+                  <div className="md:col-span-4">
+                    <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
+                      Creator Product Platforms
+                    </h3>
+                    <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
+                      eCommerce & PWAs
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4 md:col-span-6 md:col-start-7">
+                  <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
+                    Building custom web systems that turn audience attention
+                    into direct digital sales. We design offline-capable
+                    applications, interactive reader layouts, and secure
+                    checkout funnels.
+                  </p>
+                  <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
+                    <li>
+                      • Custom Next.js architectures with Stripe Checkout API
+                      integrations
+                    </li>
+                    <li>
+                      • Apple HIG-compliant digital reader engines for training
+                      guides
+                    </li>
+                    <li>
+                      • Mobile PWA wrappers supporting Add to Home Screen (A2HS)
+                      and offline state
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
 
             {/* Service 2 */}
-            <li className="border-border grid grid-cols-1 gap-x-6 gap-y-4 border-b py-10 md:grid-cols-12">
-              <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
-                II.
-              </span>
-              <div className="md:col-span-4">
-                <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Enterprise Video Solutions
-                </h3>
-                <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Ad Tech & Playback
-                </p>
-              </div>
-              <div className="space-y-4 md:col-span-6 md:col-start-7">
-                <p className="text-muted-foreground leading-relaxed">
-                  Video player integrations and ad tech configuration for
-                  high-traffic media properties. Resolving cross-platform
-                  playback issues and securing streams across web, mobile, and
-                  CTV.
-                </p>
-                <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
-                  <li>
-                    • Custom player SDK setups (JW Player, HLS streaming tuning)
-                  </li>
-                  <li>
-                    • Monetization scheduling (VAST/VPAID standards with Google
-                    IMA & FreeWheel)
-                  </li>
-                  <li>
-                    • DRM stream configurations (Widevine, FairPlay, PlayReady)
-                  </li>
-                </ul>
+            <li className="border-border border-b py-8 md:py-10">
+              <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-12">
+                <div className="flex items-baseline gap-3 md:contents">
+                  <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
+                    II.
+                  </span>
+                  <div className="md:col-span-4">
+                    <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
+                      Enterprise Video Solutions
+                    </h3>
+                    <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
+                      Ad Tech & Playback
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4 md:col-span-6 md:col-start-7">
+                  <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
+                    Video player integrations and ad tech configuration for
+                    high-traffic media properties. Resolving cross-platform
+                    playback issues and securing streams across web, mobile, and
+                    CTV.
+                  </p>
+                  <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
+                    <li>
+                      • Custom player SDK setups (JW Player, HLS streaming
+                      tuning)
+                    </li>
+                    <li>
+                      • Monetization scheduling (VAST/VPAID standards with
+                      Google IMA & FreeWheel)
+                    </li>
+                    <li>
+                      • DRM stream configurations (Widevine, FairPlay,
+                      PlayReady)
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
 
             {/* Service 3 */}
-            <li className="grid grid-cols-1 gap-x-6 gap-y-4 py-10 md:grid-cols-12">
-              <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
-                III.
-              </span>
-              <div className="md:col-span-4">
-                <h3 className="text-foreground font-heading mb-1 text-2xl font-bold uppercase">
-                  Community Backend & AI
-                </h3>
-                <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                  Discord & Chat Automations
-                </p>
-              </div>
-              <div className="space-y-4 md:col-span-6 md:col-start-7">
-                <p className="text-muted-foreground leading-relaxed">
-                  Designing Discord community spaces that convert and retain
-                  audiences. Implementing verification gates, security filters,
-                  and custom chatbot routing.
-                </p>
-                <ul className="text-muted-foreground space-y-2 font-mono text-xs tracking-wider uppercase">
-                  <li>
-                    • Discord verification onboarding flows (Carl-bot, reaction
-                    roles)
-                  </li>
-                  <li>
-                    • Conversational AI routing bots (deploying Qwen agents
-                    linked to site resources)
-                  </li>
-                  <li>
-                    • Server protection rules (AutoMod regex keyword filters,
-                    anti-raid scripts)
-                  </li>
-                </ul>
+            <li className="py-8 md:py-10">
+              <div className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-12">
+                <div className="flex items-baseline gap-3 md:contents">
+                  <span className="text-accent-lime font-serif text-3xl font-normal italic md:col-span-1">
+                    III.
+                  </span>
+                  <div className="md:col-span-4">
+                    <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
+                      Community Backend & AI
+                    </h3>
+                    <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
+                      Discord & Chat Automations
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4 md:col-span-6 md:col-start-7">
+                  <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
+                    Designing Discord community spaces that convert and retain
+                    audiences. Implementing verification gates, security
+                    filters, and custom chatbot routing.
+                  </p>
+                  <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
+                    <li>
+                      • Discord verification onboarding flows (Carl-bot,
+                      reaction roles)
+                    </li>
+                    <li>
+                      • Conversational AI routing bots (deploying Qwen agents
+                      linked to site resources)
+                    </li>
+                    <li>
+                      • Server protection rules (AutoMod regex keyword filters,
+                      anti-raid scripts)
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ol>
@@ -169,7 +184,7 @@ export default function ServicesPage() {
       {/* Engagement Strategy Segment */}
       <section className="border-border border-b py-20">
         <div className="container mx-auto px-4">
-          <div className="grid items-start gap-12 lg:grid-cols-12">
+          <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="space-y-6 lg:col-span-5">
               <span className="text-accent-lime block font-mono text-xs font-bold tracking-widest uppercase">
                 § 02.2 &nbsp;·&nbsp; Partnership & Scoping
@@ -253,7 +268,7 @@ export default function ServicesPage() {
             Ready to build custom checkout flows, optimize video streaming, or
             set up automated community pipelines?
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg">
               <Link href="/contact">Start a Project</Link>
             </Button>

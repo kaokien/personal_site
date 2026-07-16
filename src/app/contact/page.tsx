@@ -24,7 +24,7 @@ export default function ContactPage() {
                 your project.
               </span>
             </h1>
-            <p className="text-muted-foreground mt-4 max-w-xl font-mono text-lg text-xs tracking-wider uppercase">
+            <p className="text-muted-foreground mt-4 max-w-xl font-mono text-xs tracking-wider uppercase">
               A short description is plenty. I&apos;ll reply directly to verify
               scope and engineering alignment.
             </p>
@@ -34,7 +34,7 @@ export default function ContactPage() {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid items-start gap-12 lg:grid-cols-12">
+          <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-12">
             {/* Form Section */}
             <div className="space-y-8 lg:col-span-7">
               <div className="border-border bg-muted/10 rounded-none border p-6 md:p-10">

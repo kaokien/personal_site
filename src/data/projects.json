@@ -3,19 +3,23 @@
     "id": "1",
     "title": "Coach Josh Boxing",
     "slug": "coach-josh-boxing",
-    "description": "High-conversion marketing site and member acquisition funnel for a Hamden, CT boxing gym. Deployed on Vercel. Built with Next.js, featuring GymDesk API sync, automated trial signups, and local SEO.",
-    "longDescription": "Developed the complete web presence and customer acquisition system for Coach Josh Boxing in Hamden, CT. Deployed to Vercel and built with the Next.js App Router for optimal performance.\n\nKey features and integrations implemented:\n• GymDesk Integration: Seamlessly synchronized the GymDesk booking API with custom client-side scheduling widgets, establishing a frictionless free trial signup flow for kids, teens, adults, and women's programs.\n• Stripe Checkout: Wired secure payment gateways supporting membership tiers ($100–$175/mo) and private coaching booking.\n• Automated Outreach: Integrated webhook triggers linking signups to automated SMS notifications and targeted email nurture sequences.\n• SEO & Local search: Crafted local search and GEO schema optimization, positioning the site at the top of organic New Haven area search queries, helping drive gym capacity past 200 active athletes.",
+    "description": "High-conversion marketing site and member acquisition funnel for a Hamden, CT boxing gym. Managed Google AdSense campaigns growing MRR from $1,200 to $7,500. Deployed on Vercel with Next.js, GymDesk API sync, automated trial signups, and local SEO.",
+    "longDescription": "Developed the complete web presence and customer acquisition system for Coach Josh Boxing in Hamden, CT. Deployed to Vercel and built with the Next.js App Router for optimal performance.\n\nKey features and integrations implemented:\n• Google AdSense Campaign Management: Managed ad campaigns end-to-end, scaling the gym's monthly recurring revenue from $1,200 to $7,500 through targeted keyword bidding, audience segmentation, and continuous ad creative optimization.\n• GymDesk Integration: Seamlessly synchronized the GymDesk booking API with custom client-side scheduling widgets, establishing a frictionless free trial signup flow for kids, teens, adults, and women's programs.\n• Stripe Checkout: Wired secure payment gateways supporting membership tiers ($100–$175/mo) and private coaching booking.\n• Automated Outreach: Integrated webhook triggers linking signups to automated SMS notifications and targeted email nurture sequences.\n• SEO & Local search: Crafted local search and GEO schema optimization, positioning the site at the top of organic New Haven area search queries, helping drive gym capacity past 200 active athletes.",
     "category": "web_app",
     "status": "completed",
     "tags": [
       "Next.js",
       "Vercel",
+      "Google AdSense",
       "SEO/GEO",
       "GymDesk API",
-      "Stripe Payments",
-      "Framer Motion"
+      "Stripe Payments"
     ],
     "features": [
+      {
+        "title": "Ad Campaign Management",
+        "detail": "Google AdSense campaigns scaling MRR from $1.2K to $7.5K"
+      },
       {
         "title": "Next.js App Router",
         "detail": "Deployed on Vercel for sub-second page loads"

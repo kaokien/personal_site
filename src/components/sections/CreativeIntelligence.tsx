@@ -387,7 +387,7 @@ export function CreativeIntelligence() {
   const activeLobe = brainData.find((d) => d.id === activeLobeId);
 
   return (
-    <section className="text-foreground relative min-h-[800px] overflow-hidden bg-neutral-950 py-24">
+    <section className="text-foreground relative overflow-hidden bg-neutral-950 py-16 md:min-h-[800px] md:py-24">
       {/* Background Grid */}
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
