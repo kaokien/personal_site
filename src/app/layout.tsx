@@ -34,6 +34,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
@@ -76,6 +79,7 @@ const jsonLd = {
     name: 'Kevin Adu-Poku',
     jobTitle: 'Growth Solutions Engineer',
     url: siteConfig.url,
+    image: `${siteConfig.url}/og-image.png`,
     email: siteConfig.email,
     sameAs: siteConfig.socials.map((s) => s.url),
     worksFor: {

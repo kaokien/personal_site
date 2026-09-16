@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/constants';
 import projectsData from '@/data/projects.json';
+import { getBlogPosts } from '@/lib/blog';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = siteConfig.url;
 
   // Static pages
@@ -32,5 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...projectRoutes];
+  // Dynamic blog posts
+  const posts = await getBlogPosts();
+  const blogRoutes = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt || Date.now()),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...projectRoutes, ...blogRoutes];
 }

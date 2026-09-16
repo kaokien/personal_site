@@ -44,9 +44,20 @@ export default function ResumePage() {
                   <p>ROLE: Growth Solutions Engineer</p>
                   <p>LOC: New Haven, CT</p>
                   <p>ID: {siteConfig.email}</p>
+                  <p>
+                    LI:{' '}
+                    <a
+                      href="https://www.linkedin.com/in/kevinadupoku"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-accent-lime underline transition-colors"
+                    >
+                      in/kevinadupoku
+                    </a>
+                  </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-3">
                   <Button
                     size="sm"
                     variant="outline"
@@ -54,6 +65,20 @@ export default function ResumePage() {
                     disabled
                   >
                     PDF_COMING_SOON
+                  </Button>
+                  <Button
+                    asChild
+                    size="sm"
+                    variant="outline"
+                    className="hover:border-accent-lime hover:text-accent-lime h-8 text-xs transition-colors"
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/kevinadupoku"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      LINKEDIN ↗
+                    </a>
                   </Button>
                   <Button asChild size="sm" className="h-8 text-xs">
                     <Link href="/contact">INITIATE_CONTACT</Link>

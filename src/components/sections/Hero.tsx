@@ -34,16 +34,19 @@ export function Hero() {
         </motion.div>
       </div>
 
+      {/* Primary Semantic H1 for SEO & Screen Readers */}
+      <h1 className="sr-only">Kevin Adu-Poku — Growth Solutions Engineer</h1>
+
       {/* Main Typography Stack */}
-      <div className="relative z-10 my-auto flex flex-col">
-        <motion.h1
+      <div className="relative z-10 my-auto flex flex-col" aria-hidden="true">
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="font-heading text-foreground text-[clamp(3rem,12vw,13rem)] leading-[0.85] font-bold tracking-tighter uppercase select-none"
         >
           Growth
-        </motion.h1>
+        </motion.div>
 
         <div className="flex items-center gap-4 sm:gap-8">
           <motion.div
@@ -52,14 +55,14 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="bg-accent-lime h-2 w-full max-w-[100px] sm:max-w-[150px] lg:max-w-[300px]"
           />
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-foreground/90 hover:text-accent-lime font-serif text-[clamp(3rem,12vw,13rem)] leading-[0.85] font-normal normal-case italic transition-colors duration-500 select-none"
           >
             Engineer.
-          </motion.h1>
+          </motion.div>
         </div>
       </div>
 

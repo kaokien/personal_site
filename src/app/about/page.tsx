@@ -131,12 +131,22 @@ export default function AboutPage() {
             Always open to discussing new projects, roles, and partnership
             opportunities.
           </p>
-          <a
-            href="/contact"
-            className="bg-accent-lime hover:bg-accent-lime/80 mt-6 inline-flex items-center rounded-none px-6 py-3 text-sm font-bold tracking-widest text-black uppercase transition-colors"
-          >
-            Let&apos;s Talk
-          </a>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="/contact"
+              className="bg-accent-lime hover:bg-accent-lime/80 inline-flex items-center rounded-none px-6 py-3 text-sm font-bold tracking-widest text-black uppercase transition-colors"
+            >
+              Let&apos;s Talk
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kevinadupoku"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-border hover:border-accent-lime hover:text-accent-lime bg-muted/30 inline-flex items-center rounded-none border px-6 py-3 font-mono text-sm font-bold tracking-widest uppercase transition-colors"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
         </div>
       </section>
     </BaseLayout>

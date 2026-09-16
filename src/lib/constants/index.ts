@@ -5,18 +5,23 @@ export const siteConfig: SiteConfig = {
   title: 'Kevin Adu-Poku | Growth Solutions Engineer',
   description:
     'Growth Solutions Engineer specializing in video technology, platform optimization, and driving measurable revenue through custom engineering solutions.',
-  url: 'https://personal-site-zeta-snowy.vercel.app',
+  url: 'https://www.kevinadupoku.com',
   email: 'kevin.adupoku@icloud.com',
   socials: [
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/kevinadupoku',
+      icon: 'linkedin',
+    },
     {
       name: 'GitHub',
       url: 'https://github.com/kaokien',
       icon: 'github',
     },
     {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/kevinadupoku',
-      icon: 'linkedin',
+      name: 'Instagram',
+      url: 'https://instagram.com/kevysupr3me',
+      icon: 'instagram',
     },
   ],
 };
