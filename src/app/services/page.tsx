@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Services | Kevin Adu-Poku',
   description:
-    'High-performance monetization platforms for creators and custom video engineering for media companies.',
+    'Growth solutions engineering: automated client acquisition funnels, direct-to-consumer digital course platforms, and enterprise video playback architecture.',
 };
 
 export default function ServicesPage() {
@@ -20,16 +20,17 @@ export default function ServicesPage() {
               § 02 &nbsp;·&nbsp; Services & Strategy
             </span>
             <h1 className="text-foreground font-heading text-[8vw] leading-[0.95] font-bold tracking-tight uppercase md:text-[60px] lg:text-[72px]">
-              Creator & Video{' '}
+              Growth & Video{' '}
               <span className="text-accent-lime font-serif font-normal normal-case italic">
                 Systems.
               </span>
             </h1>
             <p className="text-muted-foreground mt-6 max-w-2xl font-serif text-lg leading-relaxed italic">
-              I build high-performance monetization platforms for content
-              creators and configure custom video playback architectures for
-              media companies. I align technology, community backend systems,
-              and brand licensing around direct business value.
+              I build automated member acquisition funnels and
+              direct-to-consumer digital product platforms for coaches, gyms,
+              and creator brands, and architect enterprise video playback for
+              media companies. Every system is built around measurable business
+              revenue and zero technical friction.
             </p>
           </div>
         </div>
@@ -65,32 +66,31 @@ export default function ServicesPage() {
                   </span>
                   <div className="md:col-span-4">
                     <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
-                      Creator Product Platforms
+                      Automated Acquisition Systems
                     </h3>
                     <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                      eCommerce & PWAs
+                      Member Funnels & Local SEO
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4 md:col-span-6 md:col-start-7">
                   <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
-                    Building custom web systems that turn audience attention
-                    into direct digital sales. We design offline-capable
-                    applications, interactive reader layouts, and secure
-                    checkout funnels.
+                    Building turnkey web acquisition funnels that convert local
+                    search traffic and social engagement into booked trials and
+                    active gym memberships without manual messaging.
                   </p>
                   <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
                     <li>
-                      • Custom Next.js architectures with Stripe Checkout API
-                      integrations
+                      • GymDesk and CRM API integrations with custom scheduling
+                      flows
                     </li>
                     <li>
-                      • Apple HIG-compliant digital reader engines for training
-                      guides
+                      • Local SEO and GEO schema architecture ranking top in
+                      target search markets
                     </li>
                     <li>
-                      • Mobile PWA wrappers supporting Add to Home Screen (A2HS)
-                      and offline state
+                      • Automated SMS and email nurture triggers connecting
+                      signups to coaches
                     </li>
                   </ul>
                 </div>
@@ -106,32 +106,31 @@ export default function ServicesPage() {
                   </span>
                   <div className="md:col-span-4">
                     <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
-                      Enterprise Video Solutions
+                      Direct-to-Consumer Product Platforms
                     </h3>
                     <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                      Ad Tech & Playback
+                      Digital Courses & Stripe Billing
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4 md:col-span-6 md:col-start-7">
                   <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
-                    Video player integrations and ad tech configuration for
-                    high-traffic media properties. Resolving cross-platform
-                    playback issues and securing streams across web, mobile, and
-                    CTV.
+                    Custom digital product platforms and gated video course hubs
+                    that turn creator attention into direct-to-consumer revenue
+                    on autopilot.
                   </p>
                   <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
                     <li>
-                      • Custom player SDK setups (JW Player, HLS streaming
-                      tuning)
+                      • Bespoke Next.js architectures with automated Stripe
+                      checkout
                     </li>
                     <li>
-                      • Monetization scheduling (VAST/VPAID standards with
-                      Google IMA & FreeWheel)
+                      • Apple HIG-style digital reader engines for training
+                      blueprints
                     </li>
                     <li>
-                      • DRM stream configurations (Widevine, FairPlay,
-                      PlayReady)
+                      • Secure token-gated video streaming and offline-ready PWA
+                      installation
                     </li>
                   </ul>
                 </div>
@@ -147,31 +146,31 @@ export default function ServicesPage() {
                   </span>
                   <div className="md:col-span-4">
                     <h3 className="text-foreground font-heading mb-1 text-xl font-bold uppercase sm:text-2xl">
-                      Community Backend & AI
+                      Enterprise Media & Playback Systems
                     </h3>
                     <p className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
-                      Discord & Chat Automations
+                      Ad Tech & Video Infrastructure
                     </p>
                   </div>
                 </div>
                 <div className="space-y-4 md:col-span-6 md:col-start-7">
                   <p className="text-muted-foreground text-sm leading-relaxed sm:text-base">
-                    Designing Discord community spaces that convert and retain
-                    audiences. Implementing verification gates, security
-                    filters, and custom chatbot routing.
+                    Video player integrations, custom player SDK engineering,
+                    and ad monetization architecture for high-traffic media
+                    properties, grounded in enterprise production at JW Player.
                   </p>
                   <ul className="text-muted-foreground space-y-2 font-mono text-[10px] tracking-wider uppercase sm:text-xs">
                     <li>
-                      • Discord verification onboarding flows (Carl-bot,
-                      reaction roles)
+                      • Custom player SDK implementations (JW Player, HLS
+                      adaptive-bitrate tuning)
                     </li>
                     <li>
-                      • Conversational AI routing bots (deploying Qwen agents
-                      linked to site resources)
+                      • Monetization scheduling (VAST/VPAID standards with
+                      Google IMA & FreeWheel)
                     </li>
                     <li>
-                      • Server protection rules (AutoMod regex keyword filters,
-                      anti-raid scripts)
+                      • Enterprise DRM stream configurations (Widevine,
+                      FairPlay, PlayReady)
                     </li>
                   </ul>
                 </div>

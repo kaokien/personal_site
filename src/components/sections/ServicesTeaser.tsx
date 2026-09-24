@@ -6,23 +6,24 @@ import Link from 'next/link';
 const services = [
   {
     numeral: 'I.',
-    title: 'Creator Product Platforms',
-    description: 'eCommerce, PWAs, and checkout funnels for content creators.',
-    tag: 'eCommerce & PWAs',
+    title: 'Automated Acquisition Systems',
+    description:
+      'Turnkey funnels, local search optimization, and scheduling workflows that convert visitors into active members without manual back-and-forth.',
+    tag: 'Member Acquisition',
   },
   {
     numeral: 'II.',
-    title: 'Enterprise Video Solutions',
+    title: 'Direct-to-Consumer Product Platforms',
     description:
-      'Player SDKs, ad tech, DRM. The infra behind high-traffic media.',
-    tag: 'Ad Tech & Playback',
+      'Custom course architectures, automated Stripe checkouts, and gated media hubs built to monetize audience demand on autopilot.',
+    tag: 'Digital Products & DTC',
   },
   {
     numeral: 'III.',
-    title: 'Community Backend & AI',
+    title: 'Enterprise Media & Playback Systems',
     description:
-      'Discord systems, verification flows, and conversational AI bots.',
-    tag: 'Discord & Automations',
+      'High-concurrency video delivery, ad tech integration, and player SDK solutions derived from production experience at JW Player.',
+    tag: 'Video Infra & Playback',
   },
 ];
 
