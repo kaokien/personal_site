@@ -78,9 +78,11 @@ export function Hero() {
             Kevin Adu-Poku
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
-            Solutions engineer at JW Player, keeping video running for Forbes,
-            NPR, Fox, and a dozen others. Before that, Apple and Yale. I fix the
-            things nobody sees until they break.
+            Growth Solutions Engineer bridging systems architecture, product
+            execution, and measurable business growth. Enterprise background at
+            JW Player (powering media infrastructure for Forbes, NPR, and NBC),
+            Apple, and Yale, paired with building 0-to-1 consumer platforms that
+            scale past 18K+ active users and generate automated revenue.
           </p>
         </motion.div>
 
