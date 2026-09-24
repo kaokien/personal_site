@@ -3,26 +3,22 @@
     "id": "1",
     "title": "Coach Josh Boxing",
     "slug": "coach-josh-boxing",
-    "description": "High-conversion marketing site and member acquisition funnel for a Hamden, CT boxing gym. Managed Google AdSense campaigns growing MRR from $1,200 to $7,500. Deployed on Vercel with Next.js, GymDesk API sync, automated trial signups, and local SEO.",
-    "longDescription": "Developed the complete web presence and customer acquisition system for Coach Josh Boxing in Hamden, CT. Deployed to Vercel and built with the Next.js App Router for optimal performance.\n\nKey features and integrations implemented:\n• Google AdSense Campaign Management: Managed ad campaigns end-to-end, scaling the gym's monthly recurring revenue from $1,200 to $7,500 through targeted keyword bidding, audience segmentation, and continuous ad creative optimization.\n• GymDesk Integration: Seamlessly synchronized the GymDesk booking API with custom client-side scheduling widgets, establishing a frictionless free trial signup flow for kids, teens, adults, and women's programs.\n• Stripe Checkout: Wired secure payment gateways supporting membership tiers ($100–$175/mo) and private coaching booking.\n• Automated Outreach: Integrated webhook triggers linking signups to automated SMS notifications and targeted email nurture sequences.\n• SEO & Local search: Crafted local search and GEO schema optimization, positioning the site at the top of organic New Haven area search queries, helping drive gym capacity past 200 active athletes.",
+    "description": "High-performance member acquisition funnel and local web platform for Hamden, CT boxing gym. Driven by targeted local SEO and automated booking workflows, scaling platform traffic to 18.4K active users and 27.1K sessions.",
+    "longDescription": "Engineered the digital member acquisition system for Coach Josh Boxing in Hamden, CT, transforming local search traffic into booked trials and active gym memberships.\n\nKey systems and business outcomes delivered:\n• Scale & Traffic: Scaled platform reach to 18.4K active users and 27.1K sessions through targeted organic search optimization and acquisition funnels.\n• Automated Trial Funnel: Synchronized the GymDesk booking API with custom scheduling flows, creating a frictionless trial signup pipeline for kids, teens, adults, and women's boxing programs.\n• Stripe Payments: Built direct checkout workflows supporting recurring membership tiers ($100-$175/mo) and private coaching bookings.\n• Automated Member Onboarding: Configured webhook triggers connecting trial bookings directly to automated SMS alerts and email nurture sequences.\n• Local Search Dominance: Implemented local SEO and GEO schema architecture, establishing top ranking across New Haven area boxing queries and supporting gym capacity past 200 active athletes.",
     "category": "web_app",
     "status": "completed",
     "tags": [
       "Next.js",
       "Vercel",
-      "Google AdSense",
-      "SEO/GEO",
+      "18.4K Active Users",
+      "SEO & GEO",
       "GymDesk API",
       "Stripe Payments"
     ],
     "features": [
       {
-        "title": "Ad Campaign Management",
-        "detail": "Google AdSense campaigns scaling MRR from $1.2K to $7.5K"
-      },
-      {
-        "title": "Next.js App Router",
-        "detail": "Deployed on Vercel for sub-second page loads"
+        "title": "18.4K Active Users",
+        "detail": "27.1K sessions driven through organic search and acquisition funnels"
       },
       {
         "title": "GymDesk Integration",
@@ -30,11 +26,11 @@
       },
       {
         "title": "Stripe Gateway",
-        "detail": "Integrated payment workflows for membership tiers"
+        "detail": "Integrated payment workflows for recurring membership tiers"
       },
       {
-        "title": "Local SEO / GEO",
-        "detail": "Search schema optimizations ranking top in local queries"
+        "title": "Local SEO & GEO",
+        "detail": "Top organic ranking across New Haven area boxing searches"
       }
     ],
     "thumbnailUrl": "/images/projects/coach-josh-boxing-thumb.png",
@@ -49,8 +45,8 @@
     "id": "2",
     "title": "Coach Josh Official",
     "slug": "coach-josh-official",
-    "description": "Premium eCommerce and subscription portal for a content brand with 150M+ views. Deployed on Vercel. Built with Next.js, Mux Video SDK, Stripe Checkout, and offline PWA capability.",
-    "longDescription": "Engineered the direct-to-consumer digital product platform supporting Coach Josh's global digital brand (150M+ views across social platforms).\n\nKey features and architecture implemented:\n• PWA Wrapper: Configured service workers and web app manifests for a full Progressive Web App installation, letting users install the platform directly on their iOS/Android home screens for offline-first reading.\n• Interactive eBook Engine: Crafted an Apple HIG-compliant digital reader for the 'Striking Blueprint' digital book, incorporating progress tracking and visual cues.\n• Mux Video Integration: Implemented secure adaptive-bitrate video streaming via Mux with custom video players, offering secure access to the Premium Video Course.\n• Stripe Subscriptions: Configured Stripe billing portals for managing private coaching subscriptions ($497/mo) and single sessions ($100).\n• Community Gateway: Created automated Discord onboarding systems, helping build the free community channel to 400+ members.",
+    "description": "Direct-to-consumer digital course platform and gated media hub supporting a fitness brand with 150M+ impressions. Built with Next.js, Mux Video streaming, Stripe checkout, and offline PWA capability.",
+    "longDescription": "Engineered the direct-to-consumer digital product platform supporting Coach Josh's global brand (150M+ views across social channels), enabling instant, automated course sales and video delivery.\n\nKey systems and technical architecture implemented:\n• Mux Video Infrastructure: Implemented secure adaptive-bitrate video streaming with custom players, delivering seamless playback for the premium video course library.\n• Direct Course Checkout: Built automated Stripe checkout and customer management for digital course sales and private coaching programs ($497/mo).\n• Interactive Digital Reader: Engineered an Apple HIG-style digital reader for the 'Striking Blueprint' course book with reading progress tracking.\n• Offline-First PWA: Configured service workers and web app manifests allowing athletes to install the platform directly onto iOS and Android home screens.\n• Community Funnel: Automated community onboarding workflows connecting new customers directly into private training groups.",
     "category": "web_app",
     "status": "completed",
     "tags": [
@@ -63,20 +59,20 @@
     ],
     "features": [
       {
-        "title": "Offline PWA Setup",
-        "detail": "Mobile-ready home-screen installation"
+        "title": "Mux Video Streaming",
+        "detail": "Adaptive-bitrate playback for premium video course modules"
       },
       {
-        "title": "Mux Video HLS",
-        "detail": "Secure adaptive-bitrate video course streaming"
+        "title": "Automated DTC Checkout",
+        "detail": "Self-serve Stripe checkout and instant digital fulfillment"
       },
       {
-        "title": "Interactive eBook",
-        "detail": "Apple HIG-compliant digital reader engine"
+        "title": "Interactive Reader",
+        "detail": "Apple HIG-style reader engine with progress tracking"
       },
       {
-        "title": "Stripe Subscriptions",
-        "detail": "Seamless customer portal for $497/mo programs"
+        "title": "Offline-First PWA",
+        "detail": "Home screen installation on iOS and Android"
       }
     ],
     "thumbnailUrl": "/images/projects/coach-josh-official-thumb.png",
@@ -91,39 +87,39 @@
     "id": "3",
     "title": "BoxingWiki",
     "slug": "boxing-wiki",
-    "description": "Interactive technique library and learning portal for fight training. Deployed on Vercel. Built with React, featuring an interactive SVG muscle map, automated workout generator, and gamified retention mechanics.",
-    "longDescription": "Conceived, built, and deployed BoxingWiki to fill the void of specialized interactive fighting resources. Built using React, TypeScript, and Vite, and deployed to Vercel.\n\nKey features and gamification loops implemented:\n• Gamified Engagement (Octalysis Framework): Designed the core user loop based on Yu-kai Chou's gamification model. Leveraged Core Drive 2 (Development & Accomplishment) via custom daily streaks, and Core Drive 4 (Ownership & Possession) through customized, persistent favorites lists to drive consistent daily training behavior.\n• Clickable Muscle Map: Created a responsive SVG interactive human map matching specific muscle regions to the 60+ techniques that utilize them.\n• Heavy Bag Generator: Built a customizable boxing round timer and combination generator with text-to-speech voice cues.\n• Stance Mirroring: Implemented a Southpaw mode that dynamically swaps image orientations and instructions for left-handed fighters.\n• SEO Optimization: Built index-ready static layouts with rich structured JSON-LD schemas for all 60+ technique pages.",
+    "description": "Free encyclopedia of 98 boxing techniques, video library, and interactive athlete training tools. Built with React and TypeScript, featuring an interactive SVG muscle map, automated combination generator, and structured SEO schemas.",
+    "longDescription": "Conceived, built, and deployed BoxingWiki as a specialized digital fight encyclopedia and technique training platform.\n\nKey features and gamification loops implemented:\n• Gamified Retention (Octalysis Framework): Designed the core user loop based on the Octalysis gamification model. Leveraged daily training streaks and customized, persistent favorites lists to drive consistent athlete practice.\n• Interactive Muscle Map: Created a responsive SVG human anatomical map matching specific muscle groups to the 98 techniques that activate them.\n• Heavy Bag Workout Generator: Built a customizable boxing round timer and combination generator with voice command cues.\n• Stance Mirroring: Implemented a Southpaw mode that dynamically swaps image orientations and technique guides for left-handed fighters.\n• Structured Search SEO: Built static layouts with rich structured JSON-LD schemas indexing all 98 technique pages for search discovery.",
     "category": "web_app",
     "status": "completed",
     "tags": [
       "React",
       "TypeScript",
-      "Vite",
-      "Octalysis Gamification",
+      "98 Techniques",
+      "Octalysis Framework",
       "PWA",
       "JSON-LD SEO"
     ],
     "features": [
       {
-        "title": "Octalysis Gamification",
-        "detail": "Streaks and custom favorites lists for daily retention"
+        "title": "98 Boxing Techniques",
+        "detail": "Comprehensive digital encyclopedia with video guides"
       },
       {
         "title": "Interactive Muscle Map",
-        "detail": "SVG layout matching target regions to punches"
+        "detail": "SVG layout matching target muscle groups to punches"
       },
       {
         "title": "Heavy Bag Generator",
-        "detail": "Round timers with built-in voice commands"
+        "detail": "Custom round timers with built-in voice commands"
       },
       {
-        "title": "JSON-LD SEO Layouts",
-        "detail": "Structured microdata indexing all 60+ techniques"
+        "title": "Octalysis Gamification",
+        "detail": "Streaks and custom favorites lists for athlete retention"
       }
     ],
     "thumbnailUrl": "/images/projects/boxing-wiki-thumb.png",
     "images": ["/images/projects/boxing-wiki-thumb.png"],
-    "liveUrl": "https://boxingwiki.vercel.app",
+    "liveUrl": "https://boxingwiki.org",
     "featured": true,
     "order": 3,
     "startDate": "2025-04-01",
