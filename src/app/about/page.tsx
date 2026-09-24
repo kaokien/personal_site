@@ -88,7 +88,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Capabilities — replaces the Skills Grid */}
+      {/* Capabilities: replaces the Skills Grid */}
       <section className="border-border border-y py-20">
         <div className="container mx-auto px-4">
           <span className="text-accent-lime mb-2 block font-mono text-xs font-bold tracking-widest uppercase">

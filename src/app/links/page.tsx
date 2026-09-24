@@ -131,7 +131,7 @@ const SOCIALS = [
 export default function LinksPage() {
   return (
     <>
-      {/* Scoped styles — uses CSS variables from globals.css
+      {/* Scoped styles: uses CSS variables from globals.css
           so colors automatically adapt to light/dark mode. */}
       <style jsx global>{`
         .links-page {

@@ -35,7 +35,7 @@ export function Hero() {
       </div>
 
       {/* Primary Semantic H1 for SEO & Screen Readers */}
-      <h1 className="sr-only">Kevin Adu-Poku — Growth Solutions Engineer</h1>
+      <h1 className="sr-only">Kevin Adu-Poku | Growth Solutions Engineer</h1>
 
       {/* Main Typography Stack */}
       <div className="relative z-10 my-auto flex flex-col" aria-hidden="true">
@@ -78,7 +78,7 @@ export function Hero() {
             Kevin Adu-Poku
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed font-medium sm:text-xl">
-            Solutions engineer at JW Player — kept video running for Forbes,
+            Solutions engineer at JW Player, keeping video running for Forbes,
             NPR, Fox, and a dozen others. Before that, Apple and Yale. I fix the
             things nobody sees until they break.
           </p>

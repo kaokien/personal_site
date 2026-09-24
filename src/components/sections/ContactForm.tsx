@@ -30,7 +30,7 @@ export function ContactForm() {
         data.subject || `Portfolio inquiry from ${data.name}`
       );
       const body = encodeURIComponent(
-        `Hi Kevin,\n\n${data.message}\n\n— ${data.name}\n${data.email}`
+        `Hi Kevin,\n\n${data.message}\n\n${data.name}\n${data.email}`
       );
 
       const mailtoUrl = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;

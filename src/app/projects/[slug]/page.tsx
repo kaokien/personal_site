@@ -116,7 +116,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </div>
               <div className="tracking-wider uppercase">
                 {formatDate(project.startDate)}
-                {project.endDate && ` — ${formatDate(project.endDate)}`}
+                {project.endDate && ` - ${formatDate(project.endDate)}`}
               </div>
             </div>
 

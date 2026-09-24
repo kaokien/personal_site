@@ -34,10 +34,10 @@ The objective of this update is to establish a **dual-threat personal brand posi
 
 ### A. Homepage Hero (`src/components/sections/Hero.tsx`)
 
-- **Semantic H1**: Preserve `<h1 className="sr-only">Kevin Adu-Poku — Growth Solutions Engineer</h1>`.
+- **Semantic H1**: Preserve `<h1 className="sr-only">Kevin Adu-Poku | Growth Solutions Engineer</h1>`.
 - **Display Typography**: Preserve large aesthetic typography (`GROWTH / ENGINEER.`).
 - **Subheadline Copy**:
-  > _"Growth Solutions Engineer bridging systems architecture, product execution, and measurable business growth. Enterprise background at JW Player (powering media infrastructure for Forbes, NPR, and NBC), Apple, and Yale — paired with building 0-to-1 consumer platforms that scale past 18K+ active users and generate automated revenue."_
+  > _"Growth Solutions Engineer bridging systems architecture, product execution, and measurable business growth. Enterprise background at JW Player (powering media infrastructure for Forbes, NPR, and NBC), Apple, and Yale, paired with building 0-to-1 consumer platforms that scale past 18K+ active users and generate automated revenue."_
 
 ### B. Services Teaser (`src/components/sections/ServicesTeaser.tsx`)
 

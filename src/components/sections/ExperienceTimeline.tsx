@@ -69,7 +69,7 @@ export function ExperienceTimeline({ experiences }: ExperienceTimelineProps) {
                 <div className="text-muted-foreground mb-2 flex items-center gap-2 font-mono text-xs md:justify-end">
                   {index % 2 !== 0 && <span className="hidden md:inline" />}
                   <span>
-                    {formatDate(exp.startDate)} —{' '}
+                    {formatDate(exp.startDate)} -{' '}
                     {exp.current
                       ? 'Present'
                       : exp.endDate

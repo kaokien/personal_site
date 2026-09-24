@@ -119,7 +119,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${oswald.variable} ${jetbrainsMono.variable} ${fraunces.variable} font-sans antialiased`}
       >
-        {/* Skip to main content — accessibility */}
+        {/* Skip to main content: accessibility */}
         <a
           href="#main-content"
           className="bg-accent-lime fixed top-0 left-0 z-[100] -translate-y-full px-4 py-2 text-sm font-bold text-black transition-transform focus:translate-y-0"

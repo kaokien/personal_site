@@ -105,7 +105,7 @@ export default function ResumePage() {
                     {/* Left Column: Meta */}
                     <div className="text-muted-foreground text-xs">
                       <div className="text-foreground mb-1 font-bold">
-                        {formatDate(exp.startDate)} —{' '}
+                        {formatDate(exp.startDate)} -{' '}
                         {exp.current
                           ? 'PRESENT'
                           : exp.endDate
@@ -177,7 +177,7 @@ export default function ResumePage() {
             </h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-[200px_1fr]">
               <div className="text-muted-foreground text-xs">
-                <div className="text-foreground font-bold">2019 — 2020</div>
+                <div className="text-foreground font-bold">2019 - 2020</div>
                 <div className="uppercase">Holberton School</div>
               </div>
               <div>

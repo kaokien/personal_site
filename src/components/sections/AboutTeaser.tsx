@@ -17,7 +17,7 @@ export function AboutTeaser() {
     <section className="border-border border-b py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
-          {/* Left — Headshot + Label */}
+          {/* Left: Headshot + Label */}
           <div className="lg:col-span-3">
             <span className="text-accent-lime mb-3 block font-mono text-xs font-bold tracking-widest uppercase">
               § 00 &nbsp;·&nbsp; About
@@ -45,7 +45,7 @@ export function AboutTeaser() {
             </figure>
           </div>
 
-          {/* Right — Bio + Performance Stack */}
+          {/* Right: Bio + Performance Stack */}
           <div className="lg:col-span-7 lg:col-start-5">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

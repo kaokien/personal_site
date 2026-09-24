@@ -67,7 +67,7 @@
   --accent: oklch(0 0 0 / 5%);
   --accent-foreground: oklch(0.145 0 0);
   --destructive: oklch(0.55 0.22 29);
-  /* Neon Lime — the singular accent (adjusted for light bg contrast) */
+  /* Neon Lime: the singular accent (adjusted for light bg contrast) */
   --accent-lime: oklch(0.55 0.25 130);
   --border: oklch(0 0 0 / 12%);
   --input: oklch(0 0 0 / 12%);

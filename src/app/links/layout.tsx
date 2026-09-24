@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * Standalone layout for /links — intentionally omits site nav/footer.
+ * Standalone layout for /links: intentionally omits site nav/footer.
  * This is a bio-link page meant for social media traffic (Instagram, etc).
  */
 export default function LinksLayout({

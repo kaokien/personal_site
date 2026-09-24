@@ -252,7 +252,7 @@
   },
   {
     "id": "9",
-    "title": "Nebula — Web3 DRM Audio Player",
+    "title": "Nebula: Web3 DRM Audio Player",
     "slug": "nebula",
     "description": "Premium Web3 DRM-protected audio player with simulated token-gated access, real-time royalty tracking, and a dynamic audio visualizer.",
     "longDescription": "Engineered a Web3-themed music player demo featuring protected audio playback.\n\nKey features and technical architecture implemented:\n• Token-Gated Decryption: Simulated wallet connection validations checking token holding status to authorize signed media URLs.\n• Real-time Royalty Tracking: Created a royalty ticker tracking earnings per play, simulating micro-payment distribution channels.\n• Custom Audio Visualizer: Built an interactive canvas-based EQ visualizer rendering real-time audio frequencies.\n• DRM Encryption Panel: Provided debug controls exposing raw decryption keys and license configuration settings for educational demonstration.",
